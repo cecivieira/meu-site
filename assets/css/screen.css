@@ -79,7 +79,8 @@ section.recent-posts {
 }
 
 .article-post ol,
-.article-post ul {
+.article-post ul,
+.article-post i {
     margin-bottom: 1.5rem;
 }
 
@@ -88,6 +89,7 @@ section.recent-posts {
     list-style: disc;
     margin-bottom: 0rem;
 }
+
 
 @media (min-width:576px) {
     .card-columns.listfeaturedtag {
@@ -305,7 +307,7 @@ span.post-read-more a:hover {
 }
 
 .mainheading h1.sitetitle {
-    font-family: Righteous;
+    font-family: Montserrat;
 }
 
 .mainheading h1.posttitle {
@@ -330,7 +332,7 @@ span.post-read-more a:hover {
 }
 
 .article-post {
-    font-family: Merriweather;
+    font-family: Mukta;
     font-size: 1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
@@ -379,6 +381,10 @@ blockquote {
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
+}
+
+.social-media i.fab{
+    margin: 10px;
 }
 
 .svgIcon {
@@ -685,7 +691,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Montserrat, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .article-post .h1,
@@ -762,25 +768,25 @@ iframe {
     max-width: 100%;
 }
 
-.transpdark {
-    background: rgba(0, 0, 0, 0.75);
-    color: #fff;
+.transpdark { /* barra a cima do footer; contém as categorias; parte esquerda */
+    background: rgba(191, 217, 215, 0.75); 
+    color: #5C9E9A;
 }
 
 @media (min-width:768px) {
-    .jumbotron.fortags {
+    .jumbotron.fortags { /* barra a cima do footer; contém as categorias */
         margin-bottom: -50px;
         margin-top: 3rem;
         padding: 0;
         height: 350px;
         border-radius: 0;
-        background-image: url(../images/jumbotron.jpg);
+        background-color: #79D2CC;
         background-size: cover;
     }
 
-    .jumbotron.fortags .col-md-4 {
-        background: rgba(0, 0, 0, 0.75);
-        color: #fff;
+    .jumbotron.fortags .col-md-4 { /* barra a cima do footer; contém as categorias; parte esquerda */
+        background: rgba(191, 217, 215, 0.75);
+        color: #5C9E9A;
     }
 
     .jumbotron.fortags .row {
@@ -792,13 +798,14 @@ iframe {
     margin-top: 3rem;
     padding: 0;
     border-radius: 0;
-    background-image: url(../images/jumbotron.jpg);
+    background-color: #79D2CC;
     background-size: cover;
 }
 
-.jumbotron.fortags a {
+.jumbotron.fortags a, .sumario a {
     padding: 5px 10px 7px;
-    background: #222;
+    margin-left: 5px;
+    background: #5C9E9A;
     border-radius: 30px;
     color: #fff;
     font-weight: 500;

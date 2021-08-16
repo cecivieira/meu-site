@@ -4,6 +4,35 @@
 
 ![mediumish](assets/images/mediumish-jekyll-template.png)
 
+### Run project
+
+How to use “Mediumish” theme
+
+    Download or git clone https://github.com/wowthemesnet/mediumish-theme-jekyll.git
+
+From the rood of your downloaded/cloned folder, open your terminal and install:
+
+gem install bundler
+
+Cmd
+
+Then:
+
+bundle install
+
+Cmd
+
+Edit _config.yml options. If your site is in root: baseurl: ''. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+
+Again, from your terminal:
+
+bundle exec jekyll serve --watch
+
+Cmd
+
+You should be able to see your Jekyll project now, at the address provided in terminal.
+
+Start populating your blog by adding your .md files in _posts. Mediumish already has a few examples.
 
 ### Copyright
 
