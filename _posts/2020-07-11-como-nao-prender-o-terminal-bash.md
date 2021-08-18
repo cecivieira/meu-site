@@ -3,6 +3,7 @@ layout: post
 title: "Como não prender o terminal (shell)"
 author: cecivieira
 date: 2020-07-11
+lang: pt_BR
 categories: [bash, controle de tarefas, linux, terminal commands, terminal]
 tags: [tutorial]
 image: assets/images/4.jpg
