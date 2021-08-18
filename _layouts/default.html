@@ -37,8 +37,7 @@ ga('send', 'pageview');
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
 	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		{% comment %} <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"> {% endcomment %}
+	<noscript id="deferred-styles">		
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMukta:300,300i,400,400i,700,700i" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
@@ -98,6 +97,7 @@ ga('send', 'pageview');
                 <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
                 <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
                 {% else %}
+                <li><a href="{{site.url}}{{site.baseurl}}/"> 🇧🇷 </a></li>
                 <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
                 <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
                 {% endif %}
@@ -150,11 +150,7 @@ ga('send', 'pageview');
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
                 <h2 class="d-md-block align-self-center py-1 font-weight-light">
-                {% if site.lang == "es" %}
-                Temas
-                {% else %}
-                Temas 
-                {% endif %}
+                {% t main.home.topics %}
                 <span class="d-none d-md-inline">→</span></h2>
             </div>
 		</div>
