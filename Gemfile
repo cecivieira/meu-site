@@ -20,3 +20,7 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
 end
+
+group :development do
+    gem 'rake'
+end
