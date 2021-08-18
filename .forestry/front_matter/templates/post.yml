@@ -38,3 +38,5 @@ fields:
 - type: text
   name: beforetoc
   label: beforetoc
+pages:
+- _posts/construindo-meu-site.md
