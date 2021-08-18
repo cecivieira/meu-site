@@ -4,6 +4,7 @@ description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andan√
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
+url: 'https://cecivieira.github.io/'
 google_analytics: 'G-PEG4L84NMR'
 disqus: 'cecivieira'
 # mailchimp-list: 
