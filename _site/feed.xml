@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 18 Aug 2021 20:30:55 -0300</pubDate>
+    <lastBuildDate>Wed, 18 Aug 2021 20:30:55 -0300</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>[Tutorial] Configurando uma máquina virtual e Instalando Windows 10 na VMBox</title>
+        <description>&lt;p&gt;Com a VMBox instalada, vamos configurar uma máquina virtual do Windows 10 para fazer tudo o que a gente tiver precisando nesse sistema operacional &lt;del&gt;não muito amado por pessoas desenvolvedoras&lt;/del&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Se você ainda não sabe como instalar a Virtual Box da Oracle no Ubuntu 20, vai &lt;a href=&quot;2020-10-28-instalando-a-oracle-virtual-box-no-ubuntu-20-04.md&quot;&gt;nesse post&lt;/a&gt; que expliquei tudo bem direitinho.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A VMBox permite que você configure o computador exatamente como desejar (memória RAM, HD, etc) e isso é muito útil quando temos a imagem ISO de um sistema operacional que não precisa de licença — o que não é o caso do Windows. Então, vou mostrar dois caminhos para configurar uma máquina virtual e instalar o Windows 10:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#passo-a-passo--usando-a-imagem-windows-para-teste&quot;&gt;Usando uma imagem com licença de para teste&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#passo-a-passo--usando-uma-iso-considerando-que-você-tem-a-chave-para-autenticação-do-windows&quot;&gt;Usando uma ISO considerando que você tem a chave para autenticação do Windows&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;passo-a-passo--usando-a-imagem-windows-para-teste&quot;&gt;Passo a passo — Usando a imagem Windows para teste&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Baixe a &lt;a href=&quot;https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/&quot;&gt;ISO do Windows 10&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;Descompacte o arquivo;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clique duas vezes no executável .ova, verifique se o campo “Machine Base Folder” aponta para a pasta onde a VMBox armazena as máquinas virtuais;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/1.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tá feito!&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para iniciar a máquina, abra a VMBox e faça duplo clique em cima da máquina MSEdge — Windows 10&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/2.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A senha para login está na página que você fez o download da imagem.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;passo-a-passo--usando-uma-iso-considerando-que-você-tem-a-chave-para-autenticação-do-windows&quot;&gt;Passo a passo — Usando uma ISO considerando que você tem a chave para autenticação do Windows&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Baixe a &lt;a href=&quot;https://www.microsoft.com/pt-br/software-download/windows10ISO&quot;&gt;ISO do Windows 10&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;Execute a VirtualBox;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clique no botão “New”;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/3.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Digite um nome para sua máquina virtual e selecione a versão do Windows;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/4.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Selecione a memória (RAM) desejada e clique no botão “Next”. Nesse caso configurei 4Gb pois é o necessário para o que eu quero fazer;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/5.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Deixe selecionada a opção “Create a virtual hard disk nowa” e clique no botão “Create”;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/6.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Selecione o tipo de disco rígido desejado e clique em “Next”. Sugiro usar o padrão da VMBox, “VDI (VirtualBox Disck Image)”;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/7.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Escolha como será o armazenamento em disco e clique em “Next”. A opção “Dynamically allocated” utilizará o espaço em seu disco rígido a medida que for sendo utilizado;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/8.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finalmente, verifique o tamanho do HD da máquina virtual e clique em “Create”&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/9.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agora vamos instalar o Windows 10 na máquina virtual que acabamos de criar. Dê duplo clique no título da máquina virtual;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/10.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Na primeira execução, será necessário localizar o arquivo ISO do Windows. Clique no ícone amarelo da tela;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/11.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clique em “+ Add” e localize a imagem no seu computador. Após isso, selecione a imagem e clique em “Choose”;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/12.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tá feito!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para iniciar a máquina, abra a VMBox e faça duplo clique em cima da máquina que você acabou de criar. Te lembra que na primeira inicialização o Windows vai configurar todinho e te pedir a chave de autenticação, sem ela não é possível instalar esse sistema operacional.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img class=&quot;rounded mx-auto d-block&quot; src=&quot;../assets/images/2020-10-28/13.png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Por aqui tudo funcionou sem problema, espero que tu também tenha conseguido.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Oct 2020 15:00:00 -0300</pubDate>
+        <link>http://localhost:4000/configurando-uma-maquina-virtual-e-instalando-windows-10-na-vmbox/</link>
+        <guid isPermaLink="true">http://localhost:4000/configurando-uma-maquina-virtual-e-instalando-windows-10-na-vmbox/</guid>
+        
+        <category>tutorial</category>
+        
+        
+        <category>oracle virtual box</category>
+        
+        <category>vmbox</category>
+        
+        <category>ubuntu 20.04</category>
+        
+      </item>
+    
+      <item>
+        <title>[Tutorial] Instalando a Oracle Virtual Box no Ubuntu 20.04</title>
+        <description>&lt;p&gt;Precisei testar umas coisas no Windows e uso Linux há um bom tempo, então o jeito mais recomendado de fazer isso é subir uma máquina virtual com Windows no meu Ubuntu, mas eu nunca tinha feito isso antes. Conversando com agumas amigas, cheguei na &lt;a href=&quot;https://www.virtualbox.org/&quot;&gt;Virtual Box desenvolvida pela Oracle&lt;/a&gt;, VMBox para as intimas.&lt;/p&gt;
+
+&lt;p&gt;A VMBox é um software de virtualização para computadores com arquiteturas x86/amd64 e suporta os principais sistemas operacionais. Além disso, é um Open Source com licença GPL.&lt;/p&gt;
+
+&lt;h2 id=&quot;passo-a-passo-da-instalação&quot;&gt;Passo a passo da instalação&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Caso você tenha versões anteriores da VMBox instalada no computador , recomendo que a desisntale para que não tenha perigo conflito:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; sudo apt-get remove virtualbox
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Antes de tudo precisamos descobrir o codenome da versão do Ubuntu que estamos usando(eu também não fazia ideia de que isso existia). Abre teu terminal e digita:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; lsb_release -a
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agora, é necessário escrever a linha ‘deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian &lt;codenome da=&quot;&quot; distribuição=&quot;&quot;&gt; contrib’ dentro do arquivo /etc/apt/sources.list. Faremos isso executando o seguinte comando:&lt;/codenome&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; sudo sh -c 'echo &quot;deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib&quot; &amp;gt;&amp;gt; /etc/apt/sources.list'
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Faça download e registre a chave pública do repositório:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Atualize o apt-get:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; sudo apt-get update
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instale a última versão da VMBox:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; sudo apt-get install virtualbox
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Verifique que tá tudo lindo checando a versão que foi instalada:&lt;/p&gt;
+
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; vboxmanage --version
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Se a saída foi algo do tipo “6.1.10_Ubuntur138449”, você arrasou na instalação!!! Agora bora aprender a instalar o Windows 10 nessa VM Box, vai &lt;a href=&quot;2020-10-28-instalando-a-oracle-virtual-box-no-ubuntu-20-04.md&quot;&gt;nesse post aqui&lt;/a&gt; que expliquei o passo a passo.&lt;/p&gt;
+
+&lt;p&gt;Se a saída foi diferente da versão instalada, dá uma olhadinha de novo no passo a passo ou nas orientações da &lt;a href=&quot;https://www.virtualbox.org/wiki/Linux_Downloads&quot;&gt;própia página da Virtual Box&lt;/a&gt;, pode ser que tenha havido alguma modificação.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Oct 2020 14:00:00 -0300</pubDate>
+        <link>http://localhost:4000/instalando-a-oracle-virtual-box-no-ubuntu-20-04/</link>
+        <guid isPermaLink="true">http://localhost:4000/instalando-a-oracle-virtual-box-no-ubuntu-20-04/</guid>
+        
+        <category>tutorial</category>
+        
+        
+        <category>oracle virtual box</category>
+        
+        <category>vmbox</category>
+        
+        <category>ubuntu 20.04</category>
+        
+      </item>
+    
+      <item>
+        <title>Como dados abertos contribui para o desenvolvimento de cidades inteligentes</title>
+        <description>&lt;p&gt;Uma sociedade participativa é o principal pilar para o desenvolvimento de cidades mais inteligentes. A ideia desse paradigma, que ainda está em evolução, é que o investimento estratégico em desenvolvimento social e infraestrutura de TICs possa fomentar o desenvolvimento econômico sustentável e melhoria na qualidade de vida dos habitantes locais. Segundo algumas autoras, isso nos leva a uma mudança estrutural muito importante, passamos de um modelo de pensamento competitivo para colaborativo, global para local e tomada de decisão por poucos para uma que envolva todas as partes interessadas (Herrschel, 2013, Saint, 2014, van der Graaf and Veeckman, 2014 apud &lt;a href=&quot;https://www.emerald.com/insight/content/doi/10.1108/IMP-06-2015-0024/full/html&quot;&gt;Öberg, 2017&lt;/a&gt;). Sem uma sociedade participativa, qualquer estratégia, por mais inteligente que seja, está fadada ao fracasso.&lt;/p&gt;
+
+&lt;p&gt;Entende-se que as cidades são singulares, com seus próprios desafios, contextos, virtudes e pontos de melhoria, sendo assim, não existe fórmula única para desenvolver sua “inteligência”. Empresas, sociedade civil organizada, governo, universidades, entidades sem fins lucrativos e demais entes sociais devem envolver-se em projetos estratégicos que possam responder às necessidades sociais e econômicas do local, estabelecendo prioridades e sendo flexíveis para adaptar-se às mudanças que possam aparecer.&lt;/p&gt;
+
+&lt;p&gt;Esse envolvimento de diversos entes sociais na busca por soluções permite ter uma visão holística sobre as demandas a serem tratadas e, espera-se com isso, soluções mais inclusivas.&lt;/p&gt;
+
+&lt;p&gt;Para que essa participação de todos possa acontecer precisamos de transparência nos dados e informações, além de um governo aberto. Pensando nisso, a iniciativa internacional &lt;a href=&quot;https://www.opengovpartnership.org/&quot;&gt;Parceria para Governo Aberto&lt;/a&gt; (&lt;a href=&quot;https://www.opengovpartnership.org/&quot;&gt;Open Governement Partnership&lt;/a&gt;) pretende “difundir e incentivar práticas governamentais relacionadas à transparência dos governos, ao acesso à informação pública e à participação social.” (&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/o-que-e-a-iniciativa&quot;&gt;Brasil, 2014&lt;/a&gt;). O Brasil foi um dos oito primeiros signatários dessa parceria que ao longo dos anos tem avançado para o “fortalecimento das democracias e no fomento à inovações e tecnologias para transformar a governança do século XXI”(&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/o-que-e-a-iniciativa&quot;&gt;Brasil, 2014&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;rounded float-left mr-4&quot; src=&quot;../assets/images/ogp.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como parte do acordo, bianualmente os governos apresentam planos de ações elaborados juntos com a sociedade civil, no qual estabelecem compromissos concretos seguindo os princípios de transparência, participação cidadã, prestação de contas e tecnologia e inovação. Além disso, anualmente deve ser publicado um relatório apresentando a evolução da execução dos compromissos assumidos.&lt;/p&gt;
+
+&lt;p&gt;Até hoje o Brasil já apresentou quatro planos de ações. Ressalto alguns resultados alcançados em relação a transparência de informações e abertura de dados públicos advindos desses planos:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/1o-plano-de-acao&quot;&gt;1º Plano de Ação Brasileiro para Governo Aberto(2011–2013)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Criação do Portal Brasileiro de Dados Abertos para reunir todos os conjuntos de dados dos órgãos do poder executivo federal;&lt;/li&gt;
+  &lt;li&gt;Publicação os salários de servidores públicos do poder executivo federal;&lt;/li&gt;
+  &lt;li&gt;Desenvolvimento do portal e-SIC (Sistema eletrônico de informação ao cidadão).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/2o-plano-de-acao-brasileiro&quot;&gt;2º Plano de Ação Brasileiro para Governo Aberto (2013–2016)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prestação de Contas Online de Recursos para Educação no Âmbito do Fundo Nacional de Desenvolvimento da Educação;&lt;/li&gt;
+  &lt;li&gt;Construção de painel público unificado de informações sobre os dados de execução do Programa Água para Todos;&lt;/li&gt;
+  &lt;li&gt;Desenvolvimento de Ferramentas para transparência e melhoria da Governança Fundiária;&lt;/li&gt;
+  &lt;li&gt;Criação do Banco de Preço da Administração Pública Federal;&lt;/li&gt;
+  &lt;li&gt;Abertura dos dados da execução do orçamento da União e das compras governamentais;&lt;/li&gt;
+  &lt;li&gt;Dados educacionais abertos;&lt;/li&gt;
+  &lt;li&gt;Dados abertos no âmbito do Ministério da Justiça e cidadania;&lt;/li&gt;
+  &lt;li&gt;Sistema de informações sobre a Lei Maria da Penha.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/3o-plano-de-acao-brasileiro&quot;&gt;3º Plano de Ação Brasileiro para Governo Aberto (2016–2018)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Criação de espaço de diálogo entre governo e sociedade para a geração e implementação de ações voltadas a transparência em meio ambiente.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Atualmente estamos em fase de execução do  &lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro&quot;&gt;4º Plano de Ação Brasileiro para Governo Aberto (2018–2021)&lt;/a&gt;, o qual firma os seguintes compromissos no eixo de transparência de dados e informação:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Transparência e controle no processo de reparação de Mariana e região;&lt;/li&gt;
+  &lt;li&gt;Transparência do processo legislativo;&lt;/li&gt;
+  &lt;li&gt;Transparência fundiária;&lt;/li&gt;
+  &lt;li&gt;Lei de Acesso a Informação em Estados e Municípos;&lt;/li&gt;
+  &lt;li&gt;Ecosistema de dados.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O compromisso relacionado ao ecossistema de dados tem como objetivo “estabelecer, de forma colaborativa, um modelo de referência de política de dados abertos que promova integração, capacitação e sensibilização entre sociedade e as três esferas de governo, a partir do mapeamento das demandas sociais.”(&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro/compromisso-2-docs/ecossistema-de-dados-abertos-monitoramento-e-execucao&quot;&gt;Brasil, 2018&lt;/a&gt;). Como produto, foi lançado em maio/ 2020 o “&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro/compromisso-2-docs/modelo-de-referencia-de-abertura-de-dados_versao-final-2.pdf&quot;&gt;Modelo de referência de abertura de dados&lt;/a&gt;” para orientar “gestores, agentes públicos [de todas as esferas de poder e entes federativos] e sociedade quanto à importância do uso, publicação, sustentação e monitoramento dos dados abertos” (&lt;a href=&quot;https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro/compromisso-2-docs/modelo-de-referencia-de-abertura-de-dados_versao-final-2.pdf&quot;&gt;Brasil, 2020&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Já no âmbito legislativo tivemos a aprovação da &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm&quot;&gt;Lei de Acesso à Informação em 2011 (Lei 12.527/2011)&lt;/a&gt;, o &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm&quot;&gt;Decreto 8.777/2016&lt;/a&gt; que instituiu a &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm&quot;&gt;Política de Dados Abertos do Poder Executivo Federal&lt;/a&gt; e este ano foi aprovado o &lt;a href=&quot;https://www.in.gov.br/web/dou/-/decreto-n-10.332-de-28-de-abril-de-2020-254430358&quot;&gt;Decreto 10.332/2020&lt;/a&gt; que atualiza a Estratégia de Governo Digital para o período 2020–2022, trazendo em seu bojo o Plano de Transformação Digital, Plano Diretor de Tecnologia da Informação e Comunicação e o Plano de Dados aberto conforme decreto mencionado.&lt;/p&gt;
+
+&lt;p&gt;Mas não adianta muito todo esse esforço para mudar a cultura governamental e abrir os dados se eles não forem reutilizados. O que agrega valor aos dados publicados pelos órgãos públicos é seu reuso por parte do próprio governo e da sociedade.&lt;/p&gt;
+
+&lt;p&gt;No começo do texto falei que uma das mudanças de paradigmas que trás o conceito de cidades inteligentes é sair de um modelo global para focar na criação de soluções locais, pensando as cidades como entes singulares com suas próprias complexidades e contextos. O que possibilita essa análise única das cidades é a quantidade de dados que produzimos o tempo inteiro, tanto com os sensores espalhados pela cidade (exemplo: de trânsito, de clima e câmeras de segurança) , quanto através dos nossos dispositivos pessoais.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;rounded float-right ml-4&quot; src=&quot;../assets/images/ogp-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Quando se tem suficiente dados e metadados de algo, conseguimos entender seu comportamento, suas debilidades e pontos fortes. Ou seja, dados são o insumo para que os diversos entes sociais possam desenvolver projetos estratégicos para o avanço tecnológico, econômico e social. A coleta, análise e reuso desses dados é o que possibilita o aumento da inteligência de uma cidade.&lt;/p&gt;
+
+&lt;p&gt;Vale ressaltar que me refiro a dados abertos, aqueles que não sofrem nenhum tipo de embargo legislativo; a dados de domínio público, ou seja, aqueles que qualquer pessoa pode livremente usá-los, reutilizá-los e redistribuí-los, sendo exigido, no máximo, a creditação da autoria e compartilhamento usando a mesma licença (&lt;a href=&quot;http://opendefinition.org/&quot;&gt;Open Knowledge Foundation, [201-?]&lt;/a&gt;). Sejam eles dados abertos governamentais ou de empresas — grandes empresas também estão em um movimento para abrir os seus dados como forma de demonstrar seu comprometimento com a transparência e sustentabilidade dos seus negócios, por exemplo a Nike, Nubank, Uber e Enel já publicaram alguns conjuntos de dados em formato aberto.&lt;/p&gt;
+
+&lt;p&gt;Não estou falando sobre dados pessoais, esse tipo de dado a &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm&quot;&gt;Lei Geral de Proteção de Dados Pessoais (Lei 13.709/2018)&lt;/a&gt; reconhece que cada pessoa é dona dos seus próprios dados e pode administrá-los.&lt;/p&gt;
+
+&lt;h2 id=&quot;tá-mas-como-sei-se-um-dado-é-aberto&quot;&gt;Tá, mas como sei se um dado é aberto?&lt;/h2&gt;
+
+&lt;p&gt;Existem 3 leis pensadas para Dados Governamentais Abertos e que podem ser aplicadas de forma ampla. São elas:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Se não pode ser pesquisável ou indexado na web, não existe;&lt;/li&gt;
+    &lt;li&gt;Se não estiver em formato aberto e legível por máquina, não pode ser reutilizado;&lt;/li&gt;
+    &lt;li&gt;Se sofrer algum tipo de embargo para reutilização, não é útil.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;(&lt;a href=&quot;https://eaves.ca/2009/09/30/three-law-of-open-government-data/&quot;&gt;EAVES.CA, 2009&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm&quot;&gt;Decreto 8.777/2016&lt;/a&gt; define dado aberto como “dados acessíveis ao público, representados em meio digital, estruturados em formato aberto, processáveis por máquina, referenciados na internet e disponibilizados sob licença aberta que permita sua livre utilização, consumo ou cruzamento, limitando-se a creditar a autoria ou a fonte;”&lt;/p&gt;
+
+&lt;p&gt;Formato aberto quer dizer um formato de arquivo que suas especificações estejam documentadas publicamente e de livre acesso, isso quer dizer que aquele arquivo .xls do Excel não é formato aberto, ele é de propriedade da Microsoft. O tipo de arquivo que costumamos usar para representar planilha é o .csv.&lt;/p&gt;
+
+&lt;p&gt;Dois dos principais objetivos para abertura de dados são: fomentar o controle social para uma gestão pública participativa e democrática e promover o desenvolvimento tecnológico e a inovação. Já conseguimos encontrar alguns aplicativos e serviços que seus desenvolvimentos só foram possíveis a partir de abertura de dados, por exemplo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cittamobi.com.br/home/&quot;&gt;Cittamobi&lt;/a&gt;: usa dados abertos sobre o trânsito atrelado a dados das companhias de transporte público para fornecer o serviço de previsão de horário do transporte público, melhor rota usando esses mesmo tipo de transporte etc.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://grafeno6.com/#/&quot;&gt;Grafeno6&lt;/a&gt;: fornece para prefeituras uma análise detalhada sobre a educação dos municípios. Outro produto é na área de licitação, fornecendo análises sobre as licitações que a empresa participa/participou e permitir que ela acompanhe como está sua concorrência.&lt;/li&gt;
+  &lt;li&gt;Os vários painéis da COVID-19 no país. Destaco o do &lt;a href=&quot;https://brasil.io/covid19/&quot;&gt;Brasil.IO&lt;/a&gt; que reúne dados de todos os municípios brasileiros em um painel bem completo.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://serenata.ai/&quot;&gt;Serenata de amor&lt;/a&gt;: avalia as Cota para Exercício da Atividade Parlamentar (CEAP) de deputados federais e senadores e quando encontra algum gasto suspeito publica um tweet com o nome do parlamentar e o link para a nota fiscal e dados da empresa que a emitiu.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mas, nem tudo são flores. Como ouvimos falar no começo desse ano, a &lt;a href=&quot;https://brasil.elpais.com/sociedade/2020-01-10/quando-seu-bairro-e-definido-como-zona-de-risco-por-um-app-de-transporte.html&quot;&gt;Uber começou a emitir alertas de segurança para motoristas&lt;/a&gt; e até impedir o pedido de corridas oriundas de áreas classificadas como de risco. Essa classificação é feita após análise de machine learning usando dados de corridas realizadas pela própria empresa. A 99 também faz o mesmo tipo de classificação desde 2017, mesclando dados de suas corridas com os dados abertos de segurança pública (&lt;a href=&quot;https://brasil.elpais.com/sociedade/2020-01-10/quando-seu-bairro-e-definido-como-zona-de-risco-por-um-app-de-transporte.html&quot;&gt;El país, 2020&lt;/a&gt;). Esse tipo de “solução” tem um impacto social negativo enorme, piora o estigma que a população daquela área sofre e aprofunda a exclusão do seu acesso a serviços.&lt;/p&gt;
+
+&lt;p&gt;Além de abrir os dados é preciso estimular o ecossistema de dados envolvendo todos os entes sociais para que o uso desses dados e o desenvolvimento de tecnologias seja pensando na melhoria da qualidade de vida de todos.&lt;/p&gt;
+
+&lt;p&gt;Transparência nas informações, abertura de dados e a participação de diversos entes sociais no desenvolvimento de soluções para a cidade é essencial para que caminhemos na direção de cidades inteligentes e não para uma cidade meramente tecnológica que aprofunde cada vez mais seus problemas sociais.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Esse texto foi composto por anotações da palestra “Dados abertos e Cidades inteligentes” que apresentei para o grupo de pesquisa em Cidades Inteligentes da Liga Pernambucana de Direito Digital da Universidade de Pernambuco em 19 de outubro de 2020.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;continue-estudando&quot;&gt;Continue estudando:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.redalyc.org/articulo.oa?id=85944550006&quot;&gt;A (more?) intelligent city&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.iese.edu/es/claustro-investigacion/cities-in-motion/&quot;&gt;Index Cities in Motion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/RhfM5LropRw&quot;&gt;Ciudades inteligentes: el poder de nuestros datos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/TYoT30CKCEg&quot;&gt;Ciudades inteligentes: el dilema entre la privacidad de datos y bien común&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://repositorio.cepal.org/handle/11362/37089&quot;&gt;Datos abiertos y ciudades inteligentes en América Latina: Estudio de casos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/deloitte-analytics/open-data-driving-growth-ingenuity-and-innovation.pdf&quot;&gt;Deloitte. Open data: Driving growth, ingenuity and innovation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 20 Oct 2020 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/como-dados-abertos-contribui-para-o-desenvolvimento-de-cidades-inteligentes/</link>
+        <guid isPermaLink="true">http://localhost:4000/como-dados-abertos-contribui-para-o-desenvolvimento-de-cidades-inteligentes/</guid>
+        
+        <category>artigo</category>
+        
+        
+        <category>cidades inteligentes</category>
+        
+        <category>dados abertos</category>
+        
+        <category>governo aberto</category>
+        
+        <category>opengovernment partnership</category>
+        
+        <category>parceria para governo aberto</category>
+        
+      </item>
+    
+      <item>
+        <title>Como não prender o terminal (shell)</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Alguns comandos para Controle de Tarefas no Linux.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Solução rápida:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;#Adicione &amp;amp; no final da linha do script&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;É bem comum eu ter uma dúvida besta, procurar rapidinho a solução no Google, achar, aplicar e não guardar o comando porque “vai ser fácil achar de novo”. O tempo passa e a mesma dúvida volta, sendo que dessa vez passo meia hora buscando aquele específico link maravilhoso que me ajudou outrora.&lt;/p&gt;
+
+&lt;p&gt;Saber como continuar usando o terminal ainda que esteja rodando uma aplicação bloqueante é uma dessas coisas que me leva minutos de vida regoogleando por uma solução.&lt;/p&gt;
+
+&lt;p&gt;Aplicações bloqueantes são aquelas que prendem o terminal mostrando os logs com o que tá acontecendo enquanto você faz alterações e testes, por exemplo o Pelican e o Bundle. Quando isso acontece, as vezes, abro um novo terminal, maaaasssss é possível continuar vendo os logs e seguir o usando o mesmo shell.&lt;/p&gt;
+
+&lt;p&gt;Meu fluxo, geralmente, é assim:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Adicionar &amp;amp; no final do script pra não prender o terminal;&lt;/p&gt;
+
+    &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pressionar Enter para reaparecer o cursor;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fazer todas as modificações necessárias e quando quiser fechar a aplicação;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Verificar as tarefas (job) que tão rodando no fundo (background);&lt;/p&gt;
+
+    &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;n&quot;&gt;jobs&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Selecionar a tarefa (job) que desejo trazer para primeiro plano;&lt;/p&gt;
+
+    &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt; &lt;span class=&quot;n&quot;&gt;fg&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;tarefa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Encerrar a tarefa (job).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A linguagem Bash é massa, então existem mais uns comandos para Controle de Tarefas. Dá uma olhadinha nesse &lt;a href=&quot;https://www.tldp.org/LDP/abs/html/x9644.html&quot;&gt;capítulo 15 do Advanced Bash-Scripting Guide&lt;/a&gt; ou &lt;a href=&quot;http://www.bosontreinamentos.com.br/linux/controle-de-tarefas-no-shell-comandos-bg-fg-jobs/&quot;&gt;nesse post sobre Controle de Tarefas no Shell do Linux&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Jul 2020 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/como-nao-prender-o-terminal-bash/</link>
+        <guid isPermaLink="true">http://localhost:4000/como-nao-prender-o-terminal-bash/</guid>
+        
+        <category>tutorial</category>
+        
+        
+        <category>bash</category>
+        
+        <category>controle de tarefas</category>
+        
+        <category>linux</category>
+        
+        <category>terminal commands</category>
+        
+        <category>terminal</category>
+        
+      </item>
+    
+      <item>
+        <title>Saindo da zona de conforto?</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Voltei a ser bibliotecária, membra ativa do PyLadies Recife e WiDS Recife. Daqui começam os registros do que vou aprendendo enquanto tento sair da zona de conforto.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Há 10 anos me formei em Biblioteconomia pela &lt;a href=&quot;https://www.ufpe.br/&quot;&gt;UFPE&lt;/a&gt;. Antes de colar grau já tinha passado na seleção de uma grande empresa e assim começou minha carrera como bibliotecária, no &lt;a href=&quot;http://www.pe.senai.br/&quot;&gt;SENAI Pernambuco&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Depois de 5 anos, trabalhar com informação apenas no âmbito de uma biblioteca tradicional já não me satisfazia, foi aí que conheci a comunidade &lt;a href=&quot;https://www.instagram.com/pyladiesrecife/&quot;&gt;PyLadies Recife&lt;/a&gt; durante o &lt;a href=&quot;http://brasil.pyladies.com/2014/09/19/primeiro-encontro-recife/&quot;&gt;primeiro evento, em 6 set. 2014, “um encontro para nunca mais esquecer”&lt;/a&gt;. Foi muito massa e inspirador ver tantas mulheres de áreas de conhecimento diferentes desejando o mesmo que eu, sair da sua zona de conforto.&lt;/p&gt;
+
+&lt;p&gt;Foram várias tentativas de estudar lógica de programação usando &lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt; como ferramenta. Acho que fui uma das poucas a passar 4 anos para concluir o curso “&lt;a href=&quot;https://www.pycursos.com/python-para-zumbis/&quot;&gt;Python para zumbis&lt;/a&gt;” do professor &lt;a href=&quot;https://twitter.com/fmasanori&quot;&gt;Fernando Masanori&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/CiYImHHBivpAs/giphy.gif&quot; alt=&quot;homem negro com cara de dúvida&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Em 2017 conheci o &lt;a href=&quot;https://www.instagram.com/widsrecife/&quot;&gt;Women in Data Science Recife&lt;/a&gt; (WiDS Recife) e o maravilhoso mundo multidisciplinar da Ciência de Dados.&lt;/p&gt;
+
+&lt;p&gt;No ano seguinte tive o privilégio de parar de trabalhar e me dedicar apenas a estudar o que eu queria: tecnologia da informação, dados, gestão da informação. Fui parar em Valência - ES, no &lt;a href=&quot;http://mugi.webs.upv.es/&quot;&gt;Máster Oficial Universitario en Gestión de la Información&lt;/a&gt; da &lt;a href=&quot;https://www.inf.upv.es/www/etsinf/es/&quot;&gt;Escola Tècnica Superior d’Enginyeria Informàtica&lt;/a&gt; (&lt;a href=&quot;http://www.upv.es/&quot;&gt;UPV&lt;/a&gt;). &lt;a href=&quot;https://widsvalencia.vlctechhub.org/&quot;&gt;Organizei o primeiro Women in Data Science Valencia&lt;/a&gt;. Fui acolhida pela comunidade de aprendizagem autogestinada &lt;a href=&quot;https://devscola.org/&quot;&gt;DevScola&lt;/a&gt; e aí conheci &lt;a href=&quot;https://www.ruby-lang.org/pt/about/&quot;&gt;Ruby&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Não terminei o mestrado, voltei para Recife para tomar posse de um cargo público na &lt;a href=&quot;https://www.ufpe.br/&quot;&gt;UFPE&lt;/a&gt;. Voltei a ser bibliotecária, a ser membra ativa do &lt;a href=&quot;http://twitter.com/pyladies_recife&quot;&gt;PyLadies Recife&lt;/a&gt; e &lt;a href=&quot;http://twitter.com/widsrecife&quot;&gt;WiDS Recife&lt;/a&gt;. Daqui começam os registros do que vou aprendendo enquanto tento não voltar para a zona de conforto.&lt;/p&gt;
+
+&lt;p&gt;Pode ser que apareçam umas receitas de comida entre uma técnica e uma ferramenta. Pode ser que tenham umas coisas em espanhol… inglês… ou outro idioma que essa quarentena da Covid-19 (Sars-CoV-2) possa me proporcionar tempo para aprender. Quem sabe?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/cj2Jay0wKyqFgprCUM/giphy.gif&quot; alt=&quot;mulher branca batendo palma e pedindo para que você lave suas mãos&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Apr 2020 00:00:00 -0300</pubDate>
+        <link>http://localhost:4000/saindo-da-zona-de-conforto/</link>
+        <guid isPermaLink="true">http://localhost:4000/saindo-da-zona-de-conforto/</guid>
+        
+        <category>artigo</category>
+        
+        
+        <category>carreira</category>
+        
+      </item>
+    
+  </channel>
+</rss>
