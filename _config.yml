@@ -1,7 +1,4 @@
 # Site
-name: Tecnologia
-title: Ana Cecília Vieira
-description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andanças pelas comunidades de tecnologia.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
@@ -10,6 +7,7 @@ disqus: 'cecivieira'
 # mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
+languages: ['pt', 'es']
 
 # Author
 authors:
@@ -38,6 +36,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-multiple-languages-plugin
     
 # Archives
 jekyll-archives:
@@ -70,3 +69,4 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude_from_localizations: ["javascript", "images", "css"]
