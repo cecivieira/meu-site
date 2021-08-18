@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{% t site.description %}"/>
+<meta name="keywords" content="{% t site.keywords %}"/>
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 
-<title>{{ page.title }} | {{site.name}}</title>
+<title>{{ page.title }} | {% t site.name %}</title>
 
 {% seo %}
 
@@ -69,7 +71,13 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/sobre">Sobre</a>
+
+                {% if site.lang == "es" %}
+                <a class="nav-link" href="{{ site.baseurl }}/sobre-mi">Sobre mí</a>
+                </li>
+
+                {% else %}
+                <a class="nav-link" href="{{ site.baseurl }}/sobre-mim">Sobre</a>
                 </li>
 
                 <li class="nav-item">
@@ -77,9 +85,22 @@ ga('send', 'pageview');
             
                 <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/contato">Contato</a>
-                </li>
+                </li>               
+
+                {% endif %}
 
                 {% include search-lunr.html %}
+
+                {% if post.lang == "es" or page.lang  == "es" or post.tags contains "spanish" %}
+                <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
+                {% elsif post.lang == "en" or page.lang  == "en" or post.tags contains "english" %}
+                <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
+                {% else %}
+                <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
+                {% endif %}
 
             </ul>
 
@@ -128,7 +149,13 @@ ga('send', 'pageview');
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Temas <span class="d-none d-md-inline">→</span></h2>
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">
+                {% if site.lang == "es" %}
+                Temas
+                {% else %}
+                Temas 
+                {% endif %}
+                <span class="d-none d-md-inline">→</span></h2>
             </div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
@@ -145,7 +172,7 @@ ga('send', 'pageview');
         
         <div class="row">
             <div class="col-md-4 col-sm-4 text-center text-lg-left">
-                {{site.name}} © <a target="_blank" href="{{site.copyright.link}}">{{site.copyright.name}}</a>
+                {% t site.name %} © <a target="_blank" href="{{site.copyright.link}}">{{site.copyright.name}}</a>
             </div>
             <div class="col-md-4 col-sm-4 text-center social-media">
                 {% if site.twitter %}
