@@ -36,7 +36,6 @@ ga('send', 'pageview');
 <body class="{{layout}}">
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
-		{% comment %} <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet"> {% endcomment %}
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CMukta:300,300i,400,400i,700,700i" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
@@ -69,12 +68,13 @@ ga('send', 'pageview');
                 {% else %}
                 <li class="nav-item">
                 {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/sobre">Sobre</a>
+                {% comment %} <a class="nav-link" href="{{ site.baseurl }}/sobre">Sobre</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item"> {% endcomment %}
                 <a class="nav-link" href="{{ site.baseurl }}/categorias">Categorias</a>
-            
+                </li>
+
                 <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/contato">Contato</a>
                 </li>
