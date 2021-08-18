@@ -3,6 +3,7 @@ layout: post
 title: "[Tutorial] Configurando uma máquina virtual e Instalando Windows 10 na VMBox"
 author: cecivieira
 date: 2020-10-28 18:00:00
+lang: pt-br
 categories: [oracle virtual box, vmbox, ubuntu 20.04]
 tags: [tutorial]
 image: assets/images/6.jpg

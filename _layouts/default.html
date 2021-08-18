@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{% t site.lang %}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,32 +72,54 @@ ga('send', 'pageview');
                 {% endif %}
 
                 {% if site.lang == "es" %}
-                <a class="nav-link" href="{{ site.baseurl }}/sobre-mi">Sobre mí</a>
+
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a>                
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.category %}">{% t pages.category %}</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.contact %}">{% t pages.contact %}</a>
+                </li>
+
+                {% elsif site.lang == "en" %}
+
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a>                
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.category %}">{% t pages.category %}</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.contact %}">{% t pages.contact %}</a>
                 </li>
 
                 {% else %}
-                <a class="nav-link" href="{{ site.baseurl }}/sobre-mim">Sobre</a>
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a> 
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/categorias">Categorias</a>
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.category %}">{% t pages.category %}</a>
+                </li>
             
                 <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/contato">Contato</a>
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.contact %}">{% t pages.contact %}</a>
                 </li>               
 
                 {% endif %}
 
                 {% include search-lunr.html %}
 
-                {% if post.lang == "es" or page.lang  == "es" or post.tags contains "spanish" %}
+                {% if post.lang == "es" or page.lang  == "es" or site.lang == "es" or post.tags contains "spanish" %}
                 <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
                 <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
-                {% elsif post.lang == "en" or page.lang  == "en" or post.tags contains "english" %}
+                {% elsif post.lang == "en" or page.lang  == "en" or site.lang == "en" or post.tags contains "english" %}
                 <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
                 <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
-                {% else %}
-                <li><a href="{{site.url}}{{site.baseurl}}/"> 🇧🇷 </a></li>
+                {% else %}                
                 <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
                 <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
                 {% endif %}
@@ -142,7 +164,7 @@ ga('send', 'pageview');
     
 </div>
 
-{% if page.url != "/categorias" %}
+{% if page.url != "/categories/" and page.url != "/categorias/" and page.url != "/categorias-es/" %}
 <!-- Categories Jumbotron
 ================================================== -->
 <div class="jumbotron fortags">

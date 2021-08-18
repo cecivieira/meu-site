@@ -3,6 +3,7 @@ layout: post
 title:  "Saindo da zona de conforto?"
 author: cecivieira
 date: 2020-04-19
+lang: pt-br
 categories: [carreira]
 tags: [artigo]
 image: https://media.giphy.com/media/aLXthp4tqSwVYgzzPG/giphy.gif

@@ -1,13 +1,14 @@
 # Site
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
+baseurl: 
+url: "http://localhost:4000"
 google_analytics: 'G-PEG4L84NMR'
 disqus: 'cecivieira'
 # mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
-languages: ['pt', 'es']
+languages: ['pt-br', 'es', 'en']
 
 # Author
 authors:
