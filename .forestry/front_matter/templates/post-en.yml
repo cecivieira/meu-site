@@ -11,12 +11,14 @@ fields:
 - type: text
   name: author
   label: author
+  description: cecivieira
 - type: datetime
   name: date
   label: date
 - type: text
   name: lang
   label: lang
+  description: en
 - type: list
   name: categories
   label: categories
