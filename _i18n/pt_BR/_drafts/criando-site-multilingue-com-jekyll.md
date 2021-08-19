@@ -36,9 +36,11 @@ Abaixo deixo um tutorial para implementar a internacionalização em sites está
 
 # Tutorial
 
-## 1 . Instalando o plugin Jekyll Multiple Languages 
+## 1 . Jekyll Multiple Languages Plugin
 
 O plugin Jekyll Multiple Languages vai permitir customizar o tema que você está usando para implementar multiplos idiomas.
+
+### Instalação
 
 1. Abra o arquivo Gemfile localizado na pasta raiz do seu site;
 
@@ -52,3 +54,4 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 4. Agora, ative o plugin no seu projeto. Para isso, encontre o arquivo `_config.yml `na pasta raiz do seu site e adicione `- jekyll-multiple-languages-plugin`na lista de plugins. O código deverá aparecer assim:
 
    ![](/assets/images/screenshot-from-2021-08-19-20-31-58.png)
+5. 
