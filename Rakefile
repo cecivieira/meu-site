@@ -3,10 +3,10 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
-# Indiquez le nom de votre dépôt
+# Indique o nome do seu repositório
 GITHUB_REPONAME = "cecivieira/cecivieira.github.io"
 
-desc "Génération des fichiers du site"
+desc "Geração de site estático"
 task :generate do
   Jekyll::Site.new(Jekyll.configuration({
     "source"      => ".",
@@ -14,18 +14,18 @@ task :generate do
   })).process
 end
 
-desc "Génération et publication des fichiers sur GitHub"
+desc "Geração de site estático e publicação no GitHub"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
     cp_r "_site/.", tmp
 
     pwd = Dir.pwd
     Dir.chdir tmp
-    File.open(".nojekyll", "wb") { |f| f.puts("Site généré localement.") }
+    File.open(".nojekyll", "wb") { |f| f.puts("Site gerado localmente.") }
 
     system "git init"
     system "git add ."
-    message = "Site mis à jour le #{Time.now.utc}"
+    message = "Site atualizado em #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
     system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
     system "git push origin master --force"
