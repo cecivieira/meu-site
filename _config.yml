@@ -2,7 +2,7 @@
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: 
-url: "http://localhost:4000"
+url: "http://www.cecivieira.com/"
 google_analytics: 'G-PEG4L84NMR'
 disqus: 'cecivieira'
 # mailchimp-list: 
