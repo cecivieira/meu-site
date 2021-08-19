@@ -7,7 +7,7 @@ main:
   home:
     topics: Temas
   categories:
-    tags: Activities
+    tags: Tipo de contenido
     topics: Temas
   error:
     title: Ostia... No lo encontré...

@@ -7,7 +7,7 @@ main:
   home:
     topics: Subjects
   categories:
-    tags: Activities
+    tags: Type of content
     topics: Subjects
   error:
     title: Ops... I didn't find it...

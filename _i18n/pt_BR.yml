@@ -7,8 +7,8 @@ main:
   home:
     topics: Temas
   categories:
-    tags: Atividades
-    topics: Temas
+    tags: Tipo de conteúdo
+    topics: Tema
   error:
     title: Eita... Não achei...
     description: Mira la página inicial o usa la búsqueda!
