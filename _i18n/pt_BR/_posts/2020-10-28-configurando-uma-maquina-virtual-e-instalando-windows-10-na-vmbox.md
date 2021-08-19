@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Tutorial] Configurando uma máquina virtual e Instalando Windows 10 na VMBox"
+title: "Configurando uma máquina virtual e Instalando Windows 10 na VMBox"
 author: cecivieira
 date: 2020-10-28 18:00:00
 lang: pt_BR

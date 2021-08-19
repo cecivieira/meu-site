@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Tutorial] Instalando a Oracle Virtual Box no Ubuntu 20.04"
+title: "Instalando a Oracle Virtual Box no Ubuntu 20.04"
 author: cecivieira
 date: 2020-10-28 17:00:00
 lang: pt_BR
