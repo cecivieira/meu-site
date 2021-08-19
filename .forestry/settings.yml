@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: _i18n/es/_posts
+  label: Post - Español
+  create: documents
+  match: "**/*"
+  templates:
+  - post-es
+- type: directory
   path: _i18n/pt_BR/_posts
   label: Post - Português
   create: documents
