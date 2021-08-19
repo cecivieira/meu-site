@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Tutorial] Configurando uma máquina virtual e Instalando Windows 10 na VMBox"
+title: "Configurando uma máquina virtual e Instalando Windows 10 na VMBox"
 author: cecivieira
 date: 2020-10-28 18:00:00
 lang: pt_BR
@@ -13,7 +13,7 @@ beforetoc:
 ---
 Com a VMBox instalada, vamos configurar uma máquina virtual do Windows 10 para fazer tudo o que a gente tiver precisando nesse sistema operacional ~~não muito amado por pessoas desenvolvedoras~~.
 
-> Se você ainda não sabe como instalar a Virtual Box da Oracle no Ubuntu 20, vai [nesse post](2020-10-28-instalando-a-oracle-virtual-box-no-ubuntu-20-04.md) que expliquei tudo bem direitinho.
+> Se você ainda não sabe como instalar a Virtual Box da Oracle no Ubuntu 20, vai [nesse post](/instalando-a-oracle-virtual-box-no-ubuntu-20-04/) que expliquei tudo bem direitinho.
 
 A VMBox permite que você configure o computador exatamente como desejar (memória RAM, HD, etc) e isso é muito útil quando temos a imagem ISO de um sistema operacional que não precisa de licença — o que não é o caso do Windows. Então, vou mostrar dois caminhos para configurar uma máquina virtual e instalar o Windows 10:
 

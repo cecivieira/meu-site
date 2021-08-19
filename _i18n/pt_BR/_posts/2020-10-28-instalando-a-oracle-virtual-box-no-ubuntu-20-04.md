@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Tutorial] Instalando a Oracle Virtual Box no Ubuntu 20.04"
+title: "Instalando a Oracle Virtual Box no Ubuntu 20.04"
 author: cecivieira
 date: 2020-10-28 17:00:00
 lang: pt_BR
@@ -59,6 +59,6 @@ A VMBox é um software de virtualização para computadores com arquiteturas x86
     vboxmanage --version
     ```
 
-Se a saída foi algo do tipo “6.1.10_Ubuntur138449”, você arrasou na instalação!!! Agora bora aprender a instalar o Windows 10 nessa VM Box, vai [nesse post aqui](2020-10-28-instalando-a-oracle-virtual-box-no-ubuntu-20-04.md) que expliquei o passo a passo.
+Se a saída foi algo do tipo “6.1.10_Ubuntur138449”, você arrasou na instalação!!! Agora bora aprender a instalar o Windows 10 nessa VM Box, vai [nesse post aqui](/configurando-uma-maquina-virtual-e-instalando-windows-10-na-vmbox/) que expliquei o passo a passo.
 
 Se a saída foi diferente da versão instalada, dá uma olhadinha de novo no passo a passo ou nas orientações da [própia página da Virtual Box](https://www.virtualbox.org/wiki/Linux_Downloads), pode ser que tenha havido alguma modificação.
