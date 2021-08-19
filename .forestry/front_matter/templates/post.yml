@@ -1,0 +1,37 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: lang
+  label: lang
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: image
+  label: image
+- type: textarea
+  name: description
+  label: description
+- type: boolean
+  name: toc
+  label: toc
+- type: text
+  name: beforetoc
+  label: beforetoc
