@@ -1,0 +1,24 @@
+site:
+  name: Ana Cecília Vieira
+  description: 'Blog personal para compartir aprendizajes y unir mis experiéncias en las comunidades de tecnología.'
+  keywords: Tecnología
+  lang: es
+main:
+  home:
+    topics: Temas
+  categories:
+    tags: Tipo de contenido
+    topics: Temas
+  error:
+    title: Ostia... No lo encontré...
+    description: Mira la página inicial o usa la búsqueda!
+pages:
+  about: Sobre mí
+  category: Categorías
+  contact: Contacto
+  blog: Blog
+links:
+  about: sobre-mi
+  category: categorias-es
+  contact: contacto
+  blog: 

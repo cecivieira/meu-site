@@ -1,0 +1,24 @@
+site:
+  name: Ana Cecília Vieira
+  description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andanças pelas comunidades de tecnologia.'
+  keywords: Tecnologia
+  lang: pt_BR
+main:
+  home:
+    topics: Temas
+  categories:
+    tags: Tipo de conteúdo
+    topics: Tema
+  error:
+    title: Eita... Não achei...
+    description: Mira la página inicial o usa la búsqueda!
+pages:
+  about: Sobre mim
+  category: Categorias
+  contact: Contato
+  blog: Blog
+links:
+  about: sobre-mim
+  category: categorias
+  contact: contato
+  blog: 

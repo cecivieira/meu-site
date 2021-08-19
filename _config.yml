@@ -1,15 +1,14 @@
 # Site
-name: Ana Cecília Vieira
-description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andanças pelas comunidades de tecnologia.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-baseurl: ''
-url: 'https://cecivieira.github.io/'
+baseurl: 
+url: "http://www.cecivieira.com/"
 google_analytics: 'G-PEG4L84NMR'
 disqus: 'cecivieira'
 # mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
+languages: ['pt_BR', 'es', 'en']
 
 # Author
 authors:
@@ -38,6 +37,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-multiple-languages-plugin
     
 # Archives
 jekyll-archives:
@@ -69,4 +69,5 @@ adsense-data-ad-slot: "1363087678"
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock, Rakefile]
+exclude_from_localizations: ["javascript", "images", "css"]
