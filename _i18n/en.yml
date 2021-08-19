@@ -16,7 +16,9 @@ pages:
   about: About me
   category: Categories
   contact: Contact
+  blog: Blog
 links:
   about: about
   category: categories
   contact: contact
+  blog: 

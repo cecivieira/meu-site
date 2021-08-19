@@ -73,7 +73,11 @@ ga('send', 'pageview');
 
                 {% if site.lang == "es" %}
 
-                <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a>                
+                {% comment %} <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a>                
+                </li>
+
+                <li class="nav-item"> {% endcomment %}
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.blog %}">{% t pages.blog %}</a>
                 </li>
 
                 <li class="nav-item">
@@ -84,8 +88,12 @@ ga('send', 'pageview');
                 <a class="nav-link" href="{{ site.baseurl }}/{% t links.contact %}">{% t pages.contact %}</a>
                 </li>
 
-                {% elsif site.lang == "en" %}
+                {% comment %} {% elsif site.lang == "en" %}
 
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.blog %}">{% t pages.blog %}</a>
+                </li>
+
+                <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a>                
                 </li>
 
@@ -95,10 +103,14 @@ ga('send', 'pageview');
 
                 <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/{% t links.contact %}">{% t pages.contact %}</a>
-                </li>
+                </li> {% endcomment %}
 
                 {% else %}
-                <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a> 
+                {% comment %} <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a> 
+                </li>
+
+                <li class="nav-item"> {% endcomment %}
+                <a class="nav-link" href="{{ site.baseurl }}/{% t links.blog %}">{% t pages.blog %}</a>
                 </li>
 
                 <li class="nav-item">
@@ -114,14 +126,16 @@ ga('send', 'pageview');
                 {% include search-lunr.html %}
 
                 {% if post.lang == "es" or page.lang  == "es" or site.lang == "es" or post.tags contains "spanish" %}
-                <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
-                <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
+                <li><a href="{{site.url}}"> 🇧🇷 </a></li>
+                {% comment %} 
+                <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇬🇧 </a></li>
                 {% elsif post.lang == "en" or page.lang  == "en" or site.lang == "en" or post.tags contains "english" %}
-                <li><a href="{{site.url}}{{site.baseurl}}"> 🇧🇷 </a></li>
-                <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
+                <li><a href="{{site.url}}"> 🇧🇷 </a></li>
+                <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li> 
+                {% endcomment %}
                 {% else %}                
                 <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
-                <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇺🇸 </a></li>
+                {% comment %} <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇬🇧 </a></li> {% endcomment %}
                 {% endif %}
 
             </ul>

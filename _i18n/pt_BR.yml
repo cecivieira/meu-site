@@ -16,7 +16,9 @@ pages:
   about: Sobre mim
   category: Categorias
   contact: Contato
+  blog: Blog
 links:
   about: sobre-mim
   category: categorias
   contact: contato
+  blog: 
