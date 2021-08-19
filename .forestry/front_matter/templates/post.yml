@@ -40,5 +40,3 @@ fields:
 - type: text
   name: beforetoc
   label: beforetoc
-pages:
-- _i18n/pt_BR/_posts/teste.md
