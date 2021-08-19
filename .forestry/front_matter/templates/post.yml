@@ -1,5 +1,5 @@
 ---
-label: Post - pt_BR
+label: Post
 hide_body: false
 fields:
 - type: text
@@ -19,16 +19,18 @@ fields:
 - type: text
   name: lang
   label: lang
-  description: pt_BR
+  description: pt_BR, es, en
 - type: list
   name: categories
   label: categories
+  description: artigo, tutorial, podcast, evento
 - type: list
   name: tags
   label: tags
 - type: file
   name: image
   label: image
+  description: assets/images/XXX.png
 - type: textarea
   name: description
   label: description
