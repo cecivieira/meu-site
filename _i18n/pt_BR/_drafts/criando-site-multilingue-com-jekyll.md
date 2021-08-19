@@ -29,3 +29,24 @@ Essas andanças começaram, com maior frequência, lá em 2019 na Espanha. Entã
 Abaixo deixo um tutorial para implementar a internacionalização em sites estáticos desenvolvidos em Jekyll e publicados no GitHub Page.
 
 # Ferramentas 
+
+* [Jekyll Multiple Languages Plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
+* [Ruby](https://www.ruby-lang.org)
+* [GitHub](https://github.com/)
+
+# Tutorial
+
+## 1 . Instalando o plugin Jekyll Multiple Languages 
+
+O plugin Jekyll Multiple Languages vai permitir customizar o tema que você está usando para implementar multiplos idiomas.
+
+1. Abra o arquivo Gemfile localizado na pasta raiz do seu site;
+
+   ![](/assets/images/screenshot-from-2021-08-19-13-40-34.png)
+2. Dentro dele haverá o grupo `:jekyll_plugins`. Dentro dele insira a linha `gem 'jekyll-multiple-languages-plugin'`. O arquivo deverá aparecer assim:
+
+   ![](/assets/images/screenshot-from-2021-08-19-15-15-28.png)
+3. No terminal, rode o comando abaixo para instalar esse novo plugin:
+
+   `bundle install`
+4. 
