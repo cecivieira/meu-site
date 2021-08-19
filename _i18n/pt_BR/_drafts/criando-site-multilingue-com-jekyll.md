@@ -43,10 +43,12 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 1. Abra o arquivo Gemfile localizado na pasta raiz do seu site;
 
    ![](/assets/images/screenshot-from-2021-08-19-13-40-34.png)
-2. Dentro dele haverá o grupo `:jekyll_plugins`. Dentro dele insira a linha `gem 'jekyll-multiple-languages-plugin'`. O arquivo deverá aparecer assim:
+2. Dentro dele haverá o grupo `:jekyll_plugins`. Dentro dele insira a linha `gem 'jekyll-multiple-languages-plugin'`. O código deverá aparecer assim:
 
    ![](/assets/images/screenshot-from-2021-08-19-15-15-28.png)
 3. No terminal, rode o comando abaixo para instalar esse novo plugin:
 
    `bundle install`
-4. 
+4. Agora, ative o plugin no seu projeto. Para isso, encontre o arquivo `_config.yml `na pasta raiz do seu site e adicione `- jekyll-multiple-languages-plugin`na lista de plugins. O código deverá aparecer assim:
+
+   ![](/assets/images/screenshot-from-2021-08-19-20-31-58.png)
