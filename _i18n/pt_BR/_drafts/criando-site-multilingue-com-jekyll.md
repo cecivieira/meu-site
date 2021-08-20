@@ -71,7 +71,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
        meusite/
        ├ _i18n/
          ├ pt_BR/
-           └ _post/
+           └ _posts/
          ├ es/
          └ en/
 3. Agora vamos criar arquivos de dados para cada um dos nossos idiomas. Isso vai facilitar as traduções das páginas html. Para isso, dentro da pasta `_i18n` crie um `yml` para cada lingua (exatamente com a mesma sigla da lista de idiomas do passo 1). A estrutura da pasta deve aparecer assim:
@@ -79,7 +79,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
        meusite/
        ├ _i18n/
          ├ pt_BR/
-           └ _post/
+           └ _posts/
          ├ es/
          ├ en/
          ├ pt_BR.yml   
@@ -89,7 +89,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 
    É comum nos temas Jekyll que os arquivos das pastas `_includes` e `_layouts` sejam utilizados para criação das páginas estáticas, então, sugiro que você analize esses htmls e identifique os textos que você precisará traduzir. Nesse momento não vamos traduzir o conteúdo das páginas, apenas a sua estrutura.
 
-   O arquivo `yml` deverá aparecer assim:
+   Os arquivos `yml` deverão aparecer assim:
 
        site:
          name: Ana Cecília Vieira
@@ -121,3 +121,20 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
    `{% t main.categories.tags %}`
 
       Essa chamada corresponde a variável da linha 10 do item anterior.
+
+6. Em Jekyll os conteúdos das páginas estão em arquivos do tipo Markdown (`md`) . Para traduzí-los, você precisará criar arquivos específicos dentro da pasta de cada idioma. Por exemplo:
+
+       meusite/
+       ├ _i18n/
+         ├ pt_BR/
+         	├ _posts/
+           └ about.md
+         ├ es/
+         	├ _posts/
+           └ about.md
+         ├ en/
+         	├ _posts/
+           └ about.md
+
+   Para chamar esses arquivos dentro de outro, usamos a sintaxe `{% tf <titulo_arquivo.md> %}`. Desse jeito o navegador vai entender qual conteúdo corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
+7. Os arquivos incluídos dentros da pasta `_pages` são as páginas do seu site, em alguns temas Jekyll (como o que estou usando) alguns arquivos da pasta \`
