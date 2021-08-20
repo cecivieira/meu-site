@@ -51,7 +51,7 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 3. No terminal, rode o comando abaixo para instalar esse novo plugin:
 
    `bundle install`
-4. Agora, ative o plugin no seu projeto. Para isso, encontre o arquivo `_config.yml `na pasta raiz do seu site e adicione `- jekyll-multiple-languages-plugin`na lista de plugins. O código deverá aparecer assim:
+4. Agora, ative o plugin no seu projeto. Para isso, encontre o arquivo `_config.yml` na pasta raiz do seu site e adicione `- jekyll-multiple-languages-plugin`na lista de plugins. O código deverá aparecer assim:
 
    ![](/assets/images/screenshot-from-2021-08-19-20-31-58.png)
 
@@ -60,3 +60,8 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 ### Customização do tema
 
 O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção feita por quem está navegando na página. Para isso, vamos precisar fazer as seguintes customizações no código do nosso tema:
+
+1. Abra o arquivo `_config.yml` e insira a lista com todos os idiomas desejados. O primeiro idioma será usado como o padrão para seu site.
+
+   `languages: ["pt_BR", "es", "en"]`
+2. 
