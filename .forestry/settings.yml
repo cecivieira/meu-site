@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: _i18n/pt_BR/_drafts
+  label: Rascunhos - Português
+  create: all
+  match: "**/*"
+  templates:
+  - post
+- type: directory
   path: _drafts
   label: Rascunhos
   create: documents
