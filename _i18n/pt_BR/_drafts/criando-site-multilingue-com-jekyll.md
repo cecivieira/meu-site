@@ -116,7 +116,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
    **Lembre-se:** As variáveis obrigatórias são apenas as instanciadas nas 5 primeiras linhas do exemplo acima. As demais, foram criadas de forma arbitrária por mim para customização do tema que estou usando.
 5. Ao aplicar uma variável, o navegador vai entender magicamente qual palavra corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
 
-   Para aplicar uma variável usaremos a sintaxe:
+   Para aplicar uma variável usa-se a sintaxe:
 
    `{% t main.categories.tags %}`
 
