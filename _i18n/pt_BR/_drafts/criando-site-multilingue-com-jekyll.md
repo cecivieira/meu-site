@@ -85,4 +85,32 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
          ├ pt_BR.yml   
          ├ es.yml
          └ en.yml
-4. 
+4. Configure os arquivos de dados (yml) com informações básicas do site (name, description, keywords, lang) e com as variáveis que você for utilizar nas páginas html, por exemplo: títulos, subtítulos e links do menu (nav). 
+
+   É comum nos temas Jekyll que os arquivos das pastas `_includes` e `_layouts` sejam utilizados para criação das páginas estáticas, então, sugiro que você analize esses htmls e identifique os textos que você precisará traduzir. **Nesse momento não vamos traduzir o conteúdo das páginas, apenas a sua estrutura.**
+
+   O arquivo `yml` deverá aparecer assim:
+
+       site:
+         name: Ana Cecília Vieira
+         description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andanças pelas comunidades de tecnologia.'
+         keywords: Tecnologia
+         lang: pt_BR
+       main:
+         home:
+           topics: Temas
+         categories:
+           tags: Tipo de conteúdo
+           topics: Tema
+       pages:
+         about: Sobre mim
+         category: Categorias
+         contact: Contato
+         blog: Blog
+       links:
+         about: sobre-mim
+         category: categorias
+         contact: contato
+
+   **Lembre-se:** As variáveis obrigatórias são apenas as instanciadas nas 5 primeiras linhas do exemplo acima. As demais, foram criadas de forma arbitrária por mim, pois 
+5. 
