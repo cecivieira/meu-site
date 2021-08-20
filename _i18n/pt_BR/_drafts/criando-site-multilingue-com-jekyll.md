@@ -38,7 +38,7 @@ Abaixo deixo um tutorial para implementar a internacionalização em sites está
 
 ## 1 . Jekyll Multiple Languages Plugin
 
-O plugin Jekyll Multiple Languages vai permitir customizar o tema que você está usando para implementar multiplos idiomas.
+O plugin Jekyll Multiple Languages vai permitir customizar o tema que você está usando para implementar multiplos idiomas. Para ler a documentação completa acesse o [repositório do plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin).
 
 ### Instalação
 
@@ -55,7 +55,7 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 
    ![](/assets/images/screenshot-from-2021-08-19-20-31-58.png)
 
-   Plugin instalado e ativado! 
+Plugin instalado e ativado! 
 
 ### Customização do tema
 
@@ -64,4 +64,14 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 1. Abra o arquivo `_config.yml` e insira a lista com todos os idiomas desejados. O primeiro idioma será usado como o padrão para seu site.
 
    `languages: ["pt_BR", "es", "en"]`
-2. 
+2. Crie a pasta `_i18n` e dentro dela crie uma pasta para cada idioma da lista do passo anterior (exatamente com a mesma sigla) . 
+
+   Nessa pasta colocaremos os posts e páginas referentes a cada idioma, então caso você já tenha posts, crie uma pasta `_post` na língua correspondente e mova-os. A estrutura da pasta deve aparecer assim:
+
+       meusite/
+       ├ _i18n/
+         ├ pt_BR/
+           └ _post/
+         ├ es/
+         ├ en/
+3. Agora vamos criar arquivos de 
