@@ -2,7 +2,7 @@
 layout: post
 title: Criando site multilíngue com Jekyll
 author: cecivieira
-date: 2021-08-19 00:00:00 -0300
+date: 2021-08-19T00:00:00.000-03:00
 lang: pt_BR
 categories:
 - tutorial
@@ -28,7 +28,7 @@ Essas andanças começaram, com maior frequência, lá em 2019 na Espanha. Entã
 
 Abaixo deixo um tutorial para implementar a internacionalização em sites estáticos desenvolvidos em Jekyll e publicados no GitHub Page.
 
-# Ferramentas 
+# Ferramentas
 
 * [Jekyll Multiple Languages Plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
 * [Ruby](https://www.ruby-lang.org)
@@ -55,7 +55,7 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 
    ![](/assets/images/screenshot-from-2021-08-19-20-31-58.png)
 
-Plugin instalado e ativado! 
+Plugin instalado e ativado!
 
 ### Customização do tema
 
@@ -64,7 +64,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 1. Abra o arquivo `_config.yml` e insira a lista com todos os idiomas desejados. O primeiro idioma será usado como o padrão para seu site.
 
    `languages: ["pt_BR", "es", "en"]`
-2. Crie a pasta `_i18n` e dentro dela crie uma pasta para cada idioma da lista do passo anterior (exatamente com a mesma sigla) . 
+2. Crie a pasta `_i18n` e dentro dela crie uma pasta para cada idioma da lista do passo anterior (exatamente com a mesma sigla) .
 
    Nessa pasta colocaremos os posts e páginas referentes a cada idioma, então caso você já tenha posts, crie uma pasta `_post` na língua correspondente e mova-os. A estrutura da pasta deve aparecer assim:
 
@@ -85,7 +85,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
          ├ pt_BR.yml   
          ├ es.yml
          └ en.yml
-4. Configure os arquivos de dados (yml) com informações básicas do site (name, description, keywords, lang) e com as variáveis que você for utilizar nas páginas html, por exemplo: títulos, subtítulos e links do menu (nav). 
+4. Configure os arquivos de dados (yml) com informações básicas do site (name, description, keywords, lang) e com as variáveis que você for utilizar nas páginas html, por exemplo: títulos, subtítulos e links do menu (nav).
 
    É comum nos temas Jekyll que os arquivos das pastas `_includes` e `_layouts` sejam utilizados para criação das páginas estáticas, então, sugiro que você analize esses htmls e identifique os textos que você precisará traduzir. Nesse momento não vamos traduzir o conteúdo das páginas, apenas a sua estrutura.
 
@@ -120,9 +120,8 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 
    `{% t main.categories.tags %}`
 
-      Essa chamada corresponde a variável da linha 10 do item anterior.
-
-6. Em Jekyll os conteúdos das páginas estão em arquivos do tipo Markdown (`md`) . Para traduzí-los, você precisará criar arquivos específicos dentro da pasta de cada idioma. Por exemplo:
+   Essa chamada corresponde a variável da linha 10 do item anterior.
+6. Em Jekyll, os conteúdos das páginas estão em arquivos do tipo Markdown (`md`) . Para traduzí-los, você precisará criar arquivos específicos dentro da pasta de cada idioma. Por exemplo:
 
        meusite/
        ├ _i18n/
@@ -137,6 +136,36 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
            └ about.md
 
    Para chamar esses arquivos dentro de outro, usamos a sintaxe `{% tf <titulo_arquivo.md> %}`. Desse jeito o navegador vai entender qual conteúdo corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
-7. Os arquivos incluídos dentros da pasta `_pages` são as páginas do seu site, em alguns temas Jekyll (como o que estou usando) alguns arquivos da pasta `_layouts` também são usamos como página. 
+7. As páginas do seu site estão dentro da pasta `_pages` , mas em alguns temas Jekyll (como o que estou usando) alguns arquivos da pasta `_layouts` também são usamos como página.
 
-   \[CONTINUA\]
+   Verifique o Front Matter de cada arquivo e identifique os que possuem a variável `permalink`, ela significa o link permanente daquela página no idioma original. Você deve incluir `permalink_<sigla da lista do passo 1>` para cada idioma, ele deve estar escrito obrigatoriamente com essa sintaxe. Além disso, deve incluir um `namespace` para aquela página, que será seu identificador único.
+
+   O código deve parecer com esse:
+
+   ![](/assets/images/4.png)
+
+   A URL dessas páginas ficarão assim em cada idioma:
+
+   pt_BR: <seu_dominio>/sobre-mim/
+
+   es: <seu_dominio>/es/sobre-mi/
+
+   en: <seu_dominio>/en/about/
+8. Com todo o nosso conteúdo e estrutura do site traduzidas, vamos acrescentar no nosso menu (navbar) a opção da língua para navegação.
+
+   Para isso, usaremos o _Liquid_ filtro e variáveis do Jekyll ([documentação completa](https://jekyllrb.com/docs/liquid/)) aplicando esse trecho de código dentro do nosso navbar:
+
+       {% if post.lang == "es" or page.lang  == "es" or site.lang == "es" or post.tags contains "spanish" %}
+       	<li><a href="{{site.url}}"> 🇧🇷 </a></li>
+       	<li><a href="{{site.url}}{{site.baseurl}}/en"> 🇬🇧 </a></li>
+       {% elsif post.lang == "en" or page.lang  == "en" or site.lang == "en" or post.tags contains "english" %}
+       	<li><a href="{{site.url}}"> 🇧🇷 </a></li>
+       	<li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li> 
+       {% else %}                
+       	<li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
+       	<li><a href="{{site.url}}{{site.baseurl}}/en"> 🇬🇧 </a></li>
+       {% endif %}
+
+   Você pode encontrar outras maneiras de adicionar as bandeirinhas dos idiomas no seu menu ou até não usá-las. O importante desse trecho de código é você filtrar o conteúdo apresentado na página pelo idioma.
+
+Voilà!
