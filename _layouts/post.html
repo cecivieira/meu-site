@@ -40,7 +40,7 @@ post_class: post-template
                         {% assign sortedCategories = page.categories | sort %}
                         {% for category in sortedCategories %}
                         <li>
-                            <a class="smoothscroll" href="{{site.baseurl}}/temas#{{ category | replace: " ","-" }}">{{ category }}</a>
+                            <a class="smoothscroll" href="{{site.baseurl}}/{% t links.topics %}#{{ category | replace: " ","-" }}">{{ category }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -53,7 +53,7 @@ post_class: post-template
                         {% assign sortedTags = page.tags | sort %}
                         {% for tag in sortedTags %}
                         <li>
-                            <a class="smoothscroll" href="{{site.baseurl}}/atividades#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
+                            <a class="smoothscroll" href="{{site.baseurl}}/{% t links.tags %}#{{ tag | replace: " ","-" }}">#{{ tag }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -88,7 +88,7 @@ post_class: post-template
                         <p><em>{{page.beforetoc}}</em></p>
                     {% endif %}
                     <div class="toc mt-4 mb-4 lead">
-                        <h3 class="font-weight-bold">Sumário</h3>
+                        <h3 class="font-weight-bold">{% t main.posts.toc %}</h3>
                         {% include toc.html html=content %}
                     </div>
                 {% endif %}

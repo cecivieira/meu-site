@@ -12,6 +12,8 @@ main:
   error:
     title: Eita... Não achei...
     description: Mira la página inicial o usa la búsqueda!
+  posts:
+    toc: Sumário
 pages:
   about: Sobre mim
   category: Categorias
@@ -22,3 +24,5 @@ links:
   category: categorias
   contact: contato
   blog: 
+  topics: temas
+  tags: atividades

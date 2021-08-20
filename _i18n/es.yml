@@ -12,6 +12,8 @@ main:
   error:
     title: Ostia... No lo encontré...
     description: Mira la página inicial o usa la búsqueda!
+  posts:
+    toc: Sumario
 pages:
   about: Sobre mí
   category: Categorías

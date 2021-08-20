@@ -11,7 +11,9 @@ main:
     topics: Subjects
   error:
     title: Ops... I didn't find it...
-    description: Mira la página inicial o usa la búsqueda!
+    description: Take a look the home page or use the search.
+  posts:
+    toc: Sumary
 pages:
   about: About me
   category: Categories
