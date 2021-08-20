@@ -40,3 +40,6 @@ fields:
 - type: text
   name: beforetoc
   label: beforetoc
+pages:
+- _i18n/pt_BR/_posts/criando-site-multilingue-com-jekyll.md
+- _i18n/pt_BR/_posts/meu-site-customizando-o-tema-mediumish.md
