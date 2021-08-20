@@ -138,3 +138,5 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 
    Para chamar esses arquivos dentro de outro, usamos a sintaxe `{% tf <titulo_arquivo.md> %}`. Desse jeito o navegador vai entender qual conteúdo corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
 7. Os arquivos incluídos dentros da pasta `_pages` são as páginas do seu site, em alguns temas Jekyll (como o que estou usando) alguns arquivos da pasta `_layouts` também são usamos como página. 
+
+   \[CONTINUA\]
