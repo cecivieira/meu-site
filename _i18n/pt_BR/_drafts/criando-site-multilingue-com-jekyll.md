@@ -74,4 +74,12 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
            └ _post/
          ├ es/
          ├ en/
-3. Agora vamos criar arquivos de 
+3. Agora vamos criar arquivos de dados para cada um dos nossos idiomas. Isso vai facilitar as traduções das páginas html. Para isso, dentro da pasta `_i18n` crie um `yml` para cada lingua (exatamente com a mesma sigla da lista de idiomas do passo 1). A estrutura da pasta deve aparecer assim:
+4. 
+
+       meusite/
+       ├ _i18n/
+         ├ pt_BR/
+           └ _post/
+         ├ es/
+         ├ en/
