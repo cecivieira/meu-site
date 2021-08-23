@@ -2,7 +2,7 @@
 layout: post
 title: Criando site multilíngue com Jekyll
 author: cecivieira
-date: 2021-08-19T00:00:00.000-03:00
+date: 2021-08-24 00:00:00 -0300
 lang: pt_BR
 categories:
 - tutorial
@@ -26,12 +26,14 @@ Pensando em ter um espaço para reunir minhas andanças nas comunidades de TI e 
 
 Essas andanças começaram, com maior frequência, lá em 2019 na Espanha. Então eu precisava de um site que fosse, pelo menos, em português e castelhano/espanhol. Achei que isso seria fácil, escolhi o tema, customizei e fui pesquisar como fazer isso usando Jekyll... ban... descobri que precisava de um plugin e de uma gambiarra para que o GitHub Page entendesse a internacionalização. Isso me levou 1 semana de pesquisa e bastante horas de vida.
 
-Abaixo deixo um tutorial para implementar a internacionalização em sites estáticos desenvolvidos em Jekyll e publicados no GitHub Page.
+Abaixo deixo um tutorial para implementar a internacionalização em sites estáticos desenvolvidos em Jekyll e publicados no GitHub Page. 
+
+> Esse tutorial pressupõe que você já encontrou o tema para seu site, clonou o repositório e fez os ajustes desejados. Se tu ainda não fez isso, corre [nesse artigo maravilhoso que Jéssica escreveu](https://jtemporal.com/do-tema-ao-ar/).
 
 # Ferramentas
 
 * [Jekyll Multiple Languages Plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
-* [Ruby](https://www.ruby-lang.org)
+* [Rake](https://github.com/ruby/rake)
 * [GitHub](https://github.com/)
 
 # Tutorial
@@ -45,13 +47,13 @@ O plugin Jekyll Multiple Languages vai permitir customizar o tema que você est�
 1. Abra o arquivo Gemfile localizado na pasta raiz do seu site;
 
    ![](/assets/images/screenshot-from-2021-08-19-13-40-34.png)
-2. Dentro dele haverá o grupo `:jekyll_plugins`. Dentro dele insira a linha `gem 'jekyll-multiple-languages-plugin'`. O código deverá aparecer assim:
+2. Dentro dele haverá o grupo `:jekyll_plugins`. Dentro dele insira a linha `gem 'jekyll-multiple-languages-plugin'`. O código deverá parecer com isso:
 
    ![](/assets/images/screenshot-from-2021-08-19-15-15-28.png)
 3. No terminal, rode o comando abaixo para instalar esse novo plugin:
 
    `bundle install`
-4. Agora, ative o plugin no seu projeto. Para isso, encontre o arquivo `_config.yml` na pasta raiz do seu site e adicione `- jekyll-multiple-languages-plugin`na lista de plugins. O código deverá aparecer assim:
+4. Agora, ative o plugin no seu projeto. Para isso, encontre o arquivo `_config.yml` na pasta raiz do seu site e adicione `- jekyll-multiple-languages-plugin`na lista de plugins. O código deverá parecer com isso:
 
    ![](/assets/images/screenshot-from-2021-08-19-20-31-58.png)
 
@@ -184,10 +186,76 @@ _Voilà!_ Temos um site multilíngue!! Reexecuta teu servidor local pra ver a m�
 
    Não precisei fazer isso no tema que estou usando.
 
-> Se você for hospedar seu site em servidor compartilhado, é bem provável que você não precise seguir os próximos passos.
+> Se você for hospedar seu site em um servidor compartilhado, é bem provável que você não precise seguir os próximos passos.
 >
-> Caso você faça deploy no Netlify ou GitHub Pages, segue lento esse tutorial.
+> Caso você faça deploy no Netlify ou GitHub Pages, segue lendo esse tutorial.
 
-## 2. Ruby
+## 2. Rake
 
-Apesar de nosso site funcionar lindamente em todos os idiomas no ambiente local, quando subimos para o G
+Apesar de nosso site funcionar lindamente em todos os idiomas no ambiente local, quando subimos para o GitHub Pages ele não funciona porque essa plataforma não entende o pluging Jekyll Multiple Languages. Então, como boa brasileira que somos, vamos fazer uma pequena gambiarra.
+
+Para isso, usaremos o Rakefile, o makefile do Ruby. Rake, é um gerenciador de tarefas e dependências cujas as especificações são escritas em Ruby. Para saber mais detalhes [acesse sua documentação](https://github.com/ruby/rake).
+
+Vamos usá-lo para gerar o site estático em multiplos idiomas e subir em uma nova brach do nosso repositório. 
+
+### Instalação
+
+1. Abra o arquivo Gemfile localizado na pasta raiz do seu site;
+
+   ![](/assets/images/screenshot-from-2021-08-19-13-40-34.png)
+2.  Na última linha, adicione o seguinte trecho de código para criar um novo grupo:
+
+       group :development do
+           gem 'rake'
+       end
+3. No terminal, execute o código `gem install rake` .
+
+### Script
+
+1. Na pasta raiz do seu site, crie um novo arquivo com o nome `Rakefile` ;
+2. Dentro dele coloque o seguinte script:
+
+   ```ruby
+   require "rubygems"
+   require "tmpdir"
+   require "bundler/setup"
+   require "jekyll"
+   
+   # Indique o nome do seu repositório
+   GITHUB_REPONAME = "<USUÁRIA/NOME DO SEU REPOSITÓRIO"
+   
+   desc "Geração de site estático"
+   task :generate do
+     Jekyll::Site.new(Jekyll.configuration({
+       "source"      => ".",
+       "destination" => "_site"
+     })).process
+   end
+   
+   desc "Geração de site estático e publicação no GitHub"
+   task :publish => [:generate] do
+     Dir.mktmpdir do |tmp|
+       cp_r "_site/.", tmp
+   
+       pwd = Dir.pwd
+       Dir.chdir tmp
+       File.open(".nojekyll", "wb") { |f| f.puts("Site gerado localmente.") }
+   
+       system "git init"
+       system "git add ."
+       message = "Site atualizado em #{Time.now.utc}"
+       system "git commit -m #{message.inspect}"
+       system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
+       system "git push origin master --force"
+   
+       Dir.chdir pwd
+     end
+   end
+   ```
+3. Rode o script usando o código `rake publish` . 
+
+   Ele criará a branch "master" (caso ela ainda não exista) e commitará o site estático multilíngue nela.
+
+   **Obs:** Tentei usar outro nome na branch, mas o script não roda. Caso tu tenha conseguido alterar o nome da branch no script, comenta aqui a solução =)
+
+## 3. GitHub
