@@ -299,7 +299,17 @@ Pronto!!! Seu site multilíngue , finalmente, está no ar!!!!
 
 # Mantendo o site atualizado
 
-Sempre que você fizer alterações no código do seu site ou se você usa o [Forestry](https://app.forestry.io/) para escrever e publicar seus posts, será necessário executar no terminal o comando `rake publish` a cada nova modificação ou post escrito.
+Sempre que você fizer alterações no código do seu site ou se você usa o [Forestry](https://app.forestry.io/) para escrever e publicar seus posts, será necessário executar no terminal a seguinte sequência de código a cada nova modificação ou post escrito:
+
+- [Passo obrigatório para quem usa Forestry.io] Atualize seu repositório local.
+   ```
+   git pull
+   ```
+
+- Atualize site:
+  ```
+  rake publish
+  ```
 
 Lembre-se, a branch "gh-pages" é só a conversão do código fonte do seu site para uma página legível pelo GitHub Pages, então nunca se esqueça de versionar o seu código fonte na branch "main".
 
