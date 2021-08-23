@@ -2,7 +2,7 @@
 layout: post
 title: Criando site multilíngue com Jekyll
 author: cecivieira
-date: 2021-08-24 00:00:00 -0300
+date: 2021-08-23 00:00:00 -0300
 lang: pt_BR
 categories:
 - tutorial
