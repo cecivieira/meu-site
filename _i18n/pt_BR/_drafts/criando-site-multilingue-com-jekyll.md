@@ -22,7 +22,7 @@ beforetoc: Pode ser que deixar seu site em vários idiomas não seja tão rápid
 ---
 # Contextualização
 
-Pensando em ter um espaço para reunir minhas andanças nas comunidades de TI e artigos sobre o que estou estudando, criei este site. Você pode ler sobre a escolha e customização do tema \[nesse post\](/meu-site-customizando-o-tema-mediumish).
+Pensando em ter um espaço para reunir minhas andanças nas comunidades de TI e artigos sobre o que estou estudando, criei este site. Você pode ler sobre a escolha e customização do tema \[nesse post\](/meu-site-customizando-o-tema-mediumish) \[em construção\].
 
 Essas andanças começaram, com maior frequência, lá em 2019 na Espanha. Então eu precisava de um site que fosse, pelo menos, em português e castelhano/espanhol. Achei que isso seria fácil, escolhi o tema, customizei e fui pesquisar como fazer isso usando Jekyll... ban... descobri que precisava de um plugin e de uma gambiarra para que o GitHub Page entendesse a internacionalização. Isso me levou 1 semana de pesquisa e bastante horas de vida.
 
@@ -273,3 +273,9 @@ Para que seu site multilíngue entre no ar, teremos que identificar a branch cri
    ![](/assets/images/6.png)
 
 Pronto!!! Seu site multilíngue , finalmente, está no ar!!!!
+
+# Mantendo o site atualizado
+
+Sempre que você fizer alterações no código do seu site ou se você usa o [Forestry](https://app.forestry.io/) para escrever e publicar seus posts, será necessário executar no terminal o comando `rake publish` a cada nova modificação ou post escrito.
+
+Lembre-se, a branch "gh-pages" é só a conversão do código fonte do seu site para uma página legível pelo GitHub Pages, então nunca se esqueça de versionar o seu código fonte na branch "main".
