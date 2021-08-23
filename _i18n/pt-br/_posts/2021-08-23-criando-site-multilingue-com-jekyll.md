@@ -6,7 +6,7 @@ date: 2021-08-23 12:00
 lang: pt-br
 categories: [tutorial]
 tags: [internacionalização, plugin, site multilíngue, ruby, jekyll]
-image: assets/images/5.png
+image: assets/images/1.jpg
 description: "Como internacionalizar um site estático desenvolvido em Jekyll e fazer o deploy no GitHub Page."
 toc: true
 beforetoc: "Pode ser que deixar seu site em vários idiomas não seja tão rápido quanto você espera, então dividi esse post em capítulos para te ajudar."
@@ -128,9 +128,9 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 
 - Ao aplicar uma variável, o navegador vai entender magicamente qual palavra corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
 
-  Para aplicar uma variável usa-se a sintaxe `{ % t <variável> % }` . Exemplo:
+  Para aplicar uma variável usa-se a sintaxe `{% raw %}{% t <variável> %}{% endraw %}` . Exemplo:
   ```
-  { % t main.categories.tags % } #retire o espaço entre { e %
+  {% raw %}{% t main.categories.tags %}{% endraw %}
   ```
 
   Essa chamada corresponde a variável da linha 10 do item anterior.
@@ -151,7 +151,7 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
       └ about.md
   ```
 
-  Para chamar esses arquivos dentro de outro, usamos a sintaxe `{ % tf titulo_arquivo.md % }` (retire o espaço entre o % e }). Desse jeito o navegador vai entender qual conteúdo corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
+  Para chamar esses arquivos dentro de outro, usamos a sintaxe `{% raw %}{% tf titulo_arquivo.md %}{% endraw %}`. Desse jeito o navegador vai entender qual conteúdo corresponde ao idioma selecionado pela pessoa que está navegando no seu site.
 
 - As páginas do seu site estão dentro da pasta `_pages` , mas em alguns temas Jekyll (como o que estou usando) alguns arquivos da pasta `_layouts` também são usamos como página.
 
@@ -172,17 +172,17 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 
   Para isso, usaremos o _Liquid_ filtro e variáveis do Jekyll ([documentação completa](https://jekyllrb.com/docs/liquid/)) aplicando esse trecho de código dentro do nosso navbar:
 
-  ```
-  {% if post.lang == "es" or page.lang  == "es" or site.lang == "es" or post.tags contains "spanish" %}
+  ```ruby
+  {% raw %}{% if post.lang == "es" or page.lang  == "es" or site.lang == "es" or post.tags contains "spanish" %}{% endraw %}
     <li><a href="{{site.url}}"> 🇧🇷 </a></li>
     <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇬🇧 </a></li>
-  {% elsif post.lang == "en" or page.lang  == "en" or site.lang == "en" or post.tags contains "english" %}
+  {% raw %}{% elsif post.lang == "en" or page.lang  == "en" or site.lang == "en" or post.tags contains "english" %}{% endraw %}
     <li><a href="{{site.url}}"> 🇧🇷 </a></li>
     <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li> 
-  {% else %}                
+  {% raw %}{ % else % }{% endraw %}                
     <li><a href="{{site.url}}{{site.baseurl}}/es"> 🇪🇸 </a></li>
     <li><a href="{{site.url}}{{site.baseurl}}/en"> 🇬🇧 </a></li>
-  {% endif %}
+  {% raw %}{% endif %}{% endraw %}
   ```
 
   Você pode encontrar outras maneiras de adicionar as bandeirinhas dos idiomas no seu menu ou até não usá-las. O importante desse trecho de código é você filtrar o conteúdo apresentado na página pelo idioma.
