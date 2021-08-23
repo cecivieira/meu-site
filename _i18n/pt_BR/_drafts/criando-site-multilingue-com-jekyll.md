@@ -241,12 +241,13 @@ Vamos usá-lo para gerar o site estático em multiplos idiomas e subir em uma no
        Dir.chdir tmp
        File.open(".nojekyll", "wb") { |f| f.puts("Site gerado localmente.") }
    
-       system "git init"
+       system "git init"  
        system "git add ."
        message = "Site atualizado em #{Time.now.utc}"
        system "git commit -m #{message.inspect}"
        system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-       system "git push origin master --force"
+       system "git checkout -b gh-pages"
+       system "git push origin gh-pages --force"
    
        Dir.chdir pwd
      end
@@ -254,8 +255,21 @@ Vamos usá-lo para gerar o site estático em multiplos idiomas e subir em uma no
    ```
 3. Rode o script usando o código `rake publish` . 
 
-   Ele criará a branch "master" (caso ela ainda não exista) e commitará o site estático multilíngue nela.
-
-   **Obs:** Tentei usar outro nome na branch, mas o script não roda. Caso tu tenha conseguido alterar o nome da branch no script, comenta aqui a solução =)
+   Ele criará a branch "gh-pages" (caso ela ainda não exista), commitará o site estático multilíngue nela e fará push para o repositório remoto.
 
 ## 3. GitHub
+
+O GitHub disponibiliza uma hospedagem grátis de um site estático diretamente do nosso repositório. Para mais detalhes [acesse o site do serviço](https://pages.github.com/).
+
+Estou supondo que seu site em português já está no ar, caso contrário, corre [nesse artigo maravilhoso que Jéssica escreveu](https://jtemporal.com/do-tema-ao-ar/).
+
+Para que seu site multilíngue entre no ar, teremos que identificar a branch criada no passo anterior, "gh-pages":
+
+1. No menu do repositório, seleciona "Settings";
+
+   ![](/assets/images/5-1.png)
+2. No meu lateral direito, selecione "Pages" para mostrar as configurações relativas ao GitHub Pages. Em seguida, localize o menu "Source" e selecione a branch que será usada para subir seu site, ou seja, "gh-pages".
+
+   ![](/assets/images/6.png)
+
+Pronto!!! Seu site multilíngue , finalmente, está no ar!!!!
