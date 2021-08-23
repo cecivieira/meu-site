@@ -168,9 +168,9 @@ O plugin vai permitir que todo o site mude de idioma, de acordo com a seleção 
 
    Você pode encontrar outras maneiras de adicionar as bandeirinhas dos idiomas no seu menu ou até não usá-las. O importante desse trecho de código é você filtrar o conteúdo apresentado na página pelo idioma.
 
-_Voilà!_ Temos um site multilíngue!! Reexecuta teu servidor para tu ver a mágica acontecer.
+_Voilà!_ Temos um site multilíngue!! Reexecuta teu servidor local pra ver a mágica acontecer.
 
-9. \[Opcional\] Em alguns temas Jekyll você vai precisar criar um index.html para cada idioma, o `/index.html` que encontra-se na pasta raiz do site para `/base.html` e adicionar o script abaixo:
+1. \[Opcional\] Em alguns temas Jekyll você vai precisar criar um index.html para cada idioma, o `/index.html` que encontra-se na pasta raiz do site para `/base.html` e adicionar o script abaixo:
 
        <script>
            var lang = navigator.language || navigator.userLanguage;
@@ -184,4 +184,10 @@ _Voilà!_ Temos um site multilíngue!! Reexecuta teu servidor para tu ver a mág
 
    Não precisei fazer isso no tema que estou usando.
 
+> Se você for hospedar seu site em servidor compartilhado, é bem provável que você não precise seguir os próximos passos.
+>
+> Caso você faça deploy no Netlify ou GitHub Pages, segue lento esse tutorial.
+
 ## 2. Ruby
+
+Apesar de nosso site funcionar lindamente em todos os idiomas no ambiente local, quando subimos para o G
