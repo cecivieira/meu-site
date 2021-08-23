@@ -1,9 +1,13 @@
 ---
 layout: page
-title: Contato
+title: pages.contact
+
+namespace: contact
 permalink: /contato
+permalink_es: /contacto/
+permalink_en: /contact/
+
 comments: false
 ---
-<p>Olá,</p>
 
-<p>Você pode falar comigo através do e-mail <a href="mailto:cecivieira@gmail.com">cecivieira@gmail.com</a>.</p>
+{% tf contact.md %}

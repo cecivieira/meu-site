@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: _i18n/pt_BR/_drafts
+  path: _i18n/pt-br/_drafts
   label: Rascunhos - Português
   create: all
   match: "**/*"
@@ -33,7 +33,7 @@ sections:
   templates:
   - post
 - type: directory
-  path: _i18n/pt_BR/_posts
+  path: _i18n/pt-br/_posts
   label: Post - Português
   create: documents
   match: "**/*"

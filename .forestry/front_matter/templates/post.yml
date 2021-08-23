@@ -19,7 +19,7 @@ fields:
 - type: text
   name: lang
   label: lang
-  description: pt_BR, es, en
+  description: pt-br, es, en
 - type: list
   name: categories
   label: categories

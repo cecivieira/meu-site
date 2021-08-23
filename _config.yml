@@ -8,7 +8,7 @@ disqus: 'cecivieira'
 # mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
-languages: ['pt_BR', 'es', 'en']
+languages: ['pt-br', 'es', 'en']
 
 # Author
 authors:
