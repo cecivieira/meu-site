@@ -82,6 +82,7 @@ section.recent-posts {
 .article-post ul,
 .article-post i {
     margin-bottom: 1.5rem;
+    font-family: Mukta;
 }
 
 .article-post ol ol,
