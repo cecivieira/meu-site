@@ -6,7 +6,7 @@ date: 2020-04-25 12:00
 lang: es
 categories: [artículo, charla]
 tags: [pyladies, equidad de género, comunidad]
-image: assets/images/10.jpg
+image: assets/images/cover/10.png
 description: "Un poco de de la historia de PyLadies Recife, el trabajo que hacemos junto a las mujeres y niñas, los desafíos durante la pandemia y el impacto en nuestra comunidad."
 toc: false
 beforetoc: ""

@@ -6,7 +6,7 @@ date: 2021-02-25
 lang: pt-br
 categories: [carreira, entrevista, comunidades]
 tags: [podcast]
-image: assets/images/8.jpg
+image: assets/images/cover/8.jpg
 description: Entrevista para o podcast Somos Cintia sobre minha participação nas comunidades de mulheres em TI.
 toc: false
 beforetoc:

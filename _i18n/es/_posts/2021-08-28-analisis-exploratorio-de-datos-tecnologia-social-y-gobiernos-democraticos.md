@@ -6,7 +6,7 @@ date: 2021-08-28 12:00
 lang: es
 categories: [artículo, charla]
 tags: [datos abiertos, gobierno abierto, américa latina, análisis exploratorio, innovación cívica, pandas]
-image: assets/images/9.jpg
+image: assets/images/cover/9.jpg
 description: "Datos abiertos son recursos para el desarrollo de tecnologías que ayudan a solventar problemas sociales y fomentar la gestión participativa en los gobiernos locales. El artículo enseñará técnicas iniciales para explotar conjuntos de datos abiertos Pandas. Además, abordará acerca de la importancia de la transparencia de datos y el panorama regional de transparencia de los datos en América Latina y Caribe."
 toc: true
 beforetoc: ""

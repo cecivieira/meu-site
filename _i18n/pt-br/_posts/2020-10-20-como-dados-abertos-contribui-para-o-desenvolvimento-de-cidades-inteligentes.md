@@ -6,7 +6,7 @@ date: 2020-10-20
 lang: pt-br
 categories: [cidades inteligentes, dados abertos, governo aberto, opengovernment partnership, parceria para governo aberto]
 tags: [artigo, palestra]
-image: assets/images/3.jpg
+image: assets/images/cover/3.jpg
 description: "Dados abertos contribui para a participação social, fomento de um modelo de governo aberto e desenvolvimento de cidades inteligentes."
 toc: false
 beforetoc:

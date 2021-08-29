@@ -6,7 +6,7 @@ date: 2021-07-28
 lang: pt-br
 categories: [carreira, entrevista, comunidades]
 tags: [podcast]
-image: assets/images/5.png
+image: assets/images/cover/5.png
 description: Entrevista para o podcast da comunidade Start Coding sobre PyLadies Recife e algumas reflexões sobre minha jornada em TI.
 toc: false
 beforetoc:

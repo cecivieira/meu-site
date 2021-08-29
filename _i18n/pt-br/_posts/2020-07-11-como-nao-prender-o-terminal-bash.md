@@ -6,7 +6,7 @@ date: 2020-07-11
 lang: pt-br
 categories: [bash, controle de tarefas, linux, terminal commands, terminal]
 tags: [tutorial]
-image: assets/images/4.jpg
+image: assets/images/cover/4.jpg
 description: "Aprenda a não prender seu bash: alguns comandos para Controle de Tarefas no Linux."
 toc: false
 beforetoc:
