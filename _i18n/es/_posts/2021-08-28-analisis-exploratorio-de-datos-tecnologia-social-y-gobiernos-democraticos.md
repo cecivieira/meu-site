@@ -121,6 +121,6 @@ Este texto son los apuntes de la charla "Análisis exploratorio de datos: tecnol
 Recursos:
 - [Propuesta de la charla](../../assets/images/2021-08-28/propuesta-charla-pycon-latam-2021.pdf)
 - [Diapositivas](../../assets/images/2021-08-28/diapositivas-pycon-latam-analisis-exploratorio-de-datos-tecnologia-social-y-gobiernos-democraticos.pdf)
-- [Notebook](../../assets/images/2021-08-28/analisis_datos_vacunales_ar_pe_2021.ipynb)
+- [Notebook](https://github.com/cecivieira/analisis-datos-vacunales-ar-pe-ago2021/blob/main/analisis_datos_vacunales_ar_pe_2021.ipynb)
 
 -----
