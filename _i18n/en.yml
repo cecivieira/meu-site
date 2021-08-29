@@ -4,6 +4,7 @@ site:
   keywords: Technology
   lang: en
 main:
+  archive: Posts with
   home:
     topics: Subjects
   categories:
@@ -14,6 +15,7 @@ main:
     description: Take a look the home page or use the search.
   posts:
     toc: Sumary
+    prev-next: Ready also
 pages:
   about: About me
   category: Categories

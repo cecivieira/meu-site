@@ -4,6 +4,7 @@ site:
   keywords: Tecnologia
   lang: pt-br
 main:
+  archive: Posts com
   home:
     topics: Temas
   categories:
@@ -14,6 +15,7 @@ main:
     description: Mira la página inicial o usa la búsqueda!
   posts:
     toc: Sumário
+    prev-next: Leia também
 pages:
   about: Sobre mim
   category: Categorias

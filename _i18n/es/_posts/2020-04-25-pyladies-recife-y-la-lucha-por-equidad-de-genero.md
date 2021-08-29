@@ -4,8 +4,8 @@ title: "PyLadies Recife y la lucha por equidad de género"
 author: cecivieira
 date: 2020-04-25 12:00
 lang: es
-categories: [artículo, charla]
-tags: [pyladies, equidad de género, comunidad]
+categories: [pyladies, equidad de género, comunidad]
+tags: [artículo, charla]
 image: assets/images/cover/10.png
 description: "Un poco de de la historia de PyLadies Recife, el trabajo que hacemos junto a las mujeres y niñas, los desafíos durante la pandemia y el impacto en nuestra comunidad."
 toc: false
