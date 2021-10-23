@@ -11,7 +11,7 @@ description: "Criando um mapa para o Festival Recife Coffee usando a biblioteca 
 toc: false
 beforetoc: 
 ---
-Neste ano novembro será o mês do [Recife Coffee](https://www.instagram.com/recifecoffeeoficial/)!! Um festival criado em 2016 para movimentar as cafeterias da cidade. Atualmente estão participando 25 cafeterias da região metropolitana e Petrolina. 
+Neste ano, novembro será o mês do [Recife Coffee](https://www.instagram.com/recifecoffeeoficial/)!! Um festival criado em 2016 para movimentar as cafeterias da cidade. Atualmente estão participando 25 cafeterias da região metropolitana e Petrolina, e o valor do menu será R$32,90.
 
 Todo ano eu repito a mesma ladainha: "Era pra ter um mapa bonito pra eu encontrar fácil a cafeteria mais próxima". Apois, o momento chegou!! Eu poderia só ter criado uma lista pública no Google Maps? Sim, mas que graça teria? Não teriam marcadores rosa, nem o menu de cada lugar em primeiro plano. Então, lembrei de uma biblioteca python que conheci lá em 2018, do tutorial [Creating Interactive Maps with Python](https://youtu.be/FdqDgoG-SFM) que a maravilhosa [Jéssica Temporal](https://jtemporal.com/) fez no começo do ano e criei esse mapinha com todas as cafeterias do festival:
 
@@ -73,3 +73,5 @@ Utilizei as bibliotecas [Pandas](https://pandas.pydata.org/docs/) e [Folium](htt
    ```
 
 E assim, esse ano paro de reclamar que não tem um mapa do [Recife Coffee](https://www.instagram.com/recifecoffeeoficial/).
+
+** Este projeto possui licença aberta, então fica a vontade para usar, copiar, fazer um mapa de um festival da tua cidade e, se animar, mandar melhorias (pull request) para [o repositório](https://github.com/cecivieira/mapa-recife-coffee), pois esse mapa do festival Recife Coffee ainda pode ser muito melhorado.
