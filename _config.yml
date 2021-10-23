@@ -4,7 +4,7 @@ favicon: 'assets/images/favicon.ico'
 baseurl: 
 url: "http://www.cecivieira.com/"
 google_analytics: 'G-PEG4L84NMR'
-disqus: 'cecivieira'
+# disqus: 'cecivieira'
 # mailchimp-list: 
 include: ["_pages"]
 permalink: /:title/
