@@ -19,7 +19,7 @@ Todo ano eu repito a mesma ladainha: "Era pra ter um mapa bonito pra eu encontra
   <iframe class="embed-responsive-item" src="../../assets/images/2021-10-22/mapa_recife_coffee_2021.html" allowfullscreen></iframe>
 </div>
 
-Vou mostrar para vocês como foi montá-lo.  O código completo e os dados estão disponíveis [nesse repositório](https://github.com/cecivieira/mapa-recife-coffee). E o mapa completo pode ser acessado [aqui](bit.ly/maparecifecoffee).
+Vou mostrar para vocês como foi montá-lo.  O código completo e os dados estão disponíveis [nesse repositório](https://github.com/cecivieira/mapa-recife-coffee). E o mapa completo pode ser acessado [aqui](https://cecivieira.com/assets/images/2021-10-22/mapa_recife_coffee_2021.html).
 
 # Coleta de dados
 
@@ -48,7 +48,7 @@ Utilizei as bibliotecas [Pandas](https://pandas.pydata.org/docs/) e [Folium](htt
                 Clique para saber mais
             '''.format(cafeteria['titulo']),
             popup='''
-                <img src='{imagem}' height='450'> 
+                <img src='{imagem}' height='400'> 
                 <br> 
                 <b>Horário:</b>
                 <br>
