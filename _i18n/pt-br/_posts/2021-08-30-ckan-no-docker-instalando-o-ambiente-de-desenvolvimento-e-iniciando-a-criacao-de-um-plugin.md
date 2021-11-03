@@ -29,15 +29,18 @@ No meu caso, estou desenvolvendo um plugin, então fazia falta algumas facilidad
 
 O CKAN possui um repositório exclusivo para a instalação usando o Docker, o qual possue um ambiente de desenvolvimento muito massa, que apresenta as modificações realizadas em tempo de execução dos containers.
 
-Esse tutorial abrange a instalação do CKAN e de todos os requisitos necessários para o uso do Docker. Assegure-se que você tem em torno de XXXX Gb disponíveis no seu computador antes de iniciar. 
+Esse tutorial abrange a instalação do CKAN e de todos os requisitos necessários para o uso do Docker. 
 
 A partir daqui todas as instruções pressupõe que você está usando o sistema operacional [Ubuntu 20.04](https://ubuntu.com/).
 
-O que instalaremos:
-- Git
-- Docker
-- Docker compose
-- CKAN (ambiente de desenvolvimento)
+**Sumário**
+- [Instalar Git](#instalando-o-git)
+   - [GitLab: configurar chave SSH](#gitlab-configurando-a-chave-ssh)
+- [Instalar Docker](#instalando-o-docker)
+- [Instalar Docker compose](#instalando-o-docker-compose)
+- [Instalar CKAN (ambiente de desenvolvimento)](#instalando-o-ckan-ambiente-de-desenvolvimento)
+- [Testar plugin existente](#testando-plugin-existente)
+- [Criar novo plugin](#iniciando-a-criação-de-um-plugin)
 
 ## Instalando o Git
 No terminal execute os seguintes comandos:
