@@ -114,13 +114,9 @@ Usamos el [Google Collab](https://colab.research.google.com/) para desarrollar e
 - [Latinno](https://latinno.net/es/)
 - [Open Knowledge Brasil](https://ok.org.br/)
 
------
-
-Este texto son los apuntes de la charla "Análisis exploratorio de datos: tecnología social y gobiernos democráticos" que presenté en [PyCon Latam 2021](https://www.pylatam.org/horario-completo/talk19/).
-
-Recursos:
+> Este texto son los apuntes de la charla "Análisis exploratorio de datos: tecnología social y gobiernos democráticos" que presenté en [PyCon Latam 2021](https://www.pylatam.org/horario-completo/talk19/).
+> Recursos:
 - [Propuesta de la charla](../../assets/images/2021-08-28/propuesta-charla-pycon-latam-2021.pdf)
 - [Diapositivas](../../assets/images/2021-08-28/diapositivas-pycon-latam-analisis-exploratorio-de-datos-tecnologia-social-y-gobiernos-democraticos.pdf)
 - [Notebook](https://github.com/cecivieira/analisis-datos-vacunales-ar-pe-ago2021/blob/main/analisis_datos_vacunales_ar_pe_2021.ipynb)
-
------
+- [Charla en video](https://youtu.be/kFbsP4wFjag)

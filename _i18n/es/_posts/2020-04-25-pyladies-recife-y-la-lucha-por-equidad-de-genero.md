@@ -98,13 +98,7 @@ PyLadies Day 2019
 - [The Global Gender Gap Report 2017](https://www.weforum.org/reports/the-global-gender-gap-report-2017)
 - [Como si de esto dependiera mi vida - LESLY ZERNA - TEDxUSFX](https://www.youtube.com/watch?v=iHZoj7eC5c4)
 
-
------
-
-Este texto son los apuntes de la charla "PyLadies Recife y la lucha por equidad de género" que presenté en el evento [Tech Ladies](https://youtu.be/-PlescYWQus) promovido por [PyLadies Cochabamba](https://www.instagram.com/pyladiescbba/) (Colombia).
-
-Recursos:
+> Este texto son los apuntes de la charla "PyLadies Recife y la lucha por equidad de género" que presenté en el evento [Tech Ladies](https://youtu.be/-PlescYWQus) promovido por [PyLadies Cochabamba](https://www.instagram.com/pyladiescbba/) (Colombia).
+> Recursos:
 - [Diapositivas](../../assets/images/2020-04-25/diapositivas-pyladies-recife-y-la-lucha-por-equidad-de-genero.pdf)
 - [Charla completa](https://youtu.be/-PlescYWQus?t=1790)
-
------
