@@ -120,3 +120,5 @@ Tchanran! Páginas criadas!
 # Referências
 - [Extensão CKAN Pages (ckanext-pages)](https://github.com/ckan/ckanext-pages)
 - [Just a few more pages… ckanext-pages](https://keitaroinc.medium.com/just-a-few-more-pages-ckanext-pages-577cde20d989)
+
+> Esse artigo foi escrito em parceria com <a href="mailto:lemmg@cin.ufpe.br">Lucas Gois</a>.
