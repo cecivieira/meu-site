@@ -1,6 +1,7 @@
 site:
   name: Ana Cecília Vieira
   description: 'Personal blog to share learnings and collect my experiences in the technology communities.'
+  author-description: 'Enthusiast of open data, free software and self-managed communities as an instrument for social change.'
   keywords: Technology
   lang: en
 main:
