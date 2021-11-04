@@ -2,7 +2,7 @@
 layout: post
 title: "Extensão CKAN Pages: instalação e uso"
 author: cecivieira
-date: 2021-10-27 15:00
+date: 2021-11-03 15:00
 lang: pt-br
 tags: [tutorial]
 categories: [ckan, docker, extensão ckan]
@@ -86,7 +86,7 @@ Pronto! Extensão instalada e configurada. Agora bora aprender a criar páginas 
 - **Página -** Utilizada na criação de páginas estáticas.
 
 Para isso, no menu principal, clique no lápis para criar um *blog post* e na folha para criar uma página:
-<img class="rounded mx-auto d-block" src="../assets/images/2021-10-27/icones-blog-pagina.png">
+<img class="rounded mx-auto d-block" src="../assets/images/2021-11-03/icones-blog-pagina.png">
 
 Caso você deseje criar uma página vinculada a uma organização ou grupo:
 
@@ -95,25 +95,25 @@ Caso você deseje criar uma página vinculada a uma organização ou grupo:
   - O grupo desejado, na página "Grupos" (`<seu-dominio>/group`)
   
 - No menu, selecione a opção "Pages"
-   <img class="rounded mx-auto d-block" src="../assets/images/2021-10-27/submenu.png">
+   <img class="rounded mx-auto d-block" src="../assets/images/2021-11-03/submenu.png">
 
 - Em seguida, clique no botão "+ Add page"
-   <img class="rounded mx-auto d-block" src="../assets/images/2021-10-27/botao-add-page.png">
+   <img class="rounded mx-auto d-block" src="../assets/images/2021-11-03/botao-add-page.png">
 
 A partir daqui, os demais passos são comuns para todos os tipos de páginas:
 
 1. Especifique as seguintes informações:
    - **Título -** Título da página;
    - **URL -** Determine o sufixo da url da página;
-    <img class="rounded mx-auto d-block" src="../assets/images/2021-10-27/url-organization.png">
-    <img class="rounded mx-auto d-block" src="../assets/images/2021-10-27/url-groups.png">
+    <img class="rounded mx-auto d-block" src="../assets/images/2021-11-03/url-organization.png">
+    <img class="rounded mx-auto d-block" src="../assets/images/2021-11-03/url-groups.png">
    - **Publish Date -** Data de publicação;
    - **Visibilidade -** Escolha entre "pública" (todas as usuárias da página poderão vê-la) ou "privada"(apenas usuárias logadas e com permissão de administradora poderão visualizá-la);
    - **Header order -** Ordem que a página aparecerá no menu (navbar). Essa configuração funcinou para páginas genéricas, sem filiação, mas não para páginas vinculadas à organização e grupo. Então, abri [essa issue no repositório da extensão](https://github.com/ckan/ckanext-pages/issues/115). Dá uma olhadinha lá pra vê se já tem alguma resposta;
    - **Content -** Conteúdo completo da página. É possível editá-lo usando HTML, basta selecionar a opção "Source" do menu de edição.
 
 2. Salve a página clicando no botão "Adicionar".
-    <img class="rounded mx-auto d-block" src="../assets/images/2021-10-27/botao-adicionar.png">
+    <img class="rounded mx-auto d-block" src="../assets/images/2021-11-03/botao-adicionar.png">
 
 Tchanran! Páginas criadas!
 
