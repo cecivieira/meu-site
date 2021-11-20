@@ -4,7 +4,7 @@ title: "Criando site multilíngue com Jekyll"
 author: cecivieira
 date: 2021-08-23 12:00
 lang: pt-br
-categories: [internacionalização, plugin, site multilíngue, ruby, jekyll]
+categories: [internacionalização, plugin, ruby, jekyll]
 tags: [tutorial]
 image: assets/images/cover/1.jpg
 description: "Como internacionalizar um site estático desenvolvido em Jekyll e fazer o deploy no GitHub Page."
