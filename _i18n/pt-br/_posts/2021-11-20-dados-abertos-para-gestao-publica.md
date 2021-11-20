@@ -30,11 +30,11 @@ Em 2016, foi publicado o [Decreto 8.777/2016](http://www.planalto.gov.br/ccivil_
 
 No ano passado (2020), foi instituída a [Estratégia de Governo Digital para o período de 2020 a 2022](https://www.in.gov.br/web/dou/-/decreto-n-10.332-de-28-de-abril-de-2020-254430358) no âmbito da administração pública federal, esta trás uma reformulação dos canais de transparência e dados abertos. Além disso, nesse mesmo ano, tivemos o lançamento do [Modelo de Referência de Abertura de Dados](https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro/compromisso-2-docs/modelo-de-referencia-de-abertura-de-dados_versao-final-2.pdf) voltado para governos estaduais e municipais. Tal modelo é produto do compromisso [Ecossistema de dados abertos](https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro/compromisso-2-docs/ecossistema-de-dados-abertos-monitoramento-e-execucao) do [4. Plano de Ação para Governo Aberto (2018-2021)](https://www.gov.br/cgu/pt-br/governo-aberto/a-ogp/planos-de-acao/4o-plano-de-acao-brasileiro).
 
-Reforço que essa cronologia não é exaustiva, trago aqui apenas alguns marcos para ilustrar o trabalho contínuo em direção a transparência de dados e para evidenciar a importância que o tema está ganhando para a gestão pública. Você pode verificar toda a legislação no capítulo [Continue estudando](#continue-estudando).
+Reforço que essa cronologia não é exaustiva, trago aqui apenas alguns marcos para ilustrar o trabalho contínuo em direção a transparência de dados e para evidenciar a importância que o tema está ganhando para a gestão pública. Você pode verificar mais marcos legislativos no capítulo [Continue estudando](#continue-estudando).
 
 # Afinal, o que são dados abertos?
 
-Dados abertos são “dados acessíveis ao público, representados em meio digital, estruturados em formato aberto [não proprietário, cujas especificação esteja documentada publicamente], processáveis por máquina, referenciados na internet [ou seja, precisa estar pesquisável em portais de busca, ex. Google] e disponibilizados sob licença aberta que permita sua livre utilização, consumo ou cruzamento, limitando-se a creditar a autoria ou a fonte” [Decreto 8.777/2016 (art. 2º, III)](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm)
+Dados abertos são “dados acessíveis ao público, representados em meio digital, estruturados em formato aberto [não proprietário, cujas especificação esteja documentada publicamente], processáveis por máquina, referenciados na internet [ou seja, precisa estar pesquisável em portais de busca, ex. Google] e disponibilizados sob licença aberta que permita sua livre utilização, consumo ou cruzamento, limitando-se a creditar a autoria ou a fonte” [Decreto 8.777/2016 (art. 2., III)](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8777.htm)
 
 Quando falamos em **dados abertos** estamos nos referindo a dados de interesse público, ou seja:
 
@@ -53,7 +53,7 @@ Para a gestão pública, algumas vantagens de abrir dados são:
 - Identificar tendências, desafios e desigualdades econômicas e sociais;
 - Obter dados originais, completos e atualizados no ato da demanda.
 
-Os dados abertos permitem a governos, cidadãs, a sociedade civil organizada e ao setor privado tomar decisões baseada em evidências. O acesso eficaz e oportuno aos dados nos ajuda a identificar novos desafios e ideias inovadoras que podem gerar benefícios sociais e econômicos para a sociedade e administração pública, além de oportunizar ações co-criadas entre governo e cidadãs. Especificamente na gestão pública, a abertura de dados possibilita identificar tendências, desafios, desigualdades econômicas e sociais, bem como avaliar avanços dos programas e serviços públicos.
+Os dados abertos permitem a governos, cidadãs, sociedade civil organizada e ao setor privado tomar decisões baseada em evidências. O acesso eficaz e oportuno aos dados nos ajuda a identificar novos desafios e ideias inovadoras que podem gerar benefícios sociais e econômicos para a sociedade e administração pública, além de oportunizar ações co-criadas entre governo e sociedade. Especificamente na gestão pública, a abertura de dados possibilita identificar tendências, desafios, desigualdades econômicas e sociais, bem como avaliar avanços dos programas e serviços públicos implementados.
 
 # De quem é a responsabilidade de abrir os dados?
 
@@ -64,15 +64,15 @@ A abertura de dados institucionais é de responsabilidade de toda as pessoas ser
 - **Setores proprietários dos dados:** Setores cujos dados são produto de suas atividades. Seu papel é facilitar o acesso aos dados e ao entendimento das atividades as quais coletam e produzem dados, além de qualificar essa coleta;
 - **Setor de TI:** fornecedor de infraestrutura e manutenção para o Portal de Dados Abertos institucional, além de suporte técnico na área de tecnologia da informação no que tange o acesso às bases de dados sob sua guarda, bem como à sua documentação e auxílio no entendimento da sua estrutura;
 - **Setores de monitoramento de legislações sobre restrição de acesso a dados e informações:** é de responsabilidade destas unidades autorizar o uso e avaliar a eventual necessidade de controle de acesso aos dados, em conformidade às seguintes legislações: [Lei n. 12.527/2011](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm) (Tema: Proteção de dados pessoais), [Lei Complementar n. 105/2001](http://www.planalto.gov.br/ccivil_03/leis/lcp/lcp105.htm) (Tema: Sigilo bancário), [Lei n. 5.172/1966](http://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm) (Tema: Sigilo Fiscal), [Lei n. 12.681/2012](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12681.htm) (Tema: Sigilo de Justiça), [Lei n. 13.115/2015](http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13115.htm) (Tema: Sigilo de Justiça), [Constituição da República Federativa do Brasil 1988](http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm) (Tema: Sigilo industrial), [Lei n. 9610/1988](http://www.planalto.gov.br/ccivil_03/leis/l9610.htm) (Tema: Direitos autorais), [Lei n. 6.404/1976](http://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm) (Tema: Sigilo Sociedades anônimas), [Decreto n. 7.724/2012](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7724.htm) (Tema: Sigilo Governança Empresarial), entre outras;
-- **Setor de Comunicação:** repsonsável por campanhas publicitárias e informativas, além de colaborar na divulgação das ações relativas à abertura de dados, bem como ações de fomento à cultura de dados abertos.
+- **Setor de Comunicação:** responsável por campanhas publicitárias e informativas, além de colaborar na divulgação das ações relativas à abertura de dados, bem como ações de fomento à cultura de dados abertos.
 
 A responsabilidade por publicar os dados em formato aberto e monitorar sua qualidade varia de acordo com a governança de dados da instituição, usualmente é compartilhada entre os setores proprietário dos dados e setor específico destinado a atividade.
 
 # Gestão Orientada a Dados?
 
-Uma gestão orientada a dados (*data driven*) é qualificar processos, produtos e serviços orientados pela coleta e análise de dados. É utilizar como fator determinante para tomada de decisão as informações e argumentações extraídas de dados confiáveis,fugindo de uma gestão baseada no achismo, impulso ou intuição.
+Uma gestão orientada a dados (*data driven*) se caracteriza por qualificar processos, produtos e serviços orientados pela coleta e análise de dados. Significa utilizar como fator determinante para tomada de decisão as informações e argumentações extraídas de dados confiáveis, fugindo de uma gestão baseada no achismo, impulso ou intuição.
 
-Para criar uma cultura de gestão orientada a dados é necessário investir em tecnologias que dê suporte a tomada de decisão, capacitar servidores para o uso dessas tecnologias e para pensar a partir de dados, ou seja, como qualificar sua coleta, limpeza, desenvolver análises exploratórias, participar de equipes multidisciplinares para desenvolvimento de soluções para seu setor e usar dados na sua atividade cotidiana. Com isso, reduzir o riscos e aumentar probabilidade de sucesso da tomada de decisão.
+Para criar uma cultura de gestão orientada a dados é necessário investir em tecnologias que dê suporte a tomada de decisão, além de capacitar servidores para o uso dessas tecnologias e para pensar a partir de dados, ou seja, como qualificar sua coleta, limpeza, desenvolver análises exploratórias, participar de equipes multidisciplinares para desenvolvimento de soluções para seu setor e usar dados na sua atividade cotidiana. Com isso, reduzir o riscos e aumentar probabilidade de sucesso da tomada de decisão.
 
 Algumas sugestões de uso de dados abertos na gestão pública são:
 - Mapeamento do perfil socioeconômico do público alvo para desenvolvimento de políticas afirmativas;
@@ -81,7 +81,7 @@ Algumas sugestões de uso de dados abertos na gestão pública são:
 - Execução orçamentária;
 - Adesão de normativas por parte de outros entes da federação.
 
-Fomentar a cultura de dados na gestão pública, significa incentivar inovação no setor e fortalecimento de gestões democráticas.
+Fomentar a cultura de dados na gestão pública significa incentivar inovação no setor e fortalecimento de gestões democráticas.
 
 # Continue estudando
 
