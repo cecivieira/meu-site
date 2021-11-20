@@ -5,7 +5,7 @@ author: cecivieira
 date: 2021-11-03 15:00
 lang: pt-br
 tags: [tutorial]
-categories: [ckan, docker, extensão ckan]
+categories: [ckan, docker, extensão ckan, dados abertos]
 image: assets/images/cover/14.jpg
 description: "Como criar páginas extras no CKAN usando a extensão ckanext-pages. Aprenda como instalar no ambiente do CKAN no Docker e a como usá-la"
 toc: false
