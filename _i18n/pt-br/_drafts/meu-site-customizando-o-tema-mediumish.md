@@ -115,3 +115,5 @@ Aquarelada imagens post
 Sugestão de leitura:
 
 [https://jtemporal.com/do-tema-ao-ar/](https://jtemporal.com/do-tema-ao-ar/ "https://jtemporal.com/do-tema-ao-ar/")
+
+tamanho padrao imagens capa de posts 1000px largura + 300px/in resolução
