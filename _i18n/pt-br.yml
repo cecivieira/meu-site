@@ -1,7 +1,7 @@
 site:
   name: Ana Cecília Vieira
   description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andanças pelas comunidades de tecnologia.'
-  author-description: 'Entusiasta em dados abertos, software livre e comunidades autogestinadas como instrumento para transformação social.'
+  author-description: 'Entusiasta em dados abertos, código aberto e comunidades autogestinadas como instrumento para transformação social.'
   keywords: Tecnologia
   lang: pt-br
 main:
