@@ -102,7 +102,7 @@ Fomentar a cultura de dados na gestão pública significa incentivar inovação 
 
 Esse texto é composto por anotações da palestra “Dados Abertos para Gestão Pública” apresentada na disciplina “Informática para administradores” do curso de Bacharelado em Administração Pública da [UFRPE](http://www.ufrpe.br/) em 20 de novembro de 2021. Recursos:
 - [Slides](../../assets/images/2021-11-20/slides-dados-abertos-para-gestao-publica.pdf)
-- Palestra completa (em breve)
+- [Palestra completa](https://youtu.be/j4Yo6soPnOI)
 
 A apresentação foi realizada no [Dia da Consciência Negra](https://pt.wikipedia.org/wiki/Dia_da_Consci%C3%AAncia_Negra) e Luta Antirracista, então foram compartilhadas as seguintes informações:
 
