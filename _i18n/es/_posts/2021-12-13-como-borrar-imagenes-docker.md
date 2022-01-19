@@ -31,10 +31,15 @@ Para borar todas las imágenes Docker de tu ordenador, abre el terminal y ejecut
    ```
    docker stop $(docker ps -a -q)
    ```
+4. (optativo) Si deseas borrar los datos almacenados en una imagen específica, ingrese en la carpeta que contiene los archivos del docker-composer del proyecto (quizás sea "contrib/docker") y ejecute:
+   ```
+   docker-compose down -v
+   ```
 4. Borre todas las imágenes:
    ```
    docker system prune -a
    ```
 
 Listo! Ahora tu ordenador está como si nunca tuvieras construido imágenes Docker.
+
 <div style="text-align: right"><a href="https://cecivieira.com/como-apagar-imagens-docker/">El texto tiene versión en 🇧🇷</a></div>
