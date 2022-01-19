@@ -210,7 +210,7 @@ CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000/
 CKAN__PLUGINS=envvars image_view text_view recline_view datastore datapusher <titulo-sua-extensao>
 ```
 
-- Comprove se a sua aplicação está ativada. Acesse: http://localhost:5000/api/action/status_show. Nesse link deve aparecer, entre outras informações, a lista dos plugins ativos.
+- Comprove se a sua aplicação está ativada. Acesse: [http://localhost:5000/api/action/status_show](http://localhost:5000/api/action/status_show). Nesse link deve aparecer, entre outras informações, a lista dos plugins ativos.
 
 ### Iniciando a criação de um plugin
 
