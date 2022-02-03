@@ -2,7 +2,7 @@
 layout: post
 title: "Importancia de las comunidades de mujeres para la equidad de género en la tecnología"
 author: cecivieira
-date: 2022-02-02 12:00
+date: 2022-02-05 9:00
 lang: es
 categories: [pyladies, equidad de género, comunidad]
 tags: [artículo, charla]
