@@ -65,6 +65,9 @@ author: john
 date: AAAA-MM-DD HH:MM:SS
 
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: /como-apagar-imagens-docker
 
 categories: \[ Jekyll, tutorial \]
 

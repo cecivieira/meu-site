@@ -332,11 +332,16 @@ span.post-read-more a:hover {
     color: rgba(0, 0, 0, .8);
 }
 
-.article-post p {
+.article-post p, 
+.language-version p {
     font-family: Mukta;
     font-size: 1.1rem;
     line-height: 1.84;
     color: rgba(0, 0, 0, .8);
+}
+
+.language-version p {
+    text-align: right;
 }
 
 blockquote {
@@ -347,7 +352,8 @@ blockquote {
 }
 
 .article-post p,
-.article-post blockquote {
+.article-post blockquote,
+.language-version p {
     margin: 0 0 1.5rem 0;
 }
 

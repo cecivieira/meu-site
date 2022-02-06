@@ -4,6 +4,9 @@ title: "Criando o mapa do Festival Recife Coffee com Folium"
 author: cecivieira
 date: 2021-10-22 18:00
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 tags: [tutorial]
 categories: [folium, mapa]
 image: assets/images/cover/12.png

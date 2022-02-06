@@ -4,6 +4,9 @@ title: "StartTalks #08 - PyLadies Recife"
 author: cecivieira
 date: 2021-07-28
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 categories: [carreira, entrevista, comunidades]
 tags: [podcast]
 image: assets/images/cover/5.png

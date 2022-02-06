@@ -4,6 +4,9 @@ title: "Extensão CKAN Pages: instalação e uso"
 author: cecivieira
 date: 2021-11-03 15:00
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 tags: [tutorial]
 categories: [ckan, docker, extensão ckan, dados abertos]
 image: assets/images/cover/14.jpg

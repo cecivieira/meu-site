@@ -16,6 +16,7 @@ main:
     description: Take a look the home page or use the search.
   posts:
     toc: Sumary
+    translate: You could read this post in
     prev-next: Ready also
 pages:
   about: About me

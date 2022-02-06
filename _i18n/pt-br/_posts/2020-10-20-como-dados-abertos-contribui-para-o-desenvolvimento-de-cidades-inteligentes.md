@@ -4,6 +4,9 @@ title: "Como dados abertos contribui para o desenvolvimento de cidades inteligen
 author: cecivieira
 date: 2020-10-20
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 categories: [cidades inteligentes, dados abertos, governo aberto]
 tags: [artigo, palestra]
 image: assets/images/cover/3.jpg

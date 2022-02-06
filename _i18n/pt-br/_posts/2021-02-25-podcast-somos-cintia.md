@@ -4,6 +4,9 @@ title: "Somos Cintia - Me seguraa, tem uma comunidade ali e eu quero participar!
 author: cecivieira
 date: 2021-02-25
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 categories: [carreira, entrevista, comunidades]
 tags: [podcast]
 image: assets/images/cover/8.jpg

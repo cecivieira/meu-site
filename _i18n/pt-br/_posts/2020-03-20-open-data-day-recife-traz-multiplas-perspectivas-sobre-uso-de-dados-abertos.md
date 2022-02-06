@@ -5,6 +5,9 @@ author: cecivieira
 date: 2020-03-20
 lang: pt-br
 categories: [dados abertos]
+translated-es: 
+translated-en: 
+translated-ptbr: 
 tags: [artigo]
 image: assets/images/cover/13.jpg
 description: ""

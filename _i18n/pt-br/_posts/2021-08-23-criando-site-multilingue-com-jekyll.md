@@ -4,6 +4,9 @@ title: "Criando site multilíngue com Jekyll"
 author: cecivieira
 date: 2021-08-23 12:00
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 categories: [internacionalização, plugin, ruby, jekyll]
 tags: [tutorial]
 image: assets/images/cover/1.jpg

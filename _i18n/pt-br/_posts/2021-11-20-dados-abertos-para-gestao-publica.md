@@ -4,6 +4,9 @@ title: "Dados abertos para gestão pública"
 author: cecivieira
 date: 2021-11-20 9:00
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 tags: [artigo, palestra]
 categories: [dados abertos, gestão pública]
 image: assets/images/cover/15.jpg

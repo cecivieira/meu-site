@@ -16,6 +16,7 @@ main:
     description: Mira la página inicial o usa la búsqueda!
   posts:
     toc: Sumario
+    translate: También puedes leer este texto en
     prev-next: Lea también
 pages:
   about: Sobre mí

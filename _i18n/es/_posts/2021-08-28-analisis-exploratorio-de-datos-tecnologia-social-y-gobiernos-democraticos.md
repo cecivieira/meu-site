@@ -4,6 +4,9 @@ title: "Análisis exploratorio de datos: tecnología social y gobiernos democrá
 author: cecivieira
 date: 2021-08-28 12:00
 lang: es
+translated-es: 
+translated-en: 
+translated-ptbr: 
 categories: [datos abiertos, gobierno abierto, américa latina, análisis exploratorio, innovación cívica, pandas]
 tags: [artículo, charla]
 image: assets/images/cover/9.jpg

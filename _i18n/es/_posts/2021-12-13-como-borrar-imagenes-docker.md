@@ -4,6 +4,9 @@ title: "Como borrar imágenes Docker"
 author: cecivieira
 date: 2021-12-13 17:00
 lang: es
+translated-es: 
+translated-en: 
+translated-ptbr: /como-apagar-imagens-docker
 tags: [tip]
 categories: [docker]
 image: assets/images/cover/16.jpg
@@ -41,5 +44,3 @@ Para borar todas las imágenes Docker de tu ordenador, abre el terminal y ejecut
    ```
 
 Listo! Ahora tu ordenador está como si nunca tuvieras construido imágenes Docker.
-
-<div style="text-align: right"><a href="https://cecivieira.com/como-apagar-imagens-docker/">El texto tiene versión en 🇧🇷</a></div>

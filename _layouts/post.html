@@ -97,6 +97,23 @@ post_class: post-template
                 <i class="far fa-laugh-beam"></i>               
             </div>
 
+            <!-- Version in other languages -->
+            <div class="language-version">
+                {% if page.translated-es or page.translated-ptbr or page.translated-en %}
+                <p> {% t main.posts.translate %}: 
+                    {% if page.translated-ptbr %}
+                        <a href="{{ site.url }}{{ page.translated-ptbr }}"> 🇧🇷 </a>
+                    {% endif %}
+                    {% if page.translated-es %}
+                        <a href="{{ site.url }}{{ page.translated-es }}"> 🇪🇸 </a>
+                    {% endif %}
+                    {% if page.translated-en %}
+                        <a href="{{ site.url }}{{ page.translated-en }}"> 🇺🇲 </a>
+                    {% endif %}
+                </p> 
+                {% endif %}
+                
+            </div>
 
             <!-- Rating -->
             {% if page.rating %}

@@ -4,6 +4,9 @@ title: "CKAN no Docker: instalando o ambiente de desenvolvimento e iniciando a c
 author: cecivieira
 date: 2021-08-30 12:00
 lang: pt-br
+translated-es: 
+translated-en: 
+translated-ptbr: 
 tags: [tutorial]
 categories: [ckan, dados abertos, docker]
 image: assets/images/cover/11.jpg
