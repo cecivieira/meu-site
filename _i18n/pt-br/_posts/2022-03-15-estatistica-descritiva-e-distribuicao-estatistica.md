@@ -14,6 +14,8 @@ description: "Primeiro artigo de uma série sobre conceitos (bem) básicos de es
 toc: false
 beforetoc: 
 ---
+> Primeiro artigo de uma série sobre conceitos (bem) básicos de estatística aplicada a ciência de dados. Nesse é apresentado o conceito de estatística descritiva, distribuição estatística e o contexto no qual se desenvolverá a série.
+
 Estatística foi um dos assuntos que mais tive dificuldade em engajar nos estudos, inclusive em compreender os conceitos mais básicos. Sempre que começava a estudar, parava, me dava uns dias ou semanas e voltava a estudar a mesma coisa. A cada nova tentativa eu sentia como se aquele tópico ganhasse algo de sentido. E assim vou me arrastando até... hoje... ainda que em novos temas.
 
 Esse artigo é o primeiro de uma série sobre conceitos (bem) básicos de estatística aplicada a ciência de dados. Oh, é bem básico mesmo, se essa é uma das tuas primeiras tentativas, espero que a leitura seja massa. Mas, se tu já sabe alguma coisa, talvez não encontre aqui o está procurando.
@@ -39,7 +41,7 @@ Fonte: [Notebook “Estatística básica para Ciência de Dados”](https://gith
 
 Essa curva representa a distribuição estatística da coluna, é feita a partir da quantidade de vezes que cada idade aparece, ou seja, existem mais pessoas candidatas com 40 anos do que com 80.
 
-Esse tipo de distribuição que o gráfico só tem 1 pico, chamamos de distribuição normal ou gaussiana simétrica, pois a maior parte dos dados estão ao redor da média. Existem outros tipos (binomial, poisson e uniforme), mas vamos falar só sobre a distribuição normal nessa série, pois é a que possui a variável que estamos analisando, `NR_IDADE_DATA_POSSE`.
+Esse tipo de distribuição que o gráfico só tem 1 pico e a maior parte dos dados estão ao redor da média, chamamos de distribuição normal ou gaussiana simétrica. Existem outros tipos (binomial, poisson e uniforme), mas vamos falar só sobre a distribuição normal nessa série, pois é a que possui a variável que estamos analisando, `NR_IDADE_DATA_POSSE`.
 
 Mais pra frente vamos falar sobre desvio padrão, mas deixa eu te adiantar uma coisa: a área dessa curva determina a probabilidade de ocorrer um evento, nesse caso o evento é a idade de uma pessoa candidata.
 
