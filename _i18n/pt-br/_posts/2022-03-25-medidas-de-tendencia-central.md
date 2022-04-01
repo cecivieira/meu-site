@@ -18,7 +18,7 @@ Esse artigo é o segundo de uma série sobre conceitos (bem) básicos de estatí
 
 [No artigo anterior falamos sobre o conceito de estatística descritiva, distribuição estatística e o contexto dos dados que estão sendo utilizados nos exemplos. Talvez, lê-lo te ajude a entender sobre as medidas de tendência central que vamos apresentar aqui.](https://cecivieira.com/estatistica-descritiva-e-distribuicao-estatistica/)
 
-## Medidas de tendência central
+## Conceito
 
 Algumas das principais medidas usadas em estatística são as medidas de tendência central, que servem para representar o centro de um conjunto de dados. É aquele valor que se aproxima da maior parte dos dados. 
 
