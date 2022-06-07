@@ -1,7 +1,7 @@
 site:
   name: Ana Cecília Vieira
   description: 'Blog pessoal para compartilhar aprendizados e reunir minhas andanças pelas comunidades de tecnologia.'
-  author-description: 'Entusiasta em dados abertos, código aberto e comunidades autogestinadas como instrumento para transformação social.'
+  author-description: "Analista de dados especializada em abertura de dados governamentais. Entusiasta em dados abertos, código aberto e comunidades autogestinadas como instrumento para transformação social. Embaixadora do programa 'Ciência de Dados para Inovação Cívica' da Open Knowledge Brasil e podcaster no Pizza de Dados."
   keywords: Tecnologia
   lang: pt-br
 main:
@@ -13,7 +13,7 @@ main:
     topics: Tema
   error:
     title: Eita... Não achei...
-    description: Mira la página inicial o usa la búsqueda!
+    description: Dá uma olhada na página inicial ou usa a janela de busca!
   posts:
     toc: Sumário
     translate: Você também pode ler esse texto em
