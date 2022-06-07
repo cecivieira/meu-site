@@ -103,7 +103,7 @@ sudo apt install docker.io
 
 - Inicie o Docker
 ```
-sudo systemctl start Docker
+sudo systemctl start docker
 ```
 
 - Verifique o status do docker
@@ -117,9 +117,9 @@ systemctl start docker
 sudo systemctl start docker
 ```
  
-- Configure a sua usuária no sistema operacional como a superusuária no Docker
+- Configure a sua usuária do sistema operacional como a superusuária no Docker
 ```
-sudo usermod -aG docker ${USER} 
+sudo usermod -aG docker $<user> 
 ```
 
 - Por fim, verifique se a instalação foi feita com sucesso
