@@ -50,7 +50,17 @@ Fonte: [Wikimedia](https://pt.wikipedia.org/wiki/Desvio_padr%C3%A3o#/media/Fiche
 
 O próximo artigo é sobre medidas de tendência central (média, moda e mediana). Ainda que tu não tenha entendido nada do que escrevi aqui, sugiro que sigas lendo a série até o final, pois os assuntos se complementam e vão ajudar que na tua próxima tentativa de estudo o tema faça um pouquinho mais de sentido.
 
+Se assistir vídeo aula te ajudar, dá uma olhadinha [nessa sobre conceitos de estatística básica para ciência de dados](https://youtu.be/xiZwte8D1Xs), que fiz para a [Sprint de Dados da PrograMaria](https://youtube.com/playlist?list=PL7h1S1pOf5-t13ktXkAIX5_ZG2nXpU8rE).
+
 ## Continue estudando
+
+### Outros artigos da série
+
+- [Medidas de tendência central](https://cecivieira.com/medidas-de-tendencia-central/)
+- [Medidas de dispersão](https://cecivieira.com/medidas-de-dispersao/)
+- [Valores discrepantes e valores faltantes](https://cecivieira.com/valores-discrepantes-e-valores-faltantes/)
+
+### Recomendações gerais
 
 - **WHEELAN, Charles. Estatística: O que é, para que serve, como funciona. São Paulo: Zahar, 2016.** (como uma das primeiras tentativas, também recomendo a leitura desse livro)
 - [Notebook “Estatística básica para Ciência de Dados”](https://github.com/cecivieira/estatistica-basica-para-ciencia-de-dados)

@@ -77,7 +77,17 @@ A escolha nem sempre é fácil assim, pois cada uma dessas medidas tem seus pró
 
 Ainda que tu não tenha entendido nada do que escrevi aqui, sugiro que sigas lendo a série até o final, pois os assuntos se complementam e vão ajudar que na tua próxima tentativa de estudo o tema faça um pouquinho mais de sentido.
 
+Se assistir vídeo aula te ajudar, dá uma olhadinha [nessa sobre conceitos de estatística básica para ciência de dados](https://youtu.be/xiZwte8D1Xs), que fiz para a [Sprint de Dados da PrograMaria](https://youtube.com/playlist?list=PL7h1S1pOf5-t13ktXkAIX5_ZG2nXpU8rE).
+
 ## Continue estudando
+
+### Outros artigos da série
+
+- [Estatística descritiva e distribuição estatística](https://cecivieira.com/estatistica-descritiva-e-distribuicao-estatistica/)
+- [Medidas de dispersão](https://cecivieira.com/medidas-de-dispersao/)
+- [Valores discrepantes e valores faltantes](https://cecivieira.com/valores-discrepantes-e-valores-faltantes/)
+
+### Recomendações gerais
 
 - **WHEELAN, Charles. Estatística: O que é, para que serve, como funciona. São Paulo: Zahar, 2016.** (como uma das primeiras tentativas, também recomendo a leitura desse livro)
 - [Notebook “Estatística básica para Ciência de Dados”](https://github.com/cecivieira/estatistica-basica-para-ciencia-de-dados)

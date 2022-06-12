@@ -43,7 +43,7 @@ O desvio padrão indica o grau de dispersão de um conjunto de dados, ou seja, o
 
 É possível calcular o desvio padrão usando uma função do[ Pandas](https://pandas.pydata.org/docs/), para isso vamos continuar usando a coluna `NR_IDADE_DATA_POSSE`  do [conjunto de dados de candidaturas para a Câmara dos Vereadores de Recife em 2020](https://cecivieira.com/estatistica-descritiva-e-distribuicao-estatistica/#contexto) no nosso exemplo:
 
-<img class="rounded mx-auto d-block" src="../../assets/images/serie-estatistica-para-ciencia-dados/desvio-padrao.png">
+<img class="rounded mx-auto d-block" src="../../assets/images/serie-estatistica-para-ciencia-dados/desvio-padrao.png" alt="df_candidaturas['NR_IDADE_DATA_POSSE'].std()">
 Fonte:[ Notebook “Estatística básica para Ciência de Dados”](https://github.com/cecivieira/estatistica-basica-para-ciencia-de-dados)
 
 Percebemos que o desvio padrão é de 11,34 anos. 
@@ -61,7 +61,17 @@ No próximo artigo vamos falar sobre valores discrepantes, pois é um tema impor
 
 Ainda que tu não tenha entendido nada do que escrevi aqui, sugiro que sigas lendo a série até o final, pois os assuntos se complementam e vão ajudar que na tua próxima tentativa de estudo o tema faça um pouquinho mais de sentido.
 
+Se assistir vídeo aula te ajudar, dá uma olhadinha [nessa sobre conceitos de estatística básica para ciência de dados](https://youtu.be/xiZwte8D1Xs), que fiz para a [Sprint de Dados da PrograMaria](https://youtube.com/playlist?list=PL7h1S1pOf5-t13ktXkAIX5_ZG2nXpU8rE).
+
 ## Continue estudando
+
+### Outros artigos da série
+
+- [Estatística descritiva e distribuição estatística](https://cecivieira.com/estatistica-descritiva-e-distribuicao-estatistica/)
+- [Medidas de tendência central](https://cecivieira.com/medidas-de-tendencia-central/)
+- [Valores discrepantes e valores faltantes](https://cecivieira.com/valores-discrepantes-e-valores-faltantes/)
+
+### Recomendações gerais
 
 - **WHEELAN, Charles. Estatística: O que é, para que serve, como funciona. São Paulo: Zahar, 2016.** (como uma das primeiras tentativas, também recomendo a leitura desse livro)
 - [Notebook “Estatística básica para Ciência de Dados”](https://github.com/cecivieira/estatistica-basica-para-ciencia-de-dados)
