@@ -111,15 +111,10 @@ sudo systemctl start docker
 systemctl start docker
 ```
     A saída esperada é: `status running`
-
-- Habilite a inicialização do Docker junto com seu sistema operacionar
-```
-sudo systemctl start docker
-```
  
 - Configure a sua usuária do sistema operacional como a superusuária no Docker
 ```
-sudo usermod -aG docker $<user> 
+sudo usermod -aG docker <user> 
 ```
 
 - Por fim, verifique se a instalação foi feita com sucesso
