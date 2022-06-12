@@ -117,10 +117,10 @@ Organizaciones de mujeres que tengan en cuenta su importancia social es un facto
 ---
 <div class="row">
     <div class="col">
-        <img src="../../assets/images/2022-02-05/pyladies-panama-ana-cecilia.jpg" class="rounded mx-auto d-block" alt="Susana Lau Hou">
+        <img src="../../assets/images/2022-02-05/pyladies-panama-ana-cecilia.jpg" class="rounded mx-auto d-block" alt="Ana Cecília Vieira">
     </div>
     <div class="col">
-        <img src="../../assets/images/2022-02-05/pyladies-panama-juliana.jpg" class="rounded mx-auto d-block" alt="Silvia Batista">
+        <img src="../../assets/images/2022-02-05/pyladies-panama-juliana.jpg" class="rounded mx-auto d-block" alt="Juliana Barros">
     </div>    
 </div>
 
