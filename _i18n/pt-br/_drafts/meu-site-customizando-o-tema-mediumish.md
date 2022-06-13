@@ -91,7 +91,7 @@ rating: 4.5
 
 video:
 
-<p><iframe style="width:100%;" height="315" src="[https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0](https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0 "https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0")" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe width="100%" height="315" title="Datos abiertos en la gestión pública: el caso de la Universidad Federal de Pernambuco" src="https://youtu.be/2QhqtcWoNyk?t=3412" frameborder="0" allowfullscreen></iframe></p>
 
 foto:
 
