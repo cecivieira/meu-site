@@ -86,6 +86,7 @@ Se assistir vídeo aula te ajudar, dá uma olhadinha [nessa sobre conceitos de e
 - [Estatística descritiva e distribuição estatística](https://cecivieira.com/estatistica-descritiva-e-distribuicao-estatistica/)
 - [Medidas de dispersão](https://cecivieira.com/medidas-de-dispersao/)
 - [Valores discrepantes e valores faltantes](https://cecivieira.com/valores-discrepantes-e-valores-faltantes/)
+- [Correlação entre variáveis](https://cecivieira.com/correlacao-entre-variaveis/)
 
 ### Recomendações gerais
 
