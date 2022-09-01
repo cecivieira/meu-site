@@ -30,11 +30,11 @@ No meu caso, estou desenvolvendo um plugin, então fazia falta algumas facilidad
 
 # Tutorial
 
-O CKAN possui um repositório exclusivo para a instalação usando o Docker, o qual possue um ambiente de desenvolvimento muito massa, que apresenta as modificações realizadas em tempo de execução dos containers.
+O CKAN possui um repositório que está sendo desenvolvido para conter a nova instalação do CKAN via Docker. O ambiente de desenvolvimento deste respositório é muito útil para visualizar em tempo de execução dos containers as modificações realizadas.
 
 Esse tutorial abrange a instalação do CKAN e de todos os requisitos necessários para o uso do Docker. 
 
-A partir daqui todas as instruções pressupõe que você está usando o sistema operacional [Ubuntu 20.04](https://ubuntu.com/).
+A partir daqui todas as instruções pressupõe que você está usando o sistema operacional [Ubuntu 20.04](https://ubuntu.com/) ou mais recente.
 
 **Sumário**
 - [Instalar Git](#instalando-o-git)
@@ -108,13 +108,19 @@ sudo systemctl start docker
 
 - Verifique o status do docker
 ```
-systemctl start docker
+sudo systemctl status docker
 ```
-    A saída esperada é: `status running`
+    A saída esperada é: `Active: active (running)`
  
 - Configure a sua usuária do sistema operacional como a superusuária no Docker
 ```
-sudo usermod -aG docker <user> 
+sudo usermod -aG docker ${USER} 
+```
+Caso você deseje inserir outra superusuária no Docker, além da que está logada, troque `${USER}` pelo usuária.
+
+- Aplique a nova usuária no grupo de permissões
+```
+su - ${USER}
 ```
 
 - Por fim, verifique se a instalação foi feita com sucesso
@@ -140,7 +146,7 @@ git clone https://github.com/okfn/docker-ckan.git
 
 - Entre na pasta do repositório
 ```
-cd docker-ckan/
+cd ckan-docker/
 ```
 
 Abra o editor de código da sua preferência e realize as próximas etapas:
@@ -148,13 +154,14 @@ Abra o editor de código da sua preferência e realize as próximas etapas:
 - Duplique o arquivo ".env.example" e renomeie a cópia para “.env”
 - No arquivo ".env" , atualize as seguintes variáveis de ambiente:
 ```
-CKAN_SITE_URL=http://localhost:5000/
-CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000/
+CKAN_SITE_URL=http://localhost:5000
+CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000
+DATAPUSHER_REWRITE_URL=http://localhost:5000  
 ```
 
 Volte para o terminal e execute:
 
-- Construa as imagens (você só precisa realizar isso uma vez)
+- Construa as imagens com o ambiente de desenvolvimento (você só precisa realizar isso uma vez)
 ```
 docker-compose -f docker-compose.dev.yml build
 ```
@@ -174,7 +181,7 @@ docker-compose -f docker-compose.dev.yml up
 ```
 
 - Comprove que o CKAN está rodando no seu computador. Acesse:
-http://localhost:5000/
+[http://localhost:5000](http://localhost:5000)
 
 - Nesse ambiente já existe uma usuária master. Faça login usando as credenciais:
 **login:** ckan_admin
@@ -203,8 +210,9 @@ Abra o editor de código da sua preferência e realize as próximas etapas para 
 
 - No arquivo ".env", atualize as seguintes variáveis de ambiente:
 ```
-CKAN_SITE_URL=http://localhost:5000/
-CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000/
+CKAN_SITE_URL=http://localhost:5000
+CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000
+DATAPUSHER_REWRITE_URL=http://localhost:5000
 CKAN__PLUGINS=envvars image_view text_view recline_view datastore datapusher <titulo-sua-extensao>
 ```
 
@@ -226,7 +234,7 @@ docker-compose -f docker-compose.dev.yml exec ckan-dev /bin/bash -c "ckan genera
 
     Para que você tenha permissão para editar essa pasta e, assim, desenvolver o seu plugin, é necessário editar sua permissão. Para isso, execute:
 ```
-sudo chown -R <sua usuária no sistema operacional> <caminho completo para a pasta /src/ckanext-<título-plugin>
+sudo chown -R ${USER} <caminho completo para a pasta /src/ckanext-<título-plugin>
 sudo chmod -R u+rwx <caminho completo para a pasta /src/ckanext-<título-plugin>
 ```
 
@@ -234,8 +242,9 @@ Abra o editor de código da sua preferência e realize as próximas etapas para 
 
 - No arquivo ".env", atualize as seguintes variáveis de ambiente:
 ```
-CKAN_SITE_URL=http://localhost:5000/
-CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000/
+CKAN_SITE_URL=http://localhost:5000
+CKAN__DATAPUSHER__CALLBACK_URL_BASE=http://localhost:5000
+DATAPUSHER_REWRITE_URL=http://localhost:5000
 CKAN__PLUGINS=envvars image_view text_view recline_view datastore datapusher <titulo-sua-extensao>
 ```
 
@@ -244,7 +253,7 @@ CKAN__PLUGINS=envvars image_view text_view recline_view datastore datapusher <ti
 ```
 git init
 git remote add origin <link do repositório>
-git checkout -b master
+git checkout -b main
 git pull
 ```
 
@@ -252,6 +261,8 @@ git pull
 - [Começando - Instalando o Git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
 - [Descomplicando Docker - #1: Instalando Docker no Linux](https://youtu.be/2T3itw-2xkg)
 - [GitLab and SSH keys](https://docs.gitlab.com/ee/ssh/)
+- [How To Install and Use Docker on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
 - [Repositório Docker Compose setup for CKAN](https://github.com/okfn/docker-ckan)
 
-> Esse artigo foi escrito em parceria com <a href="mailto:lemmg@cin.ufpe.br">Lucas Gois</a>.
+
+> Esse artigo foi escrito em parceria com <a href="mailto:lemmg@cin.ufpe.br">Lucas Gois</a>. Atualizado em: 01 set. 2022
