@@ -141,7 +141,7 @@ No terminal, navegue até a pasta desejada para armazenar o repositório e execu
 
 - Clone o repositório
 ```
-git clone https://github.com/okfn/docker-ckan.git
+git clone https://github.com/ckan/ckan-docker.git
 ```
 
 - Entre na pasta do repositório
