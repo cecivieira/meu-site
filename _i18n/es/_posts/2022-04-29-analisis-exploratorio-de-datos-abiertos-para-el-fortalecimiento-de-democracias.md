@@ -6,7 +6,7 @@ date: 2022-04-26 09:00
 lang: es
 translated-es: 
 translated-en: 
-translated-ptbr: 
+translated-ptbr: /analise-exploratoria-de-dados-para-fortalecimento-de-democracias
 tags: [artículo, charla]
 categories: [datos abiertos, gobierno abierto, américa latina, análisis exploratorio, innovación cívica, pandas]
 image: assets/images/cover/24.jpg
