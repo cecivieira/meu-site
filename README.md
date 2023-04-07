@@ -6,11 +6,13 @@ Esse é o repositório do meu site, onde reúno artigos e tutoriais sobre o que 
 
 ![mediumish customizado](assets/images/template-imagem.png)
 
+
 ## Requisitos
 
 - [Ruby 2.7.8](https://www.ruby-lang.org/en/)
 
 > Se você é usuária do Ubuntu 22, sugiro que a instalação siga os passos 1, 2 e 3 [desse tutorial da DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-22-04). Mas, presta atenção que a versão que deve ser instalada é a 2.7.8.
+
 
 ## Instalação
 
@@ -32,6 +34,7 @@ bundle install
 gem install rake
 ```
 
+
 ## Rodando no ambiente local
 
 Para visualizar o site no seu ambiente local (computador), execute o servidor com o seguinte comando:
@@ -40,7 +43,8 @@ Para visualizar o site no seu ambiente local (computador), execute o servidor co
 bundle exec jekyll serve --watch
 ```
 
-Acesse o `Server address` para visualizar o site.
+Acesse o `Server address`, presente no output do comando anterior, para visualizar o site.
+
 
 ## Publicando o site
 
@@ -49,6 +53,7 @@ Com a customização para internacionalização do tema, foi desenvolvido o scri
 ```bash
 rake publish
 ```
+
 
 ### Licenças
 
