@@ -1,52 +1,57 @@
-# Mediumish - Jekyll Theme
+# Mediumish - Jekyll Theme Customizado
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Documentation](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/) &nbsp; | &nbsp; [Buy me a coffee](https://www.wowthemes.net/donate/)
+[Live Demo do tema original](https://wowthemesnet.github.io/mediumish-theme-jekyll/) | [Repositório do tema original](https://github.com/wowthemesnet/mediumish-theme-jekyll/) | [Documentação original do tema](https://bootstrapstarter.com/template-mediumish-bootstrap-jekyll/) | [Artigo sobre internacionalização do tema](https://cecivieira.com/criando-site-multilingue-com-jekyll/) | [Documentação do widget de gata](https://github.com/xiazeyu/live2d-widget.js) | [Pague um café ao criador(a) do tema](https://www.wowthemes.net/donate/)
 
-![mediumish](assets/images/mediumish-jekyll-template.png)
+Esse é o repositório do meu site, onde reúno artigos e tutoriais sobre o que vou aprendendo no meio do caminho. O tema original é o [Mediumish](https://github.com/wowthemesnet/mediumish-theme-jekyll/), no entanto realizei customização para [internacionalizar o tema](https://cecivieira.com/criando-site-multilingue-com-jekyll/) e inserir um [widget fofíssimo de uma gatinha](https://github.com/xiazeyu/live2d-widget.js).
 
-### Run project
+![mediumish customizado](assets/images/template-imagem.png)
 
-How to use “Mediumish” theme
+## Requisitos
 
-    Download or git clone https://github.com/wowthemesnet/mediumish-theme-jekyll.git
+- [Ruby 2.7.8](https://www.ruby-lang.org/en/)
 
-From the rood of your downloaded/cloned folder, open your terminal and install:
+> Se você é usuária do Ubuntu 22, sugiro que a instalação siga os passos 1, 2 e 3 [desse tutorial da DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-22-04). Mas, presta atenção que a versão que deve ser instalada é a 2.7.8.
 
+## Instalação
+
+1. Clone o repositório
+```bash
+git clone git@github.com:cecivieira/cecivieira.github.io.git
+```
+
+2. Instale o gerenciador de gems [Bundler](https://bundler.io/)
+```bash
 gem install bundler
-
-Cmd
-
-Then:
-
+```
+```bash
 bundle install
+```
 
-Cmd
+3. Instale o gerenciador de tarefas [Rake](https://ruby.github.io/rake/)
+```bash
+gem install rake
+```
 
-Edit _config.yml options. If your site is in root: baseurl: ''. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+## Rodando no ambiente local
 
-Again, from your terminal:
+Para visualizar o site no seu ambiente local (computador), execute o servidor com o seguinte comando:
 
+```bash
 bundle exec jekyll serve --watch
+```
 
-Cmd
+Acesse o `Server address` para visualizar o site.
 
-You should be able to see your Jekyll project now, at the address provided in terminal.
+## Publicando o site
 
-Start populating your blog by adding your .md files in _posts. Mediumish already has a few examples.
+Com a customização para internacionalização do tema, foi desenvolvido o script presente no [Rakefile](Rakefile), o qual atualiza a rama `gh-pages`. Então, para publicar o site, execute o seguinte comando:
 
-### Copyright
+```bash
+rake publish
+```
 
-Copyright (C) 2019 Sal, https://www.wowthemes.net
+### Licenças
 
-**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
+[Sal](https://www.wowthemes.net) @ MIT license
 
-<a href="https://www.wowthemes.net/donate/" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-### Contribute
-
-1. [Fork the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
-2. Clone a copy of your fork on your local
-3. Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
-4. Make necessary changes, commit, push and open a pull request on GitHub.
-
-Thank you!
+[Live2d-widget.js](https://github.com/xiazeyu/live2d-widget.js) @ GNU Affero General Public License
