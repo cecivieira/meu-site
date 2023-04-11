@@ -23,7 +23,7 @@ git clone git@github.com:cecivieira/cecivieira.github.io.git
 
 2. Instale o gerenciador de gems [Bundler](https://bundler.io/)
 ```bash
-gem install bundler
+gem install bundle
 ```
 ```bash
 bundle install
