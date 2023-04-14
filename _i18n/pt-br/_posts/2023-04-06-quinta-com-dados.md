@@ -40,7 +40,7 @@ df_discentes = pd.read_csv('discentes_2022_ufpe.csv')
 print(df_discentes.sample(10))
 ```
 <div class="container text-center">
-  <iframe width="90%" title="Quinta Com Dados com Ana Cecília | 06/04" src="https://www.youtube.com/embed/__lmwfkaOjE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="90%" height="315" title="Quinta Com Dados com Ana Cecília | 06/04" src="https://www.youtube.com/embed/__lmwfkaOjE" frameborder="0" allowfullscreen></iframe>
 </div>
 -----
 Recursos:
