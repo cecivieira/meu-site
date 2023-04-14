@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [dica]
 categories: [docker]
-image: assets/images/cover/16.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/16_batydw.jpg
 description: "Passo a passo sobre como apagar imagens do Docker, para pessoas muito iniciantes nessa ferramenta."
 toc: false
 beforetoc: 

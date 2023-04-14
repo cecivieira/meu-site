@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [internacionalização, plugin, ruby, jekyll]
 tags: [tutorial]
-image: assets/images/cover/1.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494287/capas-site/1_vuz4tp.jpg
 description: "Como internacionalizar um site estático desenvolvido em Jekyll e fazer o deploy no GitHub Page."
 toc: true
 beforetoc: "Pode ser que deixar seu site em vários idiomas não seja tão rápido quanto você espera, então dividi esse post em capítulos para te ajudar."

@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [oracle virtual box, ubuntu 20.04]
 tags: [tutorial]
-image: assets/images/cover/2.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494288/capas-site/2_ikvwjk.png
 description: "Passo a passo de como instalar o virtal box no Ubuntu 20.04"
 toc: false
 beforetoc:

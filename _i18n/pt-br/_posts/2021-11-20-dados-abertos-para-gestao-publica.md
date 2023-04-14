@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo, palestra]
 categories: [dados abertos, gestão pública]
-image: assets/images/cover/15.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/15_p6n4af.jpg
 description: "Dados abertos é um dos pilares para o Governo Aberto. Nesse artigo explicitamos conceitos iniciais, base legislativa, como está sendo feita a governança de dados na gestão pública, como estimular uma gestão orientada a dados e algumas sugestões de uso."
 toc: false
 beforetoc: 

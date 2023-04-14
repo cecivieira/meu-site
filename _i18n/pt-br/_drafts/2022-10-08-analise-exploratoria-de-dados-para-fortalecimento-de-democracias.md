@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [dados abertos, governo aberto, américa latina, análise exploratoria, inovação cívica, pandas]
 tags: [artigo, palestra]
-image: assets/images/cover/24.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494290/capas-site/24_qtancy.jpg
 description: "Dados abertos são recursos importantes para o desenvolvimento de tecnologia cívica e fomento de gestões participativas. Este artigo apresentará técnicas de exploração de conjunto de dados abertos usando a biblioteca Pandas, visando estimular o uso de dados abertos governamentais."
 toc: false
 beforetoc:

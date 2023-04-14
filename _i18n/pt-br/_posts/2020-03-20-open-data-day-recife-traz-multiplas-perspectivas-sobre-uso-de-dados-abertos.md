@@ -9,7 +9,7 @@ translated-es:
 translated-en: 
 translated-ptbr: 
 tags: [artigo]
-image: assets/images/cover/13.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/13_duwfve.jpg
 description: ""
 toc: false
 beforetoc:

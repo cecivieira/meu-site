@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [carreira, entrevista, comunidades]
 tags: [podcast]
-image: assets/images/cover/8.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494288/capas-site/8_y6nr5p.jpg
 description: Entrevista para o podcast Somos Cintia sobre minha participação nas comunidades de mulheres em TI.
 toc: false
 beforetoc:

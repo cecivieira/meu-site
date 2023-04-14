@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo]
 categories: [estatística]
-image: assets/images/cover/20.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494290/capas-site/20_aminlw.png
 description: "Terceiro  de uma série sobre conceitos (bem) básicos de estatística aplicada a ciência de dados. Nesse são apresentadas medidas de dispersão, especificamente variância e desvio padrão."
 toc: false
 beforetoc:

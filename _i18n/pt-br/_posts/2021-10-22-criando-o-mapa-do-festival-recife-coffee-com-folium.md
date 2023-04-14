@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [tutorial]
 categories: [folium, mapa]
-image: assets/images/cover/12.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/12_jdh1xz.png
 description: "Criando um mapa para o Festival Recife Coffee usando a biblioteca Folium."
 toc: false
 beforetoc: 

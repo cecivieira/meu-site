@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo]
 categories: [estatística]
-image: assets/images/cover/21.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494290/capas-site/21_gpdodh.png
 description: "Quarto artigo de uma série sobre conceitos (bem) básicos de estatística aplicada a ciência de dados. Nesse são apresentados valores discrepantes (outliers) e valores faltantes (missings)."
 toc: false
 beforetoc:

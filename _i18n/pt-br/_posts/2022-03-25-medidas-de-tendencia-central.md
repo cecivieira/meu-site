@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo]
 categories: [estatística]
-image: assets/images/cover/19.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/19_a6hc3b.png
 description: "Segundo artigo de uma série sobre conceitos (bem) básicos de estatística aplicada a ciência de dados. Nesse são apresentadas medidas de tendência central, especificamente média, moda e mediana."
 toc: false
 beforetoc:

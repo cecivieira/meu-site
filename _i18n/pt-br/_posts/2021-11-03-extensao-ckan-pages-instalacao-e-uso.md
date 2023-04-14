@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [tutorial]
 categories: [ckan, docker, extensão ckan, dados abertos]
-image: assets/images/cover/14.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/14_gchypy.jpg
 description: "Como criar páginas extras no CKAN usando a extensão ckanext-pages. Aprenda como instalar no ambiente do CKAN no Docker e a como usá-la"
 toc: false
 beforetoc: 

@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [pyladies, equidad de género, comunidad]
 tags: [artículo, charla]
-image: assets/images/cover/10.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494288/capas-site/10_csioux.png
 description: "Un poco de de la historia de PyLadies Recife, el trabajo que hacemos junto a las mujeres y niñas, los desafíos durante la pandemia y el impacto en nuestra comunidad."
 toc: false
 beforetoc: ""

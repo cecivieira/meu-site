@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [carreira, entrevista, comunidades]
 tags: [podcast]
-image: assets/images/cover/5.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494288/capas-site/5_mvgtff.png
 description: Entrevista para o podcast da comunidade Start Coding sobre PyLadies Recife e algumas reflexões sobre minha jornada em TI.
 toc: false
 beforetoc:

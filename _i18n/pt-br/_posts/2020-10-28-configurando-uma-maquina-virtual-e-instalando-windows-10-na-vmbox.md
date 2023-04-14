@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [oracle virtual box, ubuntu 20.04]
 tags: [tutorial]
-image: assets/images/cover/6.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494288/capas-site/6_zvw3q0.jpg
 description: "Passo a passo de como configurar a virtual box e instalar o Windows 10."
 toc: false
 beforetoc:

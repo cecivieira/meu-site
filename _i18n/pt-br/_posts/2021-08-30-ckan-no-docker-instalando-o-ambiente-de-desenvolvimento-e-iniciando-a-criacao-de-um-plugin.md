@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [tutorial]
 categories: [ckan, dados abertos, docker]
-image: assets/images/cover/11.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/11_v0twrm.jpg
 description: "Aprenda a instalar o ambiente de desenvolvimento do CKAN usando Docker e a iniciar a criação de um plugin."
 toc: false
 beforetoc: 

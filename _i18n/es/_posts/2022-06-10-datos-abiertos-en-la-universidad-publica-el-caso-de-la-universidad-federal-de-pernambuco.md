@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [charla]
 categories: [datos abiertos, gobierno abierto, américa latina, ]
-image: assets/images/cover/25.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494290/capas-site/25_oq2pq8.jpg
 description: "Charla impartida en WiDS La Plata 2022 acerca de datos abiertos, el panorama actual del nivel de apertura de datos en América Latina y la importancia de tener alto nivel de transparancia de datos para el desempeño de administraciones públicas. Además, presento como si da la implantación del servicio de apertura de datos institucionales de la Universidad Federal de Pernambuco (UFPE) y las acciones promovidas alineadas con el Plan de Dados Abiertos UFPE 2021-2023."
 toc: false
 beforetoc:

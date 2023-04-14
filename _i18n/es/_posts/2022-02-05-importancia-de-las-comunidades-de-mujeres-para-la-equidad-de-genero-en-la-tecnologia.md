@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [pyladies, equidad de género, comunidad]
 tags: [artículo, charla]
-image: assets/images/cover/17.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/17_tph0vq.jpg
 description: "Comprender la importancia del contexto social es importante para desarrollar un trabajo de impacto en las comunidades de mujeres en TI. En el post enseñaré un poco de este contexto con enfoque en la América Latina, además de destacar dos principales aspectos de actuación de las comunidades: promoción de equidad y representatividad de género."
 toc: false
 beforetoc: ""

@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: /analise-exploratoria-de-dados-para-fortalecimento-de-democracias
 tags: [artículo, charla]
 categories: [datos abiertos, gobierno abierto, américa latina, análisis exploratorio, innovación cívica, pandas]
-image: assets/images/cover/24.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494290/capas-site/24_qtancy.jpg
 description: "Datos abiertos son recursos para el desarrollo de tecnologías que ayudan a solventar problemas sociales y fomentar la gestión participativa en los gobiernos locales. El artículo enseñará técnicas iniciales para explotar conjuntos de datos abiertos con la libreria Pandas."
 toc: false
 beforetoc:

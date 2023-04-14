@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo]
 categories: [estatística]
-image: assets/images/cover/18.png
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/18_wzf0s7.png
 description: "Primeiro artigo de uma série sobre conceitos (bem) básicos de estatística aplicada a ciência de dados. Nesse é apresentado o conceito de estatística descritiva, distribuição estatística e o contexto no qual se desenvolverá a série."
 toc: false
 beforetoc: 

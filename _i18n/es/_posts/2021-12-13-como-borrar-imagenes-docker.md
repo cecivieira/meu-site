@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: /como-apagar-imagens-docker
 tags: [tip]
 categories: [docker]
-image: assets/images/cover/16.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/16_batydw.jpg
 description: "Paso a paso sobre como borrar imágenes Docker, para personas muy iniciales en la herramienta"
 toc: false
 beforetoc: 

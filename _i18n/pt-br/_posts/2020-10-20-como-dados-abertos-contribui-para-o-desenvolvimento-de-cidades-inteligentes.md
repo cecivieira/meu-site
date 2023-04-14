@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [cidades inteligentes, dados abertos, governo aberto]
 tags: [artigo, palestra]
-image: assets/images/cover/3.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494288/capas-site/3_z8fxzw.jpg
 description: "Dados abertos contribui para a participação social, fomento de um modelo de governo aberto e desenvolvimento de cidades inteligentes."
 toc: false
 beforetoc:

@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 categories: [bash, controle de tarefas, linux, terminal commands, terminal]
 tags: [tutorial]
-image: assets/images/cover/4.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494287/capas-site/4_flw10d.jpg
 description: "Aprenda a não prender seu bash: alguns comandos para Controle de Tarefas no Linux."
 toc: false
 beforetoc:
