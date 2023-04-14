@@ -39,9 +39,9 @@ df_discentes = pd.read_csv('discentes_2022_ufpe.csv')
 
 print(df_discentes.sample(10))
 ```
-
-[Gravação em breve]
-
+<div class="container text-center">
+  <iframe width="90%" title="Quinta Com Dados com Ana Cecília | 06/04" src="https://www.youtube.com/embed/__lmwfkaOjE" frameborder="0" allowfullscreen></iframe>
+</div>
 -----
 Recursos:
 
