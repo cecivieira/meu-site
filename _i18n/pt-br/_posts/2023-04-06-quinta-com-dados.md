@@ -7,7 +7,7 @@ lang: pt-br
 translated-es: 
 translated-en: 
 translated-ptbr: 
-tags: [artigo]
+tags: [palestra]
 categories: [dados abertos]
 image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494290/capas-site/26_rg2vvs.jpg
 description: "Entenda conceitos básicos sobre dados abertos, os instrumentos normativos que fomentam o aumento da oferta de dados abertos, além disso são apresentados portais de dados abertos governamentais, empresas que aderiram o movimento de abertura de dados e iniciativas da sociedade civil que disponibilizam dados em formato aberto. Por fim, são apresentadas organizações da sociedade civil que possuem projetos de código aberto que todos podem contribuir."
