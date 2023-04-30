@@ -21,6 +21,18 @@ a:hover {
     text-decoration: none;
 }
 
+td, th{
+    border: 1px solid #00ab6b;
+    font-family: Mukta; !important
+    font-size: 1.1rem; !important
+    line-height: 1.84; !important
+}
+
+th{
+    text-align: center;
+    background-color: #EDEDED;
+}
+
 pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
