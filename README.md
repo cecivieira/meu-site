@@ -23,10 +23,10 @@ git clone git@github.com:cecivieira/cecivieira.github.io.git
 
 2. Instale o gerenciador de gems [Bundler](https://bundler.io/)
 ```bash
-gem install bundle
+gem install bundler
 ```
 ```bash
-bundle install
+bundler install
 ```
 
 3. Instale o gerenciador de tarefas [Rake](https://ruby.github.io/rake/)
@@ -40,7 +40,7 @@ gem install rake
 Para visualizar o site no seu ambiente local (computador), execute o servidor com o seguinte comando:
 
 ```bash
-bundle exec jekyll serve --watch
+bundler exec jekyll serve --watch
 ```
 
 Acesse o `Server address`, presente no output do comando anterior, para visualizar o site.
