@@ -20,13 +20,14 @@ main:
     prev-next: Leia também
 pages:
   about: Sobre mim
+  blog: Blog
   category: Categorias
   contact: Contato
-  blog: Blog
+  topics: Temas
 links:
   about: sobre-mim
+  blog: 
   category: categorias
   contact: contato
-  blog: 
   topics: temas
   tags: atividades

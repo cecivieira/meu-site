@@ -20,9 +20,10 @@ main:
     prev-next: Lea también
 pages:
   about: Sobre mí
-  category: Categorías
-  contact: Contacto
   blog: Blog
+  category: Categorías
+  contact: Contacto  
+  topics: Temas
 links:
   about: sobre-mi
   category: categorias-es

@@ -20,9 +20,10 @@ main:
     prev-next: Ready also
 pages:
   about: About me
+  blog: Blog
   category: Categories
   contact: Contact
-  blog: Blog
+  topics: Subjects  
 links:
   about: about
   category: categories
