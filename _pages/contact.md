@@ -1,6 +1,6 @@
 ---
 layout: page
-title: pages.contact
+title: 
 
 namespace: contact
 permalink: /contato
@@ -9,5 +9,6 @@ permalink_en: /contact/
 
 comments: false
 ---
+<h2>{% t pages.contact %}</h2>
 
-{% tf contact.md %}
+{% tf contact.html %}
