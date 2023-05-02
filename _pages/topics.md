@@ -1,6 +1,6 @@
 ---
 layout: topics
-title: Temas
+title: pages.topics
 
 namespace: topics
 permalink: /temas/
