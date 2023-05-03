@@ -73,16 +73,15 @@
 
                         {% if site.lang == "es" %}
 
-                        {% comment %} <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about
-                            %}</a>
-                    </li>
-
-                    <li class="nav-item"> {% endcomment %}
                         <a class="nav-link" href="{{ site.baseurl }}/{% t links.blog %}">{% t pages.blog %}</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ site.baseurl }}/{% t links.category %}">{% t pages.category %}</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/{% t links.about %}">{% t pages.about %}</a>
                     </li>
 
                     <li class="nav-item">
