@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 
-
 namespace: contact
 permalink: /contato
 permalink_es: /contacto/

@@ -1,7 +1,6 @@
 ---
 layout: tags
-title: Tags
-
+title: 
 namespace: tags
 permalink: /atividades/
 permalink_es: /actividades/

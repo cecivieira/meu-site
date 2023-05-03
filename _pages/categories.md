@@ -1,7 +1,6 @@
 ---
 layout: categories
-title: pages.categories
-
+title: 
 namespace: categories
 permalink: /categorias/
 permalink_es: /categorias-es/
