@@ -10,7 +10,7 @@ translated-ptbr:
 tags: [artigo]
 categories: [jinja, python]
 image: https://res.cloudinary.com/damhz6skt/image/upload/v1685128112/capas-site/28_d4zrw1.jpg
-description: "Apresenta a motivação e desenvolvimento de uma aplicação que recebe arquivos de dados (.csv e .yaml), templates em qualquer formato de arquivo e aplica os dados nesses templates."
+description: "Apresenta a motivação, desenvolvimento e hospedagem no PyPI de uma aplicação que recebe arquivos de dados (.csv e .yaml), templates em qualquer formato de arquivo e aplica os dados nesses templates."
 toc: false
 beforetoc:
 ---
