@@ -9,7 +9,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo, palestra]
 categories: [dados abertos, software livre]
-image: https://res.cloudinary.com/damhz6skt/image/upload/v1682870198/capas-site/27_sjr10u.jpg
+image: https://res.cloudinary.com/damhz6skt/image/upload/v1685128159/capas-site/27_phapgm.jpg
 description: "Nesse post são apresentados os conceitos de software livre e dados abertos, bem como as liberdades do software livre, os princípios de dados abertos e as semelhanças entre esses movimentos. Por fim, apresenta o poder social desses conceitos e ferramentas, além de estimular a leitora uma participação social mais ativa."
 toc: false
 beforetoc:
