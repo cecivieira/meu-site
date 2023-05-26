@@ -18,7 +18,7 @@ Toda vez que eu precisava publicar um episódio do [podcast Pizza de Dados](http
 
 Para resolver esse problema, desenvolvi uma aplicação que recebe arquivos de dados (.csv e .yaml), templates em qualquer formato de arquivo e aplica os dados nesses templates. 
 
-Esse artigo fala sobre o desenvolvimento dessa aplicação.
+Esse artigo fala sobre o desenvolvimento dessa aplicação e hospedagem no PyPI.
 
 ## Tecnologias utilizadas
 
