@@ -10,8 +10,11 @@ Esse é o repositório do meu site, onde reúno artigos e tutoriais sobre o que 
 ## Requisitos
 
 - [Ruby 2.7.8](https://www.ruby-lang.org/en/)
+- Bundler 2.4.22
 
 > Se você é usuária do Ubuntu 22, sugiro que a instalação siga os passos 1, 2 e 3 [desse tutorial da DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-22-04). Mas, presta atenção que a versão que deve ser instalada é a 2.7.8.
+
+> Se você é usuária de Mac OS, sugiro que a instalação siga as instruções da versão do Ruby usando o [rbenv](https://github.com/rbenv/rbenv.git)
 
 
 ## Instalação
@@ -23,15 +26,18 @@ git clone git@github.com:cecivieira/cecivieira.github.io.git
 
 2. Instale o gerenciador de gems [Bundler](https://bundler.io/)
 ```bash
-gem install bundler
-```
-```bash
-bundler install
+gem install bundler -v 2.4.22
 ```
 
 3. Instale o gerenciador de tarefas [Rake](https://ruby.github.io/rake/)
 ```bash
 gem install rake
+```
+
+4. Instale as dependencias do projeto
+```bash
+cd [caminho para a pasta do projeto]
+bundler install
 ```
 
 
