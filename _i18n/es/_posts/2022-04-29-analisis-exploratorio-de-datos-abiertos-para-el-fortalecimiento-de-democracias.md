@@ -14,7 +14,7 @@ description: "Datos abiertos son recursos para el desarrollo de tecnologías que
 toc: false
 beforetoc:
 ---
-> En este artículo encontrás el contenido técnico de tecnología ([notebook](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas/blob/main/PyCon_US.ipynb)) y las diapositivas de la charla "Análisis exploratorio de datos abiertos para el fortalecimiento de democracias" presentada en la [PyCon US 2022 (PyCon Charlas)](https://us.pycon.org/2022/schedule/presentation/97/).
+> En este artículo encontrás el contenido técnico de tecnología ([notebook](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas/blob/main/PyCon_US.ipynb)) y las diapositivas de la [charla "Análisis exploratorio de datos abiertos para el fortalecimiento de democracias"](https://youtu.be/AXQ7cFm9WLI) presentada en la [PyCon US 2022 (PyCon Charlas)](https://us.pycon.org/2022/schedule/presentation/97/).
 
 Para empezar, todo el análisis de datos hay que tener un contexto. Lo nuestro es la existencia, en Brasil, de una ley que permite a las mujeres votaren y seren votadas, además las legislaciones de cuota de género (Ley 9.504/1997 y 12.034/2009) y el tema de las propuestas legislativas.
 
@@ -28,7 +28,7 @@ Si tienes interés en el tema de datos abiertos y nivel de transparencia de dato
 
 El pipeline de este análisis es compuesto por colecta, pre-procesamiento y análisis de datos. Todavía, antes del análisis de las proposiciones hizo falta estandarizar sus palabras claves, por lo tanto fue desarrolado un classificador (modelo de aprendizaje de máquina).
 
-Los datos fueron colectados del [Portal de Datos Abiertos de la Cámara de Diputados de Brasil]() y corresponden a las candidaturas electas en el periodo de 1934 y 2021. El objetivo del análisis es compreender la evolución de la cantidad de mujeres elegidas como diputadas federal, el impacto de las legislaciones de cuotas de género y si ya se nota cambio en las temáticas de las propuestas legislativas.
+Los datos fueron colectados del [Portal de Datos Abiertos de la Cámara de Diputados de Brasil](https://dadosabertos.camara.leg.br/) y corresponden a las candidaturas electas en el periodo de 1934 y 2021. El objetivo del análisis es compreender la evolución de la cantidad de mujeres elegidas como diputadas federal, el impacto de las legislaciones de cuotas de género y si ya se nota cambio en las temáticas de las propuestas legislativas.
 
 ### Colecta de datos
 Fue usada la API RestFul en Python para recolectar los datos, excepto los de las proposiciones legislativas que no estaban disponible por API, en este caso los datos fueron descargados manualmente año a año.
