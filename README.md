@@ -11,6 +11,7 @@ Esse é o repositório do meu site, onde reúno artigos e tutoriais sobre o que 
 
 - [Ruby 2.7.8](https://www.ruby-lang.org/en/)
 - Bundler 2.4.22
+- Rake 13.0.6
 
 > Se você é usuária do Ubuntu 22, sugiro que a instalação siga os passos 1, 2 e 3 [desse tutorial da DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-22-04). Mas, presta atenção que a versão que deve ser instalada é a 2.7.8.
 
@@ -31,7 +32,7 @@ gem install bundler -v 2.4.22
 
 3. Instale o gerenciador de tarefas [Rake](https://ruby.github.io/rake/)
 ```bash
-gem install rake
+gem install rake -v 13.0.6
 ```
 
 4. Instale as dependencias do projeto
