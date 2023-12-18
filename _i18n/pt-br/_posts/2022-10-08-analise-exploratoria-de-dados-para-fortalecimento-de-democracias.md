@@ -25,8 +25,8 @@ Nessa análise exploraremos os conjuntos de dados "Deputados", "Legislaturas", "
 **Sumário**
 - [Dados abertos](#dados-abertos)
 - [Panorama da transparência de dados na América Latina e Caribe](#panorama-da-transparência-de-dados-na-américa-latina-e-caribe)
-- [Índice de dados abertos, úteis e reutilizáveis (OURdata Index)](#índice-de-dados-abertos-úteis-e-reutilizáveis-ourdata-index)
-- [Panorama das Administrações Públicas de América Latina e Caribe](#panorama-das-administrações-públicas-de-américa-latina-e-caribe)
+    - [Índice de dados abertos, úteis e reutilizáveis (OURdata Index)](#índice-de-dados-abertos-úteis-e-reutilizáveis-ourdata-index)
+    - [Panorama das Administrações Públicas de América Latina e Caribe](#panorama-das-administrações-públicas-de-américa-latina-e-caribe)
 - [Análise exploratória de dados](#análise-exploratória-de-dados)
     - [Pipeline](#pipeline)
     - [Coleta de datos](#coleta-de-datos)
@@ -118,6 +118,18 @@ O código de todas as etapas do *pipeline* estão disponíveis [neste repositór
 A análise apresente duas hipóteses e a exploração dos dados em busca da confirmação ou não destas. Por fim, o gráfico abaixo representa a evolução da quantidade de deputadas eleitas para a Câmara dos Deputados do Brasil e os marcos legislativos de cotas de gênero.
 
 <img class="rounded mx-auto d-block" src="../../assets/images/2022-10-08/evolucao-deputadas.png">
+
+## Referências
+
+- [90 anos do Código Eleitoral](https://www2.camara.leg.br/legin/fed/decret/1930-1939/decreto-21076-24-fevereiro-1932-507583-publicacaooriginal-1-pe.html)
+- [Datos abiertos en gobiernos de América Latina y el Caribe: ¿cómo avanzamos?, 2020](https://blogs.iadb.org/administracion-publica/es/datos-abiertos-en-gobiernos-de-america-latina-y-el-caribe-como-avanzamos/)
+- [Lei 9.504/1997](http://www.planalto.gov.br/ccivil_03/leis/l9504.htm)
+- [Lei 12.034/2009](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12034.htm)
+- [Los datos abiertos en América Latina y el Caribe, 2018](https://publications.iadb.org/es/los-datos-abiertos-en-america-latina-y-el-caribe)
+- [Open Data Barometer, 3.ed](https://opendatabarometer.org/3rdedition/regional-report/latin-america/?lang=es)
+- [Panorama de las Administraciones Públicas: América Latina y el Caribe 2020](https://publications.iadb.org/es/panorama-de-las-administraciones-publicas-america-latina-y-el-caribe-2020)
+- [Panorama regional de los datos abiertos: avances y desafíos en América Latina y el Caribe, 2016](https://www.cepal.org/es/publicaciones/40768-panorama-regional-datos-abiertos-avances-desafios-america-latina-caribe)
+- [¿Qué son los datos abiertos?](https://opendatahandbook.org/guide/es/what-is-open-data/)
 
 --------------------
 <img class="rounded mx-auto d-block" src="../../assets/images/2022-10-08/divulgacao-pybr-2022.png">
