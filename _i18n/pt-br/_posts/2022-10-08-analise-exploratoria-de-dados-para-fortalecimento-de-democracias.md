@@ -23,7 +23,15 @@ A Organização dos Estados Americanos (OEA) prevê que a partir de 30% de mulhe
 Nessa análise exploraremos os conjuntos de dados "Deputados", "Legislaturas", "Proposições" e "Temas" publicados pela Câmera dos Deputados Federais, afim de verificar o impacto das citadas legislações na composição de gênero da citada casa legislativa, além da correlação dessa composição com os temas das propostas legislativas ano após ano.
 
 **Sumário**
-
+- [Dados abertos](#dados-abertos)
+- [Panorama da transparência de dados na América Latina e Caribe](#panorama-da-transparência-de-dados-na-américa-latina-e-caribe)
+- [Índice de dados abertos, úteis e reutilizáveis (OURdata Index)](#índice-de-dados-abertos-úteis-e-reutilizáveis-ourdata-index)
+- [Panorama das Administrações Públicas de América Latina e Caribe](#panorama-das-administrações-públicas-de-américa-latina-e-caribe)
+- [Análise exploratória de dados](#análise-exploratória-de-dados)
+    - [Pipeline](#pipeline)
+    - [Coleta de datos](#coleta-de-datos)
+    - [Código completo](#código-completo)
+    - [Considerações finais](#considerações-finais)
 
 Antes de iniciarmos a análise exploratória, vamos observar o panorama atual do nível de transparência de dados na América Latina para comprender a importância da abertura de dados para a manutenção e fortalecimento de gestões democráticas.
 
