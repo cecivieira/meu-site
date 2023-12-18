@@ -14,13 +14,13 @@ description: "Dados abertos são recursos importantes para o desenvolvimento de 
 toc: false
 beforetoc:
 ---
-> Nesse artigo você encontrará o material ([notebook](XXXX) e [slides](XXXXXX)) usados na palestra "Análise exploratória de dados para fortalecimento de democracias", apresentada na Python Brasil 2022.
+> Nesse artigo você encontrará o material ([repositório](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas.git) e [slides](../../assets/images/2022-10-08/pybr2022 - Análise exploratória de dados para fortalecimento de democracias.pdf)) usados na [palestra "Análise exploratória de dados para fortalecimento de democracias"](https://www.youtube.com/watch?v=QGyg0ICDIyY), apresentada na Python Brasil 2022.
 
 Para começar qualquer análise de dados, é necessário compreender o contexto no qual você está desenvolvendo o estudo. O nosso, é a celebração de [90 anos do Código Eleitoral](https://www2.camara.leg.br/legin/fed/decret/1930-1939/decreto-21076-24-fevereiro-1932-507583-publicacaooriginal-1-pe.html), instrumento que permitiu às mulheres votarem e serem votadas para cargos eletivos. Também faz parte do nosso contexto, a publicação de leis sobre cotas de gênero (Lei [9.504/1997](http://www.planalto.gov.br/ccivil_03/leis/l9504.htm) e [12.034/2009](https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12034.htm)) e as propostas legislativas apresentadas.
 
 A Organização dos Estados Americanos (OEA) prevê que a partir de 30% de mulheres ocupando cargos eletivos, em casas legislativas, é possível notar um aumento substancial em propostas legislativas com temas relacionados a defesa da democracia e proteção de direitos de grupos historicamente marginalizados, a saber: mulheres, população campesina, negra, LGBTQIA+, idosos, PCDs, artistas, população economicamente vulneáveis e indígenas.
 
-Nessa análise exploraremos o conjunto de dados XXXX publicados pelo Tribunal Superior Eleitoral, afim de verificar o impacto das citadas legislações na composição de gênero da Câmara de Deputados Federais, além da correlação dessa composição com os temas das propostas legislativas ano após ano.
+Nessa análise exploraremos os conjuntos de dados "Deputados", "Legislaturas", "Proposições" e "Temas" publicados pela Câmera dos Deputados Federais, afim de verificar o impacto das citadas legislações na composição de gênero da citada casa legislativa, além da correlação dessa composição com os temas das propostas legislativas ano após ano.
 
 **Sumário**
 
@@ -71,63 +71,52 @@ No entanto, entre os países da América Latina, existe um evidente contraste no
  
 A publicação [Panorama das Administrações Públicas de América Latina e Caribe](https://publications.iadb.org/es/panorama-de-las-administraciones-publicas-america-latina-y-el-caribe-2020) abrange aspectos importantes para entender a governança pública e permite analizar o desempenho dos governos da região em comparação com os países membros da OCDE. Um dos apectos considerados para construção de indicadores, nessa publicação, é o tema "dados abertos governamentais", que utiliza os dados do [OURdata Index](https://www.oecd.org/gov/digital-government/policy-paper-ourdata-index-2019.htm).
  
-Esse Panorama, publicado em 2020, é a publicação mais recente sobre dados abertos públicos da América Latina. Foi produzido pela [OCDE (Organización para la Cooperación y el Desarrollo Económicos)](https://www.oecd.org/acerca/miembros-y-socios/), uma organização que agrupa 38 países com a missão de promover políticas públicas que melhorem o bem estar econômico e social das pessoas; e pelo [BID (Banco Interamericano de Desarrollo)](https://www.iadb.org/es/acerca-del-bid/como-estamos-organizados), que é a principal fonte de financiamento para o desenvolvimento da América Latina e Caribe, além disso ajuda a melhorar a vida das cidadãs ao brindar soluções financeiras e conhecimento sobre o desenvolvimento para clientes do setor público e privado.
+Esse Panorama, publicado em 2020, é a publicação mais recente sobre dados abertos públicos da América Latina. Foi produzido pela [OCDE (Organização para Cooperação e Desenvolvimento Econômico)](https://www.oecd.org/acerca/miembros-y-socios/), uma organização que agrupa 38 países com a missão de promover políticas públicas que melhorem o bem estar econômico e social das pessoas; e pelo [BID (Banco Interamericano de Desenvolvimento)](https://www.iadb.org/es/acerca-del-bid/como-estamos-organizados), que é a principal fonte de financiamento para o desenvolvimento da América Latina e Caribe, além disso ajuda a melhorar a vida das cidadãs ao brindar soluções financeiras e conhecimento sobre o desenvolvimento para clientes do setor público e privado.
  
-Este [Panorama](https://publications.iadb.org/es/panorama-de-las-administraciones-publicas-america-latina-y-el-caribe-2020) informa que el 81% de los países en América Latina y Caribe cuentan con una estrategia de mediano plazo y el 75% tiene un plan de acción nacional que incluye implementación de portales y publicación de datos abiertos. En cuanto a participación ciudadana, la mitad de los países latinoamericanos tienen programas gubernamentales para apoyar el conocimiento sobre datos abiertos gubernamentales entre las organizaciones de la sociedad civil. Sin embargo, esta proporción es inferior a los países de la OCDE, donde el 75% de los gobiernos los tienen.
+Este [Panorama](https://publications.iadb.org/es/panorama-de-las-administraciones-publicas-america-latina-y-el-caribe-2020) informa que 81% dos países que compõe a América Latina e Caribe possuem uma estratégia de médio prazo e 75% tem um plano de ação nacional, que prevê implementação de portais e publicação de conjuntos de dados abertos. Quanto a participação cidadã, a metade dos países latinoamericanos possuem programas governamentais para apoiar a qualificação sobre datos abertos para as organizações da sociedade civil. No entanto, essa taxa está abaixo da média dos países da OCDE, que é de 75%.
  
-Aunque la agenda de datos abiertos ha despegado en nuestra región, aún hay margen de mejora. En consonancia con el [Open Data Barómetro](https://opendatabarometer.org/), los análisis muestran que los gobiernos todavía tratan los datos abiertos como iniciativas aisladas. O sea, deberíamos priorizar e invertir en la gobernanza de datos abiertos para respaldar los cambios sustanciales necesarios para incorporar un enfoque abierto en todos los ámbitos y estimular la participación ciudadana en las políticas y programas gubernamentales.
- 
-La democracia en América Latina y Caribe abarca mucho más que las elecciones, de acuerdo con el [proyecto LATINNO](https://latinno.net/es/), en los últimos años estamos convirtiéndonos en un laboratorio de innovaciones políticas y de gobernanza participativa. Mucho se da por la transparencia de datos gubernamentales, aunque nos quede mucho por hacer.
- 
-# Análisis exploratório de datos
- 
-Hasta aquí hemos visto la importancia de los datos abiertos gubernamentales para desarrollo de innovación y una gestión más participativa, también echamos un vistazo en el panorama de América Latina acerca del nivel de apertura de los datos y políticas de los gobiernos acerca del tema. Ahora podremos las manos en la masa... ops.. en los datos.
- 
-La ideia del análisis es enseñar un poquito de Pandas y ser un ejemplo de lo qué podemos hacer con datos abiertos, presentar para vosotras la potencia de este recurso y instigar vosotras a utilizarlos sea para desarrollar nuevas tecnología que mejore la vida de su comunidad o cobrar al gobierno.
- 
-Elegí para nuestro análisis, los datos de vacunación contra COVID-19 de algunos países de América Latina. Si quieres, puedes profundizarlo cogiendo datos de todos los países de la región.
+Ainda que a agenda sobre dados abertos está avançando na nossa região, há muito o que avançarmos. De acordo com o [Open Data Barómetro](https://opendatabarometer.org/), os governos da região desenvolvem iniciativas isoladas sobre o tema. Ou seja, deveríamos priorizar e investir na gestão baseada em dados para respaldar as mudanças estruturais necessárias para termos um enfoque "aberto" em todos os âmbitos e esimular a participação cidadã no desenvolvimento de políticas e programas governamentais.
 
+A democracia na América Latina e Caribe vai muito além das eleições, de acordo com o [projeto LATINNO](https://latinno.net/es/), nos últimos anos estamos nos convertendo em um laboratório de inovação política e de gestão participativa. Muito disso se dá devido a transparência de dados governamentais, ainda que tenhamos muito o que avançar nesse tema.
+ 
+# Análise exploratória de dados
+
+Até aqui te mostrei a importância dos dados abertos governamentais para o desenvolvimento de inovação e uma gestão más participativa, além disso também apresentei um panorama do nível de transparência de dados e a política adotada pelos governos da América Latina sobre o tema. Agora, vamos colocar a mão na massa... quer dizer... nos dados.
+
+A ideia dessa análise exploratória é ensinar um pouco da biblioteca Pandas e ser um exemplo de uso de dados abertos, além disso apresentar a potência dos dados e estimular você a consumi dados governamentais, seja para desenvolver novas tecnologia para melhorar a vida da sua comunidade ou acompanhar uma política governamental.
+
+Escolhi para esta análise os dados de candidaturas eleitas e propostas legislativas para a Câmera dos Deputados Federal do Brasil.
 
 ## Pipeline
 
-<img class="rounded mx-auto d-block" src="../../assets/images/2022-04-29/pipeline.png">
+<img class="rounded mx-auto d-block" src="../../assets/images/2022-10-08/pipeline.png">
 
-El pipeline de este análisis es compuesto por colecta, pre-procesamiento y análisis de datos. Todavía, antes del análisis de las proposiciones hizo falta estandarizar sus palabras claves, por lo tanto fue desarrolado un classificador (modelo de aprendizaje de máquina).
+O pipeline dessa análise é composto por coleta, pré-processamento e análise de dados. Contudo, antes analisar as proposições legislativas foi necessário criar um vocabulário controlado. Para isso, foi desenvolvido um classificador (modelo de aprendizado de máquina).
 
-Los datos fueron colectados del [Portal de Datos Abiertos de la Cámara de Diputados de Brasil]() y corresponden a las candidaturas electas en el periodo de 1934 y 2021. El objetivo del análisis es compreender la evolución de la cantidad de mujeres elegidas como diputadas federal, el impacto de las legislaciones de cuotas de género y si ya se nota cambio en las temáticas de las propuestas legislativas.
+Os dados foram coletados no [Portal de Dados Abertos da Câmera de Deputados Federal do Brasil](https://dadosabertos.camara.leg.br/) e correspondem às candidaturas eleitas no período entre 1934 e 2021. O objetivo da análise é compreender a evolução da quantidade de mulheres eleitas como deputada federal no período, o impacto da legislação referente a cota de gênero para esta casa legislativa e se já é possível verificar mudança nas temáticas das propostas legislativas.
 
-### Colecta de datos
-Fue usada la API RestFul en Python para recolectar los datos, excepto los de las proposiciones legislativas que no estaban disponible por API, en este caso los datos fueron descargados manualmente año a año.
+### Coleta de datos
 
-Es importante decir que en el [Portal de Datos Abiertos de la Cámara de Diputados de Brasil](https://dadosabertos.camara.leg.br/) no están disponibles todas las proposiciones legislativas hasta el año 2000. Entonces, puede que los resultados del análisis no refleje la realidad, todavía creo que es un buen ejercicio para tener ideas de cómo podemos manejar datos abiertos y actuar desde la sociedad civil.
+Foi utilizada a API Restful em Python para coleta dos dados, exceto das propostas legislativas, pois não estavam disponíveis via API. Então, os dados foram coletados manualmente, ano a ano.
 
-### Pre procesamiento
+É importante dizer que no [Portal de Dados Abertos da Câmera de Deputados Federal do Brasil](https://dadosabertos.camara.leg.br/) nexistem dados apenas de algumas proposições tramitadas entre os anos de 1934 e 1945, além disso os dados das proposições legislativas entre os anos de 1946 e 2000 estão parcialmente disponibilizados - estão abertos apenas os referentes às “proposições de tipos que poderiam se tornar (ou se tornaram) leis e normas jurídicas” (Brasil, [2021?]). Então, é possível que o resulta desta análise não reflita a realidade, no entanto acredito que é um bom exercício para termos ideia de como podemos reutilizar os dados abertos como sociedade civil.
 
-Las seguintes etapas del *pipeline* puedes encontrar en [este notebook](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas/blob/main/PyCon_US.ipynb).
+### Código completo
 
-## Consideraciones finales
+O código de todas as etapas do *pipeline* estão disponíveis [neste repositório](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas.git).
 
-Desde la sociedad civil, hay un montón de iniciativas que trabajan y luchan por mejoras en nuestra sociedad. Únete a una de ellas!! Nadie cambia el mundo sola, todavía puedes aportar tu granito de arena.
+## Considerações finais
 
-## Organizaciones que promueven uso de la tecnología para el fortalecimiento de democracias
+A análise apresente duas hipóteses e a exploração dos dados em busca da confirmação ou não destas. Por fim, o gráfico abaixo representa a evolução da quantidade de deputadas eleitas para a Câmara dos Deputados do Brasil e os marcos legislativos de cotas de gênero.
 
-- [Aúna](https://www.auna.org.mx/)
-- [Cívica Digital](https://civica.digital/)
-- [Codeando México](http://codeandomexico.org/)
-- [Ciudadanía inteligente](https://ciudadaniai.org/)
-- [Data Cívica](https://datacivica.org/)
-- [ILDA](https://idatosabiertos.org/)
-- [Instituto Cidade Democrática](https://cidadedemocratica.org.br)
-- [Instituto de Tecnologia e Sociedade](https://itsrio.org/pt/home/)
-- [Latinno](https://latinno.net/es/)
-- [Open Knowledge Brasil](https://ok.org.br/)
+<img class="rounded mx-auto d-block" src="../../assets/images/2022-10-08/evolucao-deputadas.png">
 
 --------------------
-<img class="rounded mx-auto d-block" src="../../assets/images/2022-04-29/cartel-pycon-charlas-2022.jpg">
+<img class="rounded mx-auto d-block" src="../../assets/images/2022-10-08/divulgacao-pybr-2022.png">
 
-Este texto son los apuntes de la charla "Análisis exploratorio de datos abiertos para el fortalecimiento de democracias" presentada en la [PyCon US 2022 (PyCon Charlas)](https://us.pycon.org/2022/schedule/presentation/97/) en el 29 abr 2022 en la ciudad de Salt Lake City(EUA). 
+Esse artigo é composto pelas anotações da palestra “Análise de dados para fortalecimento de democracias”, apresentada na [Python Brasil 2022](https://pretalx.com/python-brasil-2022/talk/AN7RJP/)) em 23 out. no Centro de Convenções do Amazonas Vasco Vasquez (Manaus).
 
 Recursos:
-- [Diapositivas](../../assets/images/2022-04-29/PyCon US - Análisis exploratorio de datos abiertos para el fortalecimiento de democracias.pdf)
-- [Notebook](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas/blob/main/PyCon_US.ipynb)
-- [Charla en video](https://youtu.be/AXQ7cFm9WLI)
+- [Slides](../../assets/images/2022-10-08/pybr2022 - Análise exploratória de dados para fortalecimento de democracias.pdf)
+- [Repositório](https://github.com/cecivieira/cotas-genero-eleicoes-e-proposicoes-legislativas.git)
+- [Palestra completa](https://www.youtube.com/watch?v=QGyg0ICDIyY) 
