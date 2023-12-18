@@ -15,7 +15,7 @@ toc: false
 beforetoc:
 ---
 
-> Esse artigo é composto pelas anotações da palestra "Dados abertos e software livre: um match perfeito", apresentada no FLISOL, realizado no IFPE Palmares em 29 abr. 2023. Aqui você também encontrará a apresentação ([slides]()).
+> Esse artigo é composto pelas anotações da palestra "Dados abertos e software livre: um match perfeito", apresentada no FLISOL, realizado no IFPE Palmares em 29 abr. 2023. Aqui você também encontrará a apresentação ([slides](../../assets/images/2023-04-29/dados-abertos-software-livre-match-perfeito.pdf)).
 
 Dados abertos e software livre tem muito em comum na sua conceituação, principalmente no que se refere ao objetivo de proporcionar liberdade e autonomia para a sociedade com objetivo de que tenhamos poder debater e contribuir com o desenvolvimento de soluções.
 
