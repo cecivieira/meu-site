@@ -10,7 +10,7 @@ translated-en:
 translated-ptbr: 
 tags: [artigo]
 image: https://res.cloudinary.com/damhz6skt/image/upload/v1681494289/capas-site/13_duwfve.jpg
-description: ""
+description: "Relato sobre os eventos Open Data Day Recife 2020."
 toc: false
 beforetoc:
 ---
