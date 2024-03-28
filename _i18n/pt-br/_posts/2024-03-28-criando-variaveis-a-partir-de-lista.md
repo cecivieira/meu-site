@@ -52,4 +52,36 @@ print(
 )
 ```
 
+## Saiba mais
+
+Em linhas gerais, python armazena todas as variáveis e símbolos do entorno/programa em um dicionário, sendo a "chave" o nome da variável e o "valor" o valor atribuído à variável. Então, a função `globals()` retorna esse dicionário apenas com as chaves do tipo "global" (pera, já te explico isso). Isso quer dizer que ao executar o comando `globals()['nome_variável']`, com o nome de qualquer que seja a variável global já existente no entorno, o resultado será o valor atribuído a ela:
+
+```python
+altura = 1.64
+
+print("A altura é de ", globals()['altura'])
+```
+
+Saída esperada:
+````
+A altura é de 1.64
+````
+
+Dessa forma, quando usamos o comando `globals()['nome_variável']` podemos tanto criar uma nova (como já vimos no começo desse artigo), quanto modificar o valor de uma variável existente:
+
+```python
+altura = 1.64
+
+globals()['altura'] = 2.2
+
+print("A altura é de ", globals()['altura'])
+```
+
+Saída esperada:
+````
+A altura é de 2.2
+````
+
+Te falei que a função `globals()` retorna apenas os símbolos do tipo "global", não foi?! Isso porque, python tem dois tipos: global e local. Os símbolos do tipo "global" são os que foram criados de forma genérica no código, fora de estruturas dos tipos: função, classe, repetição (while e for loops), etc. Já os símbolos do tipo "local", são os criado dentro desses estruturas e que, consequentemente, só podem ser usados dentro delas.
+
 Mais informações sobre o funcionamento da função embutida `globals()` estão disponíveis na [documentação da linguagem](https://docs.python.org/pt-br/3/library/functions.html#globals).
