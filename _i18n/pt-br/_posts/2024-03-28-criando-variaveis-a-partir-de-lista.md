@@ -17,12 +17,12 @@ beforetoc:
 Volta e meia preciso usar elementos de uma lista como nomes de variáveis e atribuir valores distintos para cada uma. O comando é bem simples:
 
 ```python
-global()[item_lista]
+globals()[item_lista]
 ```
 
 Achar essa solução pela internet é que não é tão simples assim.
 
-Antes de te mostrar a aplicação, lembro que há algumas convensões para nomear as variáveis em Python. Essas boas práticas existem para que o código seja mais explícito e facilmente legível por qualquer pessoa, até pelo seu "eu do futuro". Na [PEP 8 - Style Guide fo Python Code](https://peps.python.org/pep-0008/) você encontrará essa e várias outras convensões como: uso da identação e uso de aspas.
+Antes de te mostrar a aplicação, lembro que há algumas convensões para nomear as variáveis em Python. Essas boas práticas existem para que o código seja mais explícito e facilmente legível por qualquer pessoa, até pela sua "eu do futuro". Na [PEP 8 - Style Guide fo Python Code](https://peps.python.org/pep-0008/) você encontrará essa e várias outras convensões como: uso da identação e uso de aspas.
 
 ## Caso de uso
 Atribuir um número inteiro aleatório para cada elemento de umas lista de strings.
