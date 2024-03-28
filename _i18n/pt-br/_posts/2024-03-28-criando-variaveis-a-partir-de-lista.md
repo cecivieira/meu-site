@@ -82,6 +82,6 @@ Saída esperada:
 A altura é de 2.2
 ````
 
-Te falei que a função `globals()` retorna apenas os símbolos do tipo "global", não foi?! Isso porque, python tem dois tipos: global e local. Os símbolos do tipo "global" são os que foram criados de forma genérica no código, fora de estruturas dos tipos: função, classe, repetição (while e for loops), etc. Já os símbolos do tipo "local", são os criado dentro desses estruturas e que, consequentemente, só podem ser usados dentro delas.
+Te falei que a função `globals()` retorna apenas os símbolos do tipo "global", não foi?! Isso porque, python tem dois tipos: global e local. Os símbolos do tipo "global" são os que foram criados de forma genérica no código, fora de estruturas dos tipos: função, classe, repetição (while e for), etc. Já os símbolos do tipo "local", são os criados dentro dessas estruturas e que, consequentemente, só podem ser usados dentro delas.
 
 Mais informações sobre o funcionamento da função embutida `globals()` estão disponíveis na [documentação da linguagem](https://docs.python.org/pt-br/3/library/functions.html#globals).
