@@ -4,17 +4,17 @@ title: "Dados abertos feat Qualidade de Dados"
 author: cecivieira
 date: 2024-08-10 08:00
 lang: pt-br
-translated-es: es/analisis-exploratorio-de-datos-abiertos-para-el-fortalecimiento-de-democracias
+translated-es: 
 translated-en: 
 translated-ptbr: 
 categories: [dados abertos, qualidade de dados]
 tags: [artigo, palestra]
 image: https://res.cloudinary.com/damhz6skt/image/upload/v1723315771/capas-site/watercolor-mobile-background-yellow-blue-desktop-wallpaper-abstract-design_ghsprc.jpg
-description: "Dados abertos são recursos importantes para o desenvolvimento de tecnologia cívica e fomento de gestões participativas. Este artigo apresentará técnicas de exploração de conjunto de dados abertos usando a biblioteca Pandas, visando estimular o uso de dados abertos governamentais."
+description: "Slides do keynote apresentano durante a Python Nordeste 2024"
 toc: false
 beforetoc:
 ---
-> Nesse artigo você encontrará os [slides](../../assets/images/2024-08-10/Dados abertos feat qualidade de dados.pdf) usados na palestra (keynote) ["Dados abertos feat Qualidade de Dados"](https://www.youtube.com/watch?v=QGyg0ICDIyY), apresentada na Python Nordeste 2024.
+> Nesse artigo você encontrará os [slides](../../assets/images/2024-08-10/Dados abertos feat qualidade de dados.pdf) usados na palestra (keynote) ["Dados abertos feat Qualidade de Dados"](https://www.youtube.com/@PythonNordeste), apresentada na Python Nordeste 2024.
 
 Artigo em construção...
 
